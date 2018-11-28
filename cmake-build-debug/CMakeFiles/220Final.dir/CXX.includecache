@@ -6,6 +6,12 @@
 
 #IncludeRegexTransform: 
 
+/Users/jeffpage/Desktop/220Final/Playlist.cpp
+Playlist.h
+/Users/jeffpage/Desktop/220Final/Playlist.h
+
+/Users/jeffpage/Desktop/220Final/Playlist.h
+
 /Users/jeffpage/Desktop/220Final/Song.cpp
 Song.h
 /Users/jeffpage/Desktop/220Final/Song.h
@@ -17,12 +23,6 @@ string
 /Users/jeffpage/Desktop/220Final/SongTest.cpp
 Song.h
 /Users/jeffpage/Desktop/220Final/Song.h
-TestLib.h
-/Users/jeffpage/Desktop/220Final/TestLib.h
-
-/Users/jeffpage/Desktop/220Final/TestLib.cpp
-iostream
--
 TestLib.h
 /Users/jeffpage/Desktop/220Final/TestLib.h
 

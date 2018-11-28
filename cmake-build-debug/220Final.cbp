@@ -80,6 +80,12 @@
 				</MakeCommands>
 			</Target>
 		</Build>
+		<Unit filename="/Users/jeffpage/Desktop/220Final/Playlist.cpp">
+			<Option target="220Final"/>
+		</Unit>
+		<Unit filename="/Users/jeffpage/Desktop/220Final/Playlist.h">
+			<Option target="220Final"/>
+		</Unit>
 		<Unit filename="/Users/jeffpage/Desktop/220Final/Song.cpp">
 			<Option target="220Final"/>
 		</Unit>

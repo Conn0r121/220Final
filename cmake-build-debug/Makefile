@@ -123,6 +123,33 @@ depend:
 	$(MAKE) -f CMakeFiles/220Final.dir/build.make CMakeFiles/220Final.dir/build
 .PHONY : 220Final/fast
 
+Playlist.o: Playlist.cpp.o
+
+.PHONY : Playlist.o
+
+# target to build an object file
+Playlist.cpp.o:
+	$(MAKE) -f CMakeFiles/220Final.dir/build.make CMakeFiles/220Final.dir/Playlist.cpp.o
+.PHONY : Playlist.cpp.o
+
+Playlist.i: Playlist.cpp.i
+
+.PHONY : Playlist.i
+
+# target to preprocess a source file
+Playlist.cpp.i:
+	$(MAKE) -f CMakeFiles/220Final.dir/build.make CMakeFiles/220Final.dir/Playlist.cpp.i
+.PHONY : Playlist.cpp.i
+
+Playlist.s: Playlist.cpp.s
+
+.PHONY : Playlist.s
+
+# target to generate assembly for a file
+Playlist.cpp.s:
+	$(MAKE) -f CMakeFiles/220Final.dir/build.make CMakeFiles/220Final.dir/Playlist.cpp.s
+.PHONY : Playlist.cpp.s
+
 Song.o: Song.cpp.o
 
 .PHONY : Song.o
@@ -213,6 +240,9 @@ help:
 	@echo "... rebuild_cache"
 	@echo "... edit_cache"
 	@echo "... 220Final"
+	@echo "... Playlist.o"
+	@echo "... Playlist.i"
+	@echo "... Playlist.s"
 	@echo "... Song.o"
 	@echo "... Song.i"
 	@echo "... Song.s"
