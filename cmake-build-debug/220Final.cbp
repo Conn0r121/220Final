@@ -8,94 +8,94 @@
 		<Option virtualFolders="CMake Files\;"/>
 		<Build>
 			<Target title="all">
-				<Option working_dir="/Users/dmccaffrey/CLionProjects/220Final/cmake-build-debug"/>
+				<Option working_dir="/Users/jeffpage/Desktop/220Final/cmake-build-debug"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j4 -f &quot;/Users/dmccaffrey/CLionProjects/220Final/cmake-build-debug/Makefile&quot;  VERBOSE=1 all"/>
-					<CompileFile command="/usr/bin/make -j4 -f &quot;/Users/dmccaffrey/CLionProjects/220Final/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j4 -f &quot;/Users/dmccaffrey/CLionProjects/220Final/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/dmccaffrey/CLionProjects/220Final/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j4 -f &quot;/Users/jeffpage/Desktop/220Final/cmake-build-debug/Makefile&quot;  VERBOSE=1 all"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/Users/jeffpage/Desktop/220Final/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/Users/jeffpage/Desktop/220Final/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/jeffpage/Desktop/220Final/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="rebuild_cache">
-				<Option working_dir="/Users/dmccaffrey/CLionProjects/220Final/cmake-build-debug"/>
+				<Option working_dir="/Users/jeffpage/Desktop/220Final/cmake-build-debug"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j4 -f &quot;/Users/dmccaffrey/CLionProjects/220Final/cmake-build-debug/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
-					<CompileFile command="/usr/bin/make -j4 -f &quot;/Users/dmccaffrey/CLionProjects/220Final/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j4 -f &quot;/Users/dmccaffrey/CLionProjects/220Final/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/dmccaffrey/CLionProjects/220Final/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j4 -f &quot;/Users/jeffpage/Desktop/220Final/cmake-build-debug/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/Users/jeffpage/Desktop/220Final/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/Users/jeffpage/Desktop/220Final/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/jeffpage/Desktop/220Final/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="edit_cache">
-				<Option working_dir="/Users/dmccaffrey/CLionProjects/220Final/cmake-build-debug"/>
+				<Option working_dir="/Users/jeffpage/Desktop/220Final/cmake-build-debug"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j4 -f &quot;/Users/dmccaffrey/CLionProjects/220Final/cmake-build-debug/Makefile&quot;  VERBOSE=1 edit_cache"/>
-					<CompileFile command="/usr/bin/make -j4 -f &quot;/Users/dmccaffrey/CLionProjects/220Final/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j4 -f &quot;/Users/dmccaffrey/CLionProjects/220Final/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/dmccaffrey/CLionProjects/220Final/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j4 -f &quot;/Users/jeffpage/Desktop/220Final/cmake-build-debug/Makefile&quot;  VERBOSE=1 edit_cache"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/Users/jeffpage/Desktop/220Final/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/Users/jeffpage/Desktop/220Final/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/jeffpage/Desktop/220Final/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="220Final">
-				<Option output="/Users/dmccaffrey/CLionProjects/220Final/cmake-build-debug/220Final" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="/Users/dmccaffrey/CLionProjects/220Final/cmake-build-debug"/>
+				<Option output="/Users/jeffpage/Desktop/220Final/cmake-build-debug/220Final" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/jeffpage/Desktop/220Final/cmake-build-debug"/>
 				<Option object_output="./"/>
 				<Option type="1"/>
 				<Option compiler="gcc"/>
 				<Compiler>
 					<Add directory="/Library/Developer/CommandLineTools/usr/include/c++/v1"/>
-					<Add directory="/Library/Developer/CommandLineTools/usr/lib/clang/9.0.0/include"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/lib/clang/9.1.0/include"/>
 					<Add directory="/Library/Developer/CommandLineTools/usr/include"/>
 					<Add directory="/usr/include"/>
 					<Add directory="/System/Library/Frameworks"/>
 					<Add directory="/Library/Frameworks"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j4 -f &quot;/Users/dmccaffrey/CLionProjects/220Final/cmake-build-debug/Makefile&quot;  VERBOSE=1 220Final"/>
-					<CompileFile command="/usr/bin/make -j4 -f &quot;/Users/dmccaffrey/CLionProjects/220Final/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j4 -f &quot;/Users/dmccaffrey/CLionProjects/220Final/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/dmccaffrey/CLionProjects/220Final/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j4 -f &quot;/Users/jeffpage/Desktop/220Final/cmake-build-debug/Makefile&quot;  VERBOSE=1 220Final"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/Users/jeffpage/Desktop/220Final/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/Users/jeffpage/Desktop/220Final/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/jeffpage/Desktop/220Final/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="220Final/fast">
-				<Option output="/Users/dmccaffrey/CLionProjects/220Final/cmake-build-debug/220Final" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="/Users/dmccaffrey/CLionProjects/220Final/cmake-build-debug"/>
+				<Option output="/Users/jeffpage/Desktop/220Final/cmake-build-debug/220Final" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/jeffpage/Desktop/220Final/cmake-build-debug"/>
 				<Option object_output="./"/>
 				<Option type="1"/>
 				<Option compiler="gcc"/>
 				<Compiler>
 					<Add directory="/Library/Developer/CommandLineTools/usr/include/c++/v1"/>
-					<Add directory="/Library/Developer/CommandLineTools/usr/lib/clang/9.0.0/include"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/lib/clang/9.1.0/include"/>
 					<Add directory="/Library/Developer/CommandLineTools/usr/include"/>
 					<Add directory="/usr/include"/>
 					<Add directory="/System/Library/Frameworks"/>
 					<Add directory="/Library/Frameworks"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j4 -f &quot;/Users/dmccaffrey/CLionProjects/220Final/cmake-build-debug/Makefile&quot;  VERBOSE=1 220Final/fast"/>
-					<CompileFile command="/usr/bin/make -j4 -f &quot;/Users/dmccaffrey/CLionProjects/220Final/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j4 -f &quot;/Users/dmccaffrey/CLionProjects/220Final/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/dmccaffrey/CLionProjects/220Final/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j4 -f &quot;/Users/jeffpage/Desktop/220Final/cmake-build-debug/Makefile&quot;  VERBOSE=1 220Final/fast"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/Users/jeffpage/Desktop/220Final/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/Users/jeffpage/Desktop/220Final/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/jeffpage/Desktop/220Final/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 		</Build>
-		<Unit filename="/Users/dmccaffrey/CLionProjects/220Final/Song.cpp">
+		<Unit filename="/Users/jeffpage/Desktop/220Final/Song.cpp">
 			<Option target="220Final"/>
 		</Unit>
-		<Unit filename="/Users/dmccaffrey/CLionProjects/220Final/Song.h">
+		<Unit filename="/Users/jeffpage/Desktop/220Final/Song.h">
 			<Option target="220Final"/>
 		</Unit>
-		<Unit filename="/Users/dmccaffrey/CLionProjects/220Final/SongTest.cpp">
+		<Unit filename="/Users/jeffpage/Desktop/220Final/SongTest.cpp">
 			<Option target="220Final"/>
 		</Unit>
-		<Unit filename="/Users/dmccaffrey/CLionProjects/220Final/TestLib.cpp">
+		<Unit filename="/Users/jeffpage/Desktop/220Final/TestLib.cpp">
 			<Option target="220Final"/>
 		</Unit>
-		<Unit filename="/Users/dmccaffrey/CLionProjects/220Final/TestLib.h">
+		<Unit filename="/Users/jeffpage/Desktop/220Final/TestLib.h">
 			<Option target="220Final"/>
 		</Unit>
-		<Unit filename="/Users/dmccaffrey/CLionProjects/220Final/CMakeLists.txt">
+		<Unit filename="/Users/jeffpage/Desktop/220Final/CMakeLists.txt">
 			<Option virtualFolder="CMake Files\"/>
 		</Unit>
 	</Project>

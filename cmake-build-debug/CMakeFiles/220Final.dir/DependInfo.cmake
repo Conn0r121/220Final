@@ -4,9 +4,9 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
-  "/Users/dmccaffrey/CLionProjects/220Final/Song.cpp" "/Users/dmccaffrey/CLionProjects/220Final/cmake-build-debug/CMakeFiles/220Final.dir/Song.cpp.o"
-  "/Users/dmccaffrey/CLionProjects/220Final/SongTest.cpp" "/Users/dmccaffrey/CLionProjects/220Final/cmake-build-debug/CMakeFiles/220Final.dir/SongTest.cpp.o"
-  "/Users/dmccaffrey/CLionProjects/220Final/TestLib.cpp" "/Users/dmccaffrey/CLionProjects/220Final/cmake-build-debug/CMakeFiles/220Final.dir/TestLib.cpp.o"
+  "/Users/jeffpage/Desktop/220Final/Song.cpp" "/Users/jeffpage/Desktop/220Final/cmake-build-debug/CMakeFiles/220Final.dir/Song.cpp.o"
+  "/Users/jeffpage/Desktop/220Final/SongTest.cpp" "/Users/jeffpage/Desktop/220Final/cmake-build-debug/CMakeFiles/220Final.dir/SongTest.cpp.o"
+  "/Users/jeffpage/Desktop/220Final/TestLib.cpp" "/Users/jeffpage/Desktop/220Final/cmake-build-debug/CMakeFiles/220Final.dir/TestLib.cpp.o"
   )
 set(CMAKE_CXX_COMPILER_ID "AppleClang")
 

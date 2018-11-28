@@ -6,17 +6,27 @@
 
 #IncludeRegexTransform: 
 
-/Users/dmccaffrey/CLionProjects/220Final/Song.h
+/Users/jeffpage/Desktop/220Final/Song.cpp
+Song.h
+/Users/jeffpage/Desktop/220Final/Song.h
+
+/Users/jeffpage/Desktop/220Final/Song.h
 string
 -
 
-/Users/dmccaffrey/CLionProjects/220Final/SongTest.cpp
+/Users/jeffpage/Desktop/220Final/SongTest.cpp
 Song.h
-/Users/dmccaffrey/CLionProjects/220Final/Song.h
+/Users/jeffpage/Desktop/220Final/Song.h
 TestLib.h
-/Users/dmccaffrey/CLionProjects/220Final/TestLib.h
+/Users/jeffpage/Desktop/220Final/TestLib.h
 
-/Users/dmccaffrey/CLionProjects/220Final/TestLib.h
+/Users/jeffpage/Desktop/220Final/TestLib.cpp
+iostream
+-
+TestLib.h
+/Users/jeffpage/Desktop/220Final/TestLib.h
+
+/Users/jeffpage/Desktop/220Final/TestLib.h
 string
 -
 iostream
