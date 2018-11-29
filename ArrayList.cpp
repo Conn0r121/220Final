@@ -67,7 +67,7 @@ int ArrayList::getValueAt(int index){
     if(index<0 || index>=currItemCount){
         throw std::out_of_range("bad argument dummy");
     }
-    int value = this->array[Index];
+    int value = this->array[index];
     return value;
 }
 std::string ArrayList::toString(){
@@ -164,7 +164,7 @@ int ArrayList::removeValueAt(int index){
     if(index<0 || index>currItemCount) {
         throw std::out_of_range("bad argument dummy");
     }
-    int myReturn=array[Index];
+    int myReturn=array[index];
     for(int i=index; i<currItemCount-1;i++){
         array[i]=array[i+1];
     }

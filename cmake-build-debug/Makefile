@@ -39,19 +39,19 @@ cmake_force:
 SHELL = /bin/sh
 
 # The CMake executable.
-CMAKE_COMMAND = /cygdrive/c/Users/conno/.CLion2018.2/system/cygwin_cmake/bin/cmake.exe
+CMAKE_COMMAND = /Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake
 
 # The command to remove a file.
-RM = /cygdrive/c/Users/conno/.CLion2018.2/system/cygwin_cmake/bin/cmake.exe -E remove -f
+RM = /Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake -E remove -f
 
 # Escaping for special characters.
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /cygdrive/c/Users/conno/CLionProjects/220Final
+CMAKE_SOURCE_DIR = /Users/jeffpage/CLionProjects/220Final
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /cygdrive/c/Users/conno/CLionProjects/220Final/cmake-build-debug
+CMAKE_BINARY_DIR = /Users/jeffpage/CLionProjects/220Final/cmake-build-debug
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -59,7 +59,7 @@ CMAKE_BINARY_DIR = /cygdrive/c/Users/conno/CLionProjects/220Final/cmake-build-de
 # Special rule for the target rebuild_cache
 rebuild_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake to regenerate build system..."
-	/cygdrive/c/Users/conno/.CLion2018.2/system/cygwin_cmake/bin/cmake.exe -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
+	/Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
 .PHONY : rebuild_cache
 
 # Special rule for the target rebuild_cache
@@ -70,7 +70,7 @@ rebuild_cache/fast: rebuild_cache
 # Special rule for the target edit_cache
 edit_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "No interactive CMake dialog available..."
-	/cygdrive/c/Users/conno/.CLion2018.2/system/cygwin_cmake/bin/cmake.exe -E echo No\ interactive\ CMake\ dialog\ available.
+	/Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
 .PHONY : edit_cache
 
 # Special rule for the target edit_cache
@@ -80,9 +80,9 @@ edit_cache/fast: edit_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /cygdrive/c/Users/conno/CLionProjects/220Final/cmake-build-debug/CMakeFiles /cygdrive/c/Users/conno/CLionProjects/220Final/cmake-build-debug/CMakeFiles/progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/jeffpage/CLionProjects/220Final/cmake-build-debug/CMakeFiles /Users/jeffpage/CLionProjects/220Final/cmake-build-debug/CMakeFiles/progress.marks
 	$(MAKE) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start /cygdrive/c/Users/conno/CLionProjects/220Final/cmake-build-debug/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/jeffpage/CLionProjects/220Final/cmake-build-debug/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
@@ -122,33 +122,6 @@ depend:
 220Final/fast:
 	$(MAKE) -f CMakeFiles/220Final.dir/build.make CMakeFiles/220Final.dir/build
 .PHONY : 220Final/fast
-
-Playlist.o: Playlist.cpp.o
-
-.PHONY : Playlist.o
-
-# target to build an object file
-Playlist.cpp.o:
-	$(MAKE) -f CMakeFiles/220Final.dir/build.make CMakeFiles/220Final.dir/Playlist.cpp.o
-.PHONY : Playlist.cpp.o
-
-Playlist.i: Playlist.cpp.i
-
-.PHONY : Playlist.i
-
-# target to preprocess a source file
-Playlist.cpp.i:
-	$(MAKE) -f CMakeFiles/220Final.dir/build.make CMakeFiles/220Final.dir/Playlist.cpp.i
-.PHONY : Playlist.cpp.i
-
-Playlist.s: Playlist.cpp.s
-
-.PHONY : Playlist.s
-
-# target to generate assembly for a file
-Playlist.cpp.s:
-	$(MAKE) -f CMakeFiles/220Final.dir/build.make CMakeFiles/220Final.dir/Playlist.cpp.s
-.PHONY : Playlist.cpp.s
 
 Song.o: Song.cpp.o
 
@@ -238,11 +211,8 @@ help:
 	@echo "... clean"
 	@echo "... depend"
 	@echo "... rebuild_cache"
-	@echo "... 220Final"
 	@echo "... edit_cache"
-	@echo "... Playlist.o"
-	@echo "... Playlist.i"
-	@echo "... Playlist.s"
+	@echo "... 220Final"
 	@echo "... Song.o"
 	@echo "... Song.i"
 	@echo "... Song.s"

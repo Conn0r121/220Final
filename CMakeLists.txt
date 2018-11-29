@@ -3,4 +3,4 @@ project(220Final)
 
 set(CMAKE_CXX_STANDARD 14)
 
-add_executable(220Final Song.cpp SongTest.cpp TestLib.cpp Playlist.cpp Playlist.h ArrayList.h)
+add_executable(220Final Song.cpp SongTest.cpp TestLib.cpp)
