@@ -1,10 +1,10 @@
 //
 // created by Connor Robinson 10/18/18
 //
-#include "ArrayList.h"
 #include <stdexcept>
 #include <string>
 #include <iostream>
+#include "ArrayList.h"
 
 ArrayList::ArrayList(int initialCapacity){
     if(initialCapacity<1){
@@ -67,7 +67,7 @@ int ArrayList::getValueAt(int index){
     if(index<0 || index>=currItemCount){
         throw std::out_of_range("bad argument dummy");
     }
-    int value = this->array[index];
+    int value = this->array[Index];
     return value;
 }
 std::string ArrayList::toString(){
@@ -83,7 +83,7 @@ std::string ArrayList::toString(){
 //        returnString=returnString+tempString+", ";
     }
     //tempString=*(array+currItemCount-1);
-        returnString+=std::to_string(array[currItemCount-1])+"}";
+    returnString+=std::to_string(array[currItemCount-1])+"}";
     //returnString=returnString+tempString+"}";
     return returnString;
 }
@@ -164,7 +164,7 @@ int ArrayList::removeValueAt(int index){
     if(index<0 || index>currItemCount) {
         throw std::out_of_range("bad argument dummy");
     }
-    int myReturn=array[index];
+    int myReturn=array[Index];
     for(int i=index; i<currItemCount-1;i++){
         array[i]=array[i+1];
     }

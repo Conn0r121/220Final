@@ -6,35 +6,3 @@
 
 #IncludeRegexTransform: 
 
-/cygdrive/c/Users/conno/CLionProjects/220Final/Playlist.cpp
-Playlist.h
-/cygdrive/c/Users/conno/CLionProjects/220Final/Playlist.h
-
-/cygdrive/c/Users/conno/CLionProjects/220Final/Playlist.h
-
-/cygdrive/c/Users/conno/CLionProjects/220Final/Song.cpp
-Song.h
-/cygdrive/c/Users/conno/CLionProjects/220Final/Song.h
-
-/cygdrive/c/Users/conno/CLionProjects/220Final/Song.h
-string
--
-
-/cygdrive/c/Users/conno/CLionProjects/220Final/SongTest.cpp
-Song.h
-/cygdrive/c/Users/conno/CLionProjects/220Final/Song.h
-TestLib.h
-/cygdrive/c/Users/conno/CLionProjects/220Final/TestLib.h
-
-/cygdrive/c/Users/conno/CLionProjects/220Final/TestLib.cpp
-iostream
--
-TestLib.h
-/cygdrive/c/Users/conno/CLionProjects/220Final/TestLib.h
-
-/cygdrive/c/Users/conno/CLionProjects/220Final/TestLib.h
-string
--
-iostream
--
-

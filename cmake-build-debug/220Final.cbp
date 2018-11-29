@@ -80,9 +80,6 @@
 				</MakeCommands>
 			</Target>
 		</Build>
-		<Unit filename="/cygdrive/c/Users/conno/CLionProjects/220Final/ArrayList.cpp">
-			<Option target="220Final"/>
-		</Unit>
 		<Unit filename="/cygdrive/c/Users/conno/CLionProjects/220Final/ArrayList.h">
 			<Option target="220Final"/>
 		</Unit>
