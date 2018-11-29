@@ -1,147 +1,171 @@
-//
-// Created by Toby Dragon on 9/30/16.
-//
-
-#ifndef COMP220_ARRAYLIST_H
-#define COMP220_ARRAYLIST_H
-
+// created by Connor Robinson 10/18/18
+#include "ArrayList.h"
 #include <stdexcept>
 #include <string>
-#include "List.h"
+#include <iostream>
 
-class ArrayList : public List {
-private:
-    //pointer to the start of the array
-    int* array;
-    //count of the number of valid items currently stored in the array
-    int currItemCount;
-    //size of the current array
-    int currCapacity;
+ArrayList::ArrayList(int initialCapacity){
+    if(initialCapacity<1){
+        throw std::invalid_argument( "size must be greater than 1");
+    }
+    //delete [] array;
+    array = new int[initialCapacity];
+    currItemCount = 0;
+    currCapacity = initialCapacity;
 
-    /**
-     * replaces the old array with an array twice the size
-     * private method only called within ArrayList when necessary
-     * @post: array points to a new array of twice the size with values copied from the old one,
-     *        the old array is deleted.
-     */
-    void doubleCapacity();
+}
 
-public:
-    /**
-     * Constructor
-     * @throws an std::invalid_argument exception if size < 1
-     */
-    ArrayList(int initialCapacity);
+ArrayList::ArrayList(const ArrayList& arrayListToCopy) {
+    this->array = new int[arrayListToCopy.currCapacity];
+    this->currItemCount = arrayListToCopy.currItemCount;
+    this->currCapacity = arrayListToCopy.currCapacity;
+    for (int i =0; i <currCapacity; i++){
+        array[i] = arrayListToCopy.array[i];
+    }
+    //delete [] array;
+//    array = newArray;
+}
 
-    //Copy Constructor
-    ArrayList(const ArrayList& arrayListToCopy);
+ArrayList &ArrayList::operator=(const ArrayList &arrayListToCopy) {
+    if(this != &arrayListToCopy){
+        delete [] array;
+        array=nullptr;
+        array = new int[currCapacity];
+        this->currItemCount = arrayListToCopy.currItemCount;
+        this->currCapacity = arrayListToCopy.currCapacity;
 
-    //Overloaded Assignment Operator
-    ArrayList& operator=(const ArrayList& arrayListToCopy);
+        for(int i = 0; i<currItemCount; i++){
+            this->array[i] = arrayListToCopy.array[i];
+        }
+    }
+    return *this;
+}
 
-    //Destructor
-    ~ArrayList();
+ArrayList::~ArrayList(){
+    delete [] array;
+}
 
-    /**
-     * appends the new item to the end of the list
-     * @post the list has an additional value in it, at the end
-     */
-    void insertAtEnd(int itemToAdd);
+void ArrayList::doubleCapacity(){
+    currCapacity*=2;
+    int* tempArray = new int[currCapacity];
+    for(int i =0; i<currItemCount; i++) {
+        tempArray[i] = array[i];
+    }
+    delete [] array;
+    array=tempArray;
+}
+void ArrayList::insertAtEnd(int itemToAdd){
+    if(currCapacity<=currItemCount){
+        doubleCapacity();
+    }
+    array[currItemCount]=itemToAdd;
+    this->currItemCount++;
+}
+int ArrayList::getValueAt(int index){
+    if(index<0 || index>=currItemCount){
+        throw std::out_of_range("bad argument dummy");
+    }
+    int value = this->array[index];
+    return value;
+}
+std::string ArrayList::toString(){
 
-    /**
-     * gets a value from the list
-     * @param index the location from which to get the value
-     * @return a copy of the item at index
-     * @throws out_of_range exception if index is invalid
-     */
-    int getValueAt(int index);
+    std::string returnString="{";
+    std::string tempString;
+    if(currItemCount==0){
+        return "{}";
+    }
+    for(int i=0; i<currItemCount-1; i++){
+        returnString+=std::to_string(array[i])+", ";
+//        tempString=*(array+i);
+//        returnString=returnString+tempString+", ";
+    }
+    //tempString=*(array+currItemCount-1);
+    returnString+=std::to_string(array[currItemCount-1])+"}";
+    //returnString=returnString+tempString+"}";
+    return returnString;
+}
+bool ArrayList::isEmpty(){
+    if(currItemCount==0){
+        return true;
+    }
+    return false;
+}
+int ArrayList::itemCount(){
+    return currItemCount;
+}
+void ArrayList::clearList(){
+    currItemCount=0;
+}
+int ArrayList::find(int numToFind){
+    for(int i=0; i<currItemCount; i++){
+        if(*(array+i)==numToFind){
+            return i;
+        }
+    }
+    return -1;
+}
+int ArrayList::findLast(int numToFind){
+    for(int i=0; i<currItemCount; i++){
+        if(*(array+currItemCount-i-1)==numToFind){
+            return currItemCount-i-1;
+        }
+    }
+    return -1;
+}
+int ArrayList::findMaxIndex() {
+    int maxIndex=0;
+    if (this->isEmpty()) {
+        throw std::out_of_range("Array size must be > 0");
+    } else {
+        int maxValue = array[0];
+        for (int i = 0; i < currItemCount; i++) {
+            if (maxValue < *(array + i)) {
+                maxValue = *(array + i);
+                maxIndex = i;
+            }
+        }
+    }
 
-    /**
-     * gives a string representation of the current list
-     * @returns a string representing the given list in the exact format shown below
-     * {1, 2, 3, 4, 5}
-     */
-    std::string toString();
-
-    /**
-     * checks if there are any valid items in the list
-     * @return true if there are no valid items in the list, false otherwise
-     */
-    bool isEmpty();
-
-    /**
-     * returns a count of valid items currently in the list
-     * @returns the number of valid items in the list
-     */
-    int itemCount();
-
-    /**
-     * makes the list empty of valid items
-     * @post the list is empty, such that isEmpty() == true
-     */
-    void clearList();
-
-    /**
-     * Searches an int array for a certain value
-     * @return the index of the first occurrence of numToFind if it is present, otherwise returns -1
-     */
-    int find(int numToFind);
-
-    /**
-     * Searches an int array for a certain value
-     * @return the index of the last occurrence of numToFind if it is present, otherwise returns -1
-     */
-    int findLast(int numToFind);
-
-    /**
-     * finds the largest value in the array
-     * @return the first index of the maximum value
-     * @throws out_of_range exception if there is no item to remove
-     */
-    int findMaxIndex();
-
-    /**
-     * appends the new item to the beginning of the list
-     * @post the list has an additional value in it, at the beginning
-     *    all other items are shifted down by one index
-     */
-    void insertAtFront(int itemToAdd);
-
-    /**
-     * inserts the item into the list so that it can be found with get(index)
-     * @param index the location in which to insert this item
-     * @post the list has an additional value in it at the specified index,
-     *        all further values have been shifted down by one index
-     * @throws out_of_range exception if index is invalid (< 0 or > currItemCount)
-     */
-    void insertAt(int itemToAdd, int index);
-
-    /**
-     * removes the item at the end of the list, and returns a copy of that item
-     * @post the item at the end is removed from the list
-     * @return a copy of the item at the end
-     * @throws out_of_range exception if there is no item to remove
-     */
-    int removeValueAtEnd();
-
-    /**
-     * removes the item at the front of the list, and returns a copy of that item
-     * @post the item at the front is removed from the list, everything else is shifted down one
-     * @return a copy of the item at index
-     * @throws out_of_range exception if there is no item to remove
-     */
-    int removeValueAtFront();
-
-    /**
-     * removes the item at index from the list, and returns a copy of that item
-     * @param index the location from which to get the value
-     * @post the item at index is removed from the list, everything else is shifted down one
-     * @return a copy of the item at index
-     * @throws out_of_range exception if index is invalid
-     */
-    int removeValueAt(int index);
-
-};
-
-
-#endif //COMP220_ARRAYLIST_H
+    return maxIndex;
+}
+void ArrayList::insertAtFront(int itemToAdd){
+    if(currItemCount>=currCapacity){
+        doubleCapacity();
+    }
+    for(int i=currItemCount; i>=0; i--){
+        array[i+1]=array[i];
+    }
+    array[0]=itemToAdd;
+    currItemCount++;
+}
+void ArrayList::insertAt(int itemToAdd, int index){
+    if(index<0 || index>currItemCount){
+        throw std::out_of_range("bad argument dummy");
+    }
+    if(currItemCount>=currCapacity){
+        doubleCapacity();
+    }
+    for(int i=currItemCount;i>=index; i--){
+        array[i+1]=array[i];
+    }
+    *(array+index)=itemToAdd;
+    currItemCount++;
+}
+int ArrayList::removeValueAtEnd(){
+    return removeValueAt(currItemCount-1);
+}
+int ArrayList::removeValueAtFront(){
+    return removeValueAt(0);
+}
+int ArrayList::removeValueAt(int index){
+    if(index<0 || index>currItemCount) {
+        throw std::out_of_range("bad argument dummy");
+    }
+    int myReturn=array[index];
+    for(int i=index; i<currItemCount-1;i++){
+        array[i]=array[i+1];
+    }
+    currItemCount--;
+    return myReturn;
+}
