@@ -123,6 +123,33 @@ depend:
 	$(MAKE) -f CMakeFiles/220Final.dir/build.make CMakeFiles/220Final.dir/build
 .PHONY : 220Final/fast
 
+ArrayList.o: ArrayList.cpp.o
+
+.PHONY : ArrayList.o
+
+# target to build an object file
+ArrayList.cpp.o:
+	$(MAKE) -f CMakeFiles/220Final.dir/build.make CMakeFiles/220Final.dir/ArrayList.cpp.o
+.PHONY : ArrayList.cpp.o
+
+ArrayList.i: ArrayList.cpp.i
+
+.PHONY : ArrayList.i
+
+# target to preprocess a source file
+ArrayList.cpp.i:
+	$(MAKE) -f CMakeFiles/220Final.dir/build.make CMakeFiles/220Final.dir/ArrayList.cpp.i
+.PHONY : ArrayList.cpp.i
+
+ArrayList.s: ArrayList.cpp.s
+
+.PHONY : ArrayList.s
+
+# target to generate assembly for a file
+ArrayList.cpp.s:
+	$(MAKE) -f CMakeFiles/220Final.dir/build.make CMakeFiles/220Final.dir/ArrayList.cpp.s
+.PHONY : ArrayList.cpp.s
+
 Playlist.o: Playlist.cpp.o
 
 .PHONY : Playlist.o
@@ -240,6 +267,9 @@ help:
 	@echo "... rebuild_cache"
 	@echo "... 220Final"
 	@echo "... edit_cache"
+	@echo "... ArrayList.o"
+	@echo "... ArrayList.i"
+	@echo "... ArrayList.s"
 	@echo "... Playlist.o"
 	@echo "... Playlist.i"
 	@echo "... Playlist.s"
