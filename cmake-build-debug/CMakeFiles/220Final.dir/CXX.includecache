@@ -6,27 +6,33 @@
 
 #IncludeRegexTransform: 
 
-/Users/jeffpage/Desktop/220Final/Playlist.cpp
+/cygdrive/c/Users/conno/CLionProjects/220Final/Playlist.cpp
 Playlist.h
-/Users/jeffpage/Desktop/220Final/Playlist.h
+/cygdrive/c/Users/conno/CLionProjects/220Final/Playlist.h
 
-/Users/jeffpage/Desktop/220Final/Playlist.h
+/cygdrive/c/Users/conno/CLionProjects/220Final/Playlist.h
 
-/Users/jeffpage/Desktop/220Final/Song.cpp
+/cygdrive/c/Users/conno/CLionProjects/220Final/Song.cpp
 Song.h
-/Users/jeffpage/Desktop/220Final/Song.h
+/cygdrive/c/Users/conno/CLionProjects/220Final/Song.h
 
-/Users/jeffpage/Desktop/220Final/Song.h
+/cygdrive/c/Users/conno/CLionProjects/220Final/Song.h
 string
 -
 
-/Users/jeffpage/Desktop/220Final/SongTest.cpp
+/cygdrive/c/Users/conno/CLionProjects/220Final/SongTest.cpp
 Song.h
-/Users/jeffpage/Desktop/220Final/Song.h
+/cygdrive/c/Users/conno/CLionProjects/220Final/Song.h
 TestLib.h
-/Users/jeffpage/Desktop/220Final/TestLib.h
+/cygdrive/c/Users/conno/CLionProjects/220Final/TestLib.h
 
-/Users/jeffpage/Desktop/220Final/TestLib.h
+/cygdrive/c/Users/conno/CLionProjects/220Final/TestLib.cpp
+iostream
+-
+TestLib.h
+/cygdrive/c/Users/conno/CLionProjects/220Final/TestLib.h
+
+/cygdrive/c/Users/conno/CLionProjects/220Final/TestLib.h
 string
 -
 iostream
