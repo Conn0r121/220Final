@@ -93,7 +93,6 @@ int ArrayList::itemCount(){
 }
 void ArrayList::clearList(){
     currItemCount=0;
-    delete this;
     //THIS NEEDS TO BE FIXED
 }
 //int ArrayList::find(int numToFind){
