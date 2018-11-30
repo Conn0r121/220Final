@@ -7,11 +7,12 @@
 
 #include <stdexcept>
 #include <string>
+#include "Song.h"
 
 class ArrayList {
 private:
     //pointer to the start of the array
-    int* array;
+    Song **array;
     //count of the number of valid items currently stored in the array
     int currItemCount;
     //size of the current array
@@ -47,7 +48,7 @@ public:
      * appends the new item to the end of the list
      * @post the list has an additional value in it, at the end
      */
-    void insertAtEnd(int itemToAdd);
+    void insertAtEnd(Song* itemToAdd);
 
     /**
      * gets a value from the list
@@ -55,7 +56,7 @@ public:
      * @return a copy of the item at index
      * @throws out_of_range exception if index is invalid
      */
-    int getValueAt(int index);
+    Song* getValueAt(int index);
 
     /**
      * gives a string representation of the current list
@@ -106,7 +107,7 @@ public:
      * @post the list has an additional value in it, at the beginning
      *    all other items are shifted down by one index
      */
-    void insertAtFront(int itemToAdd);
+    void insertAtFront(Song* itemToAdd);
 
     /**
      * inserts the item into the list so that it can be found with get(index)
@@ -123,7 +124,7 @@ public:
      * @return a copy of the item at the end
      * @throws out_of_range exception if there is no item to remove
      */
-    int removeValueAtEnd();
+    Song* removeValueAtEnd();
 
     /**
      * removes the item at the front of the list, and returns a copy of that item
@@ -131,7 +132,7 @@ public:
      * @return a copy of the item at index
      * @throws out_of_range exception if there is no item to remove
      */
-    int removeValueAtFront();
+    Song* removeValueAtFront();
 
     /**
      * removes the item at index from the list, and returns a copy of that item
@@ -140,7 +141,7 @@ public:
      * @return a copy of the item at index
      * @throws out_of_range exception if index is invalid
      */
-    int removeValueAt(int index);
+    Song* removeValueAt(int index);
 };
 
 
