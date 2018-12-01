@@ -150,32 +150,32 @@ ArrayList.cpp.s:
 	$(MAKE) -f CMakeFiles/220Final.dir/build.make CMakeFiles/220Final.dir/ArrayList.cpp.s
 .PHONY : ArrayList.cpp.s
 
-Playlist.o: Playlist.cpp.o
+ArraylistPlaylist.o: ArraylistPlaylist.cpp.o
 
-.PHONY : Playlist.o
+.PHONY : ArraylistPlaylist.o
 
 # target to build an object file
-Playlist.cpp.o:
-	$(MAKE) -f CMakeFiles/220Final.dir/build.make CMakeFiles/220Final.dir/Playlist.cpp.o
-.PHONY : Playlist.cpp.o
+ArraylistPlaylist.cpp.o:
+	$(MAKE) -f CMakeFiles/220Final.dir/build.make CMakeFiles/220Final.dir/ArraylistPlaylist.cpp.o
+.PHONY : ArraylistPlaylist.cpp.o
 
-Playlist.i: Playlist.cpp.i
+ArraylistPlaylist.i: ArraylistPlaylist.cpp.i
 
-.PHONY : Playlist.i
+.PHONY : ArraylistPlaylist.i
 
 # target to preprocess a source file
-Playlist.cpp.i:
-	$(MAKE) -f CMakeFiles/220Final.dir/build.make CMakeFiles/220Final.dir/Playlist.cpp.i
-.PHONY : Playlist.cpp.i
+ArraylistPlaylist.cpp.i:
+	$(MAKE) -f CMakeFiles/220Final.dir/build.make CMakeFiles/220Final.dir/ArraylistPlaylist.cpp.i
+.PHONY : ArraylistPlaylist.cpp.i
 
-Playlist.s: Playlist.cpp.s
+ArraylistPlaylist.s: ArraylistPlaylist.cpp.s
 
-.PHONY : Playlist.s
+.PHONY : ArraylistPlaylist.s
 
 # target to generate assembly for a file
-Playlist.cpp.s:
-	$(MAKE) -f CMakeFiles/220Final.dir/build.make CMakeFiles/220Final.dir/Playlist.cpp.s
-.PHONY : Playlist.cpp.s
+ArraylistPlaylist.cpp.s:
+	$(MAKE) -f CMakeFiles/220Final.dir/build.make CMakeFiles/220Final.dir/ArraylistPlaylist.cpp.s
+.PHONY : ArraylistPlaylist.cpp.s
 
 Song.o: Song.cpp.o
 
@@ -270,9 +270,9 @@ help:
 	@echo "... ArrayList.o"
 	@echo "... ArrayList.i"
 	@echo "... ArrayList.s"
-	@echo "... Playlist.o"
-	@echo "... Playlist.i"
-	@echo "... Playlist.s"
+	@echo "... ArraylistPlaylist.o"
+	@echo "... ArraylistPlaylist.i"
+	@echo "... ArraylistPlaylist.s"
 	@echo "... Song.o"
 	@echo "... Song.i"
 	@echo "... Song.s"

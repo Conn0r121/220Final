@@ -150,10 +150,10 @@ void ArrayList::clearList(){
 //    *(array+index)=itemToAdd;
 //    currItemCount++;
 //}
-int ArrayList::removeValueAtEnd(){
+Song* ArrayList::removeValueAtEnd(){
     return removeValueAt(currItemCount-1);
 }
-int ArrayList::removeValueAtFront(){
+Song* ArrayList::removeValueAtFront(){
     return removeValueAt(0);
 }
 Song* ArrayList::removeValueAt(int index){

@@ -86,10 +86,13 @@
 		<Unit filename="/cygdrive/c/Users/conno/CLionProjects/220Final/ArrayList.h">
 			<Option target="220Final"/>
 		</Unit>
-		<Unit filename="/cygdrive/c/Users/conno/CLionProjects/220Final/Playlist.cpp">
+		<Unit filename="/cygdrive/c/Users/conno/CLionProjects/220Final/ArraylistPlaylist.cpp">
 			<Option target="220Final"/>
 		</Unit>
-		<Unit filename="/cygdrive/c/Users/conno/CLionProjects/220Final/Playlist.h">
+		<Unit filename="/cygdrive/c/Users/conno/CLionProjects/220Final/ArraylistPlaylist.h">
+			<Option target="220Final"/>
+		</Unit>
+		<Unit filename="/cygdrive/c/Users/conno/CLionProjects/220Final/PlaylistCollection.h">
 			<Option target="220Final"/>
 		</Unit>
 		<Unit filename="/cygdrive/c/Users/conno/CLionProjects/220Final/Song.cpp">

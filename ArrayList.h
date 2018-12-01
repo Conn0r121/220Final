@@ -71,6 +71,7 @@ public:
      */
     bool isEmpty();
 
+
     /**
      * returns a count of valid items currently in the list
      * @returns the number of valid items in the list

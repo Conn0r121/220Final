@@ -9,7 +9,7 @@
 
 class PlaylistCollection {
 private:
-    List* songs
+    List* songs;
 public:
     virtual std::string displayAll() =0;
     virtual std::string displayPlaylist(std::string playlistToFind) =0;

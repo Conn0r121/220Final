@@ -9,7 +9,8 @@
 
 class Inventory {
 private:
-    PlaylistCollection* master;
+    PlaylistCollection* allPlaylists;
+    Playlist* masterSongList;
 public:
     /**
      * reads songs from a file and adds with no duplicates
