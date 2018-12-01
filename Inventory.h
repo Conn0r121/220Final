@@ -9,8 +9,8 @@
 
 class Inventory {
 private:
-    PlaylistCollection* allPlaylists;
-    Playlist* masterSongList;
+    Inventory(const Inventory& invToCopy);
+    Inventory& operator=(const Inventory& invToCopy);
 public:
     /**
      * reads songs from a file and adds with no duplicates
