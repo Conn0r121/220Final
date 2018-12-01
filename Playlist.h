@@ -1,25 +1,23 @@
 //
-// Created by Jeff Page on 11/27/18.
+// Created by student on 12/1/2018.
 //
 
 #ifndef INC_220FINAL_PLAYLIST_H
 #define INC_220FINAL_PLAYLIST_H
 
-#include "ArrayList.cpp"
-#include "Song.cpp"
+#include "Song.h"
 
 class Playlist {
 private:
-    ArrayList * myList;
+    List* songs;
+    int duration;
+
 public:
-    Playlist();
-    void addSong(const Song *mySong);
-    void removeSong();
-    void findSong();
-    void findArtist();
-
+    virtual std::string toString() =0:
+    virtual void calcDuration() =0;
+    virtual std::string playNext() =0;
+    virtual bool isEmpty() =0;
+    virtual void addSong() =0;
+    virtual void removeSong() =0;
 };
-
-
-
 #endif //INC_220FINAL_PLAYLIST_H
