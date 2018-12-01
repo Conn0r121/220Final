@@ -6,6 +6,7 @@
 #define INC_220FINAL_PLAYLIST_H
 
 #include "Song.h"
+#include "List.h"
 
 class Playlist {
 private:
