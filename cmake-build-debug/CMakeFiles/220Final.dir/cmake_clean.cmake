@@ -5,8 +5,7 @@ file(REMOVE_RECURSE
   "CMakeFiles/220Final.dir/ArraylistPlaylist.cpp.o"
   "CMakeFiles/220Final.dir/ArrayList.cpp.o"
   "220Final.pdb"
-  "220Final.exe"
-  "lib220Final.dll.a"
+  "220Final"
 )
 
 # Per-language clean rules from dependency scanning.
