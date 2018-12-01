@@ -9,7 +9,8 @@
 
 class PlaylistCollection {
 private:
-    List* songs;
+    PlaylistCollection(const PlaylistCollection& playlistCollectionToCopy);
+    PlaylistCollection& operator=(const PlaylistCollection& playlistCollectionToCopy);
 public:
     virtual std::string displayAll() =0;
     virtual std::string displayPlaylist(std::string playlistToFind) =0;
