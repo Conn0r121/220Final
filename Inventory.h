@@ -11,6 +11,7 @@ class Inventory {
 private:
     Inventory(const Inventory& invToCopy);
     Inventory& operator=(const Inventory& invToCopy);
+
 public:
     /**
      * reads songs from a file and adds with no duplicates
