@@ -9,7 +9,7 @@
 
 class PlaylistCollection {
 private:
-    PlaylistCollection(const PlaylistCollection& playlistCollectiontoCopy);
+    PlaylistCollection(const PlaylistCollection& playlistCollectionToCopy);
     PlaylistCollection& operator=(const PlaylistCollection& playlistCollectionToCopy);
 public:
     virtual std::string displayAll() =0;
