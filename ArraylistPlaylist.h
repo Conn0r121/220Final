@@ -12,12 +12,15 @@
 class ArraylistPlaylist : public Playlist {
 private:
     ArrayList * myList;
+    int duration;
 public:
     ArraylistPlaylist();
-    void addSong(const Song *mySong);
+    std::string toString();
+    void calcDuration();
+    std::string playNext();
+    bool isEmpty();
+    void addSong();
     void removeSong();
-    void findSong();
-    void findArtist();
 
 };
 

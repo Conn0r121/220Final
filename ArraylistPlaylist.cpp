@@ -4,12 +4,24 @@
 
 #include "ArraylistPlaylist.h"
 
-ArraylistPlaylist::ArraylistPlaylist(){
+ArraylistPlaylist::ArraylistPlaylist() {
     myList = new ArrayList(10);
 }
-void ArraylistPlaylist::addSong(const Song *mySong) {
-    myList->insertAtFront(mySong);
+std::string ArraylistPlaylist::toString(){
+
 }
-void ArraylistPlaylist::removeSong(const Song *mySong) {
+void ArraylistPlaylist::calcDuration(){
+
+}
+std::string ArraylistPlaylist::playNext(){
+
+}
+bool ArraylistPlaylist::isEmpty(){
+
+}
+void ArraylistPlaylist::addSong(){
+
+}
+void ArraylistPlaylist::removeSong(){
 
 }
