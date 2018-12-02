@@ -8,8 +8,9 @@
 #include <stdexcept>
 #include <string>
 #include "Song.h"
+#include "list.h"
 
-class ArrayList {
+class ArrayList : public List  {
 private:
     //pointer to the start of the array
     Song **array;
