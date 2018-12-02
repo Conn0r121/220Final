@@ -2,8 +2,8 @@
 // Created by Jeff Page on 11/27/18.
 //
 
-#ifndef INC_220FINAL_PLAYLIST_H
-#define INC_220FINAL_PLAYLIST_H
+#ifndef INC_220FINAL_ARRAYLISTPLAYLIST_H
+#define INC_220FINAL_ARRAYLISTPLAYLIST_H
 
 #include "ArrayList.h"
 #include "Song.h"
@@ -23,4 +23,4 @@ public:
 
 
 
-#endif //INC_220FINAL_PLAYLIST_H
+#endif //INC_220FINAL_ARRAYLISTPLAYLIST_H
