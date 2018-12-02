@@ -68,23 +68,22 @@ Song* ArrayList::getValueAt(int index){
     Song *value = this->array[index];
     return value;
 }
-//std::string ArrayList::toString(){
-//
-//    std::string returnString="{";
-//    std::string tempString;
-//    if(currItemCount==0){
-//        return "{}";
-//    }
-//    for(int i=0; i<currItemCount-1; i++){
-//        returnString+=std::to_string(array[i])+", ";
-////        tempString=*(array+i);
-////        returnString=returnString+tempString+", ";
-//    }
-//    //tempString=*(array+currItemCount-1);
-//    returnString+=std::to_string(array[currItemCount-1])+"}";
-//    //returnString=returnString+tempString+"}";
-//    return returnString;
-//}
+std::string ArrayList::toString(){
+    std::string returnString="{";
+    std::string tempString;
+    if(currItemCount==0){
+        return "{}";
+    }
+    for(int i=0; i<currItemCount-1; i++){
+        returnString+=std::to_string(array[i])+", ";
+        tempString=*(array+i);
+        returnString=returnString+tempString+", ";
+    }
+    tempString=*(array+currItemCount-1);
+    returnString+=std::to_string(array[currItemCount-1])+"}";
+    returnString=returnString+tempString+"}";
+    return returnString;
+}
 bool ArrayList::isEmpty(){
     return currItemCount==0;
 }
@@ -95,61 +94,61 @@ void ArrayList::clearList(){
     currItemCount=0;
     //THIS NEEDS TO BE FIXED
 }
-//int ArrayList::find(int numToFind){
-//    for(int i=0; i<currItemCount; i++){
-//        if(*(array+i)==numToFind){
-//            return i;
-//        }
-//    }
-//    return -1;
-//}
-//int ArrayList::findLast(int numToFind){
-//    for(int i=0; i<currItemCount; i++){
-//        if(*(array+currItemCount-i-1)==numToFind){
-//            return currItemCount-i-1;
-//        }
-//    }
-//    return -1;
-//}
-//int ArrayList::findMaxIndex() {
-//    int maxIndex=0;
-//    if (this->isEmpty()) {
-//        throw std::out_of_range("Array size must be > 0");
-//    } else {
-//        int maxValue = array[0];
-//        for (int i = 0; i < currItemCount; i++) {
-//            if (maxValue < *(array + i)) {
-//                maxValue = *(array + i);
-//                maxIndex = i;
-//            }
-//        }
-//    }
-//
-//    return maxIndex;
-//}
-//void ArrayList::insertAtFront(int itemToAdd){
-//    if(currItemCount>=currCapacity){
-//        doubleCapacity();
-//    }
-//    for(int i=currItemCount; i>=0; i--){
-//        array[i+1]=array[i];
-//    }
-//    array[0]=itemToAdd;
-//    currItemCount++;
-//}
-//void ArrayList::insertAt(int itemToAdd, int index){
-//    if(index<0 || index>currItemCount){
-//        throw std::out_of_range("bad argument dummy");
-//    }
-//    if(currItemCount>=currCapacity){
-//        doubleCapacity();
-//    }
-//    for(int i=currItemCount;i>=index; i--){
-//        array[i+1]=array[i];
-//    }
-//    *(array+index)=itemToAdd;
-//    currItemCount++;
-//}
+int ArrayList::find(int numToFind){
+    for(int i=0; i<currItemCount; i++){
+        if(*(array+i)==numToFind){
+            return i;
+        }
+    }
+    return -1;
+}
+int ArrayList::findLast(int numToFind){
+    for(int i=0; i<currItemCount; i++){
+        if(*(array+currItemCount-i-1)==numToFind){
+            return currItemCount-i-1;
+        }
+    }
+    return -1;
+}
+int ArrayList::findMaxIndex() {
+    int maxIndex=0;
+    if (this->isEmpty()) {
+        throw std::out_of_range("Array size must be > 0");
+    } else {
+        int maxValue = array[0];
+        for (int i = 0; i < currItemCount; i++) {
+            if (maxValue < *(array + i)) {
+                maxValue = *(array + i);
+                maxIndex = i;
+            }
+        }
+    }
+
+    return maxIndex;
+}
+void ArrayList::insertAtFront(int itemToAdd){
+    if(currItemCount>=currCapacity){
+        doubleCapacity();
+    }
+    for(int i=currItemCount; i>=0; i--){
+        array[i+1]=array[i];
+    }
+    array[0]=itemToAdd;
+    currItemCount++;
+}
+void ArrayList::insertAt(int itemToAdd, int index){
+    if(index<0 || index>currItemCount){
+        throw std::out_of_range("bad argument dummy");
+    }
+    if(currItemCount>=currCapacity){
+        doubleCapacity();
+    }
+    for(int i=currItemCount;i>=index; i--){
+        array[i+1]=array[i];
+    }
+    *(array+index)=itemToAdd;
+    currItemCount++;
+}
 Song* ArrayList::removeValueAtEnd(){
     return removeValueAt(currItemCount-1);
 }
