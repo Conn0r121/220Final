@@ -9,11 +9,12 @@
 
 class Playlist {
 private:
+    std::string title;
     List* songs;
     int duration;
 
 public:
-    virtual std::string toString() =0:
+    virtual std::string toString() =0;
     virtual void calcDuration() =0;
     virtual std::string playNext() =0;
     virtual bool isEmpty() =0;

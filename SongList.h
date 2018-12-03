@@ -15,7 +15,7 @@ private:
 public:
     void addSong(Song songToAdd);
     void removeSong(std::string name);
-    Song getSongbyName(std::string name);
+    Song getSongByName(std::string name);
 
 
 };
