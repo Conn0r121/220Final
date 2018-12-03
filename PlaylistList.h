@@ -18,7 +18,7 @@ private:
 public:
     void addPlaylist(Playlist playlistToAdd);
     void removePlaylist(std::string name);
-    Playlist getPlaylist(std::string name )
+    Playlist getPlaylist(std::string name)
 };
 
 
