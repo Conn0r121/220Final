@@ -56,11 +56,11 @@ ArrayList<T>::~ArrayList() {
     this->array = nullptr;
 }
 template <class T>
-void ArrayList::insertAtEnd(int itemToAdd){
+void ArrayList<T>::insertAtEnd(int itemToAdd){
     insertAt(itemToAdd,currItemCount);
 }
 template <class T>
-int ArrayList::getValueAt(int index){
+int ArrayList<T>::getValueAt(int index){
     if(index>=currItemCount || index<0){
         throw std::out_of_range( "Out of Range" );
     }
@@ -69,11 +69,11 @@ int ArrayList::getValueAt(int index){
     }
 }
 template <class T>
-std::string ArrayList::toString(){
+std::string ArrayList<T>::toString(){
     return ::toString(array,currItemCount);
 }
 template <class T>
-bool ArrayList::isEmpty(){
+bool ArrayList<T>::isEmpty(){
     if(currItemCount==0){
         return true;
     }
@@ -82,23 +82,23 @@ bool ArrayList::isEmpty(){
     }
 }
 template <class T>
-int ArrayList::itemCount(){
+int ArrayList<T>::itemCount(){
     return currItemCount;
 }
 template <class T>
-void ArrayList::clearList(){
+void ArrayList<T>::clearList(){
     currItemCount=0;
 }
 template <class T>
-int ArrayList::find(int numToFind){
+int ArrayList<T>::find(int numToFind){
     return ::find(array,currItemCount,numToFind,numLinesRun);
 }
 template <class T>
-int ArrayList::findLast(int numToFind){
+int ArrayList<T>::findLast(int numToFind){
     return ::findLast(array,currItemCount,numToFind,numLinesRun);
 }
 template <class T>
-int ArrayList::findMaxIndex(){
+int ArrayList<T>::findMaxIndex(){
     if(currItemCount<1){
         throw std::out_of_range("Arrays must be greater than 0");
     }
@@ -107,11 +107,11 @@ int ArrayList::findMaxIndex(){
     }
 }
 template <class T>
-void ArrayList::insertAtFront(int itemToAdd){
+void ArrayList<T>::insertAtFront(int itemToAdd){
     insertAt(itemToAdd,0);
 }
 template <class T>
-void ArrayList::insertAt(int itemToAdd, int index){
+void ArrayList<T>::insertAt(int itemToAdd, int index){
     if(index<0 || index>currItemCount){
         throw std::out_of_range( "Out of Range" );
     }
@@ -134,15 +134,15 @@ void ArrayList::insertAt(int itemToAdd, int index){
     }
 }
 template <class T>
-int ArrayList::removeValueAtEnd(){
+int ArrayList<T>::removeValueAtEnd(){
     return removeValueAt(currItemCount-1);
 }
 template <class T>
-int ArrayList::removeValueAtFront(){
+int ArrayList<T>::removeValueAtFront(){
     return removeValueAt(0);
 }
 template <class T>
-int ArrayList::removeValueAt(int index){
+int ArrayList<T>::removeValueAt(int index){
     if(currItemCount<1){
         throw std::out_of_range("Cannot remove anything from an empty list");
     }
