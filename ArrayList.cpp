@@ -8,8 +8,8 @@
 #include <iostream>
 
 int numLinesRun=0;
-
-void ArrayList::doubleCapacity() {
+template <class T>
+void ArrayList<T>::doubleCapacity() {
     int* newArray=::copyArray(this->array,currCapacity*2,numLinesRun);
     this->currCapacity=currCapacity*2;
     delete [] this->array;
