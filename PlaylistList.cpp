@@ -3,11 +3,7 @@
 //
 
 #include "PlaylistList.h"
-//
-// Created by conno on 12/2/2018.
-//
 
-#include "SongList.h"
 PlaylistList::PlaylistList(){
     listSize=5;
     playlistCount=0;
