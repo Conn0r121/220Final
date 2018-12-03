@@ -8,6 +8,7 @@
 #include <stdexcept>
 #include <string>
 
+template <class T>
 class ArrayList {
 private:
     //pointer to the start of the array
@@ -45,7 +46,7 @@ public:
      * appends the new item to the end of the list
      * @post the list has an additional value in it, at the end
      */
-    void insertAtEnd(int itemToAdd);
+    void insertAtEnd(T itemToAdd);
 
     /**
      * gets a value from the list
@@ -53,7 +54,7 @@ public:
      * @return a copy of the item at index
      * @throws out_of_range exception if index is invalid
      */
-    int getValueAt(int index);
+    T getValueAt(T index);
 
     /**
      * gives a string representation of the current list
@@ -84,13 +85,13 @@ public:
      * Searches an int array for a certain value
      * @return the index of the first occurrence of numToFind if it is present, otherwise returns -1
      */
-    int find(int numToFind);
+    int find(T itemToFind);
 
     /**
      * Searches an int array for a certain value
      * @return the index of the last occurrence of numToFind if it is present, otherwise returns -1
      */
-    int findLast(int numToFind);
+    int findLast(T itemToFind);
 
     /**
      * finds the largest value in the array
@@ -104,7 +105,7 @@ public:
      * @post the list has an additional value in it, at the beginning
      *    all other items are shifted down by one index
      */
-    void insertAtFront(int itemToAdd);
+    void insertAtFront(T itemToAdd);
 
     /**
      * inserts the item into the list so that it can be found with get(index)
@@ -113,7 +114,7 @@ public:
      *        all further values have been shifted down by one index
      * @throws out_of_range exception if index is invalid (< 0 or > currItemCount)
      */
-    void insertAt(int itemToAdd, int index);
+    void insertAt(T itemToAdd, int index);
 
     /**
      * removes the item at the end of the list, and returns a copy of that item
@@ -121,7 +122,7 @@ public:
      * @return a copy of the item at the end
      * @throws out_of_range exception if there is no item to remove
      */
-    int removeValueAtEnd();
+    T removeValueAtEnd();
 
     /**
      * removes the item at the front of the list, and returns a copy of that item
@@ -129,7 +130,7 @@ public:
      * @return a copy of the item at index
      * @throws out_of_range exception if there is no item to remove
      */
-    int removeValueAtFront();
+    T removeValueAtFront();
 
     /**
      * removes the item at index from the list, and returns a copy of that item
@@ -138,7 +139,7 @@ public:
      * @return a copy of the item at index
      * @throws out_of_range exception if index is invalid
      */
-    int removeValueAt(int index);
+    T removeValueAt(int index);
 
 };
 
