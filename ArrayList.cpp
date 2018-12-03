@@ -56,11 +56,11 @@ ArrayList<T>::~ArrayList() {
     this->array = nullptr;
 }
 template <class T>
-void ArrayList<T>::insertAtEnd(int itemToAdd){
+void ArrayList<T>::insertAtEnd(T itemToAdd){
     insertAt(itemToAdd,currItemCount);
 }
 template <class T>
-int ArrayList<T>::getValueAt(int index){
+T ArrayList<T>::getValueAt(int index){
     if(index>=currItemCount || index<0){
         throw std::out_of_range( "Out of Range" );
     }
@@ -90,12 +90,12 @@ void ArrayList<T>::clearList(){
     currItemCount=0;
 }
 template <class T>
-int ArrayList<T>::find(int numToFind){
-    return ::find(array,currItemCount,numToFind,numLinesRun);
+int ArrayList<T>::find(T itemToFind){
+    return ::find(array,currItemCount,itemToFind,numLinesRun);
 }
 template <class T>
-int ArrayList<T>::findLast(int numToFind){
-    return ::findLast(array,currItemCount,numToFind,numLinesRun);
+int ArrayList<T>::findLast(T itemToFind){
+    return ::findLast(array,currItemCount,itemToFind,numLinesRun);
 }
 template <class T>
 int ArrayList<T>::findMaxIndex(){
@@ -107,11 +107,11 @@ int ArrayList<T>::findMaxIndex(){
     }
 }
 template <class T>
-void ArrayList<T>::insertAtFront(int itemToAdd){
+void ArrayList<T>::insertAtFront(T itemToAdd){
     insertAt(itemToAdd,0);
 }
 template <class T>
-void ArrayList<T>::insertAt(int itemToAdd, int index){
+void ArrayList<T>::insertAt(T itemToAdd, int index){
     if(index<0 || index>currItemCount){
         throw std::out_of_range( "Out of Range" );
     }
@@ -134,15 +134,15 @@ void ArrayList<T>::insertAt(int itemToAdd, int index){
     }
 }
 template <class T>
-int ArrayList<T>::removeValueAtEnd(){
+T ArrayList<T>::removeValueAtEnd(){
     return removeValueAt(currItemCount-1);
 }
 template <class T>
-int ArrayList<T>::removeValueAtFront(){
+T ArrayList<T>::removeValueAtFront(){
     return removeValueAt(0);
 }
 template <class T>
-int ArrayList<T>::removeValueAt(int index){
+T ArrayList<T>::removeValueAt(int index){
     if(currItemCount<1){
         throw std::out_of_range("Cannot remove anything from an empty list");
     }
