@@ -1,3 +1,0 @@
-/cygdrive/c/Users/conno/CLionProjects/220Final/cmake-build-debug/CMakeFiles/rebuild_cache.dir
-/cygdrive/c/Users/conno/CLionProjects/220Final/cmake-build-debug/CMakeFiles/220Final.dir
-/cygdrive/c/Users/conno/CLionProjects/220Final/cmake-build-debug/CMakeFiles/edit_cache.dir
