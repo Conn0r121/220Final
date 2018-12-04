@@ -25,4 +25,5 @@ const int Song::getDuration() {
 const int Song::getPlayCount() {
     return playCount;
 }
+std::string Song::toString();
 

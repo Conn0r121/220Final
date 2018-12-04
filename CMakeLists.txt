@@ -3,7 +3,8 @@ project(220Final)
 
 set(CMAKE_CXX_STANDARD 14)
 
-add_executable(220Final
+add_executable(
+        220Final
         Song.cpp
         List.h
         ArrayLib.cpp

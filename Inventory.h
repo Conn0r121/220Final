@@ -33,7 +33,7 @@ public:
      * displays all songs by a given artist
      * @return a string
      */
-    virtual std::string displayByArtist() =0;
+    virtual std::string displayByArtist(std::string artistName) =0;
 
     /**
      * display information on a given song

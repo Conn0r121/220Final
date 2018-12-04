@@ -26,3 +26,14 @@ void PlaylistImplementation::addSong() {
 void PlaylistImplementation::removeSong() {
 
 }
+
+Song PlaylistImplementation::getSongByArtist(std::string artistName) {
+
+}
+Song PlaylistImplementation::getSongByTitle(std::string songName) {
+
+}
+
+Song getSongByPosition(int position){
+
+}

@@ -6,12 +6,12 @@
 #define INC_220FINAL_PLAYLIST_H
 
 #include "Song.h"
-#include "List.h"
+#include "ArrayList.h"
 
-class Playlist : public List {
+class Playlist {
 private:
     std::string title;
-    List* songs;
+    ArrayList<Song>* songs;
     int duration;
 
 public:
@@ -21,5 +21,6 @@ public:
     virtual bool isEmpty() =0;
     virtual void addSong() =0;
     virtual void removeSong() =0;
+    virtual Song getSongByPosition(int position)=0;
 };
 #endif //INC_220FINAL_PLAYLIST_H

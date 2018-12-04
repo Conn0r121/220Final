@@ -6,9 +6,15 @@
 #define INC_220FINAL_INVENTORYIMPLEMENTATION_H
 
 #include "Inventory.h"
+#include "PlaylistCollectionImplementation.h"
+#include "PlaylistImplementation.h"
 
 class InventoryImplementation: public Inventory {
 private:
+    PlaylistCollectionImplementation allPlaylists;
+    PlaylistImplementation allSongs;
+    int totalSongCount;
+
 
 public:
     /**
@@ -23,7 +29,9 @@ public:
 
     /**
      * displays the full library in alphabetical order by artist
+     * THIS NEEDS THE SONGLIST TO BE SORTED BY ARTIST
      * @return a string
+
      */
     std::string displayLibrary();
 
@@ -31,13 +39,13 @@ public:
      * displays all songs by a given artist
      * @return a string
      */
-    std::string displayByArtist();
+    std::string displayByArtist(std::string artistName);
 
     /**
      * display information on a given song
      * @return a string
      */
-    std::string displaySong();
+    std::string displaySong(std::string songName);
 
     void loadLibrary();
 

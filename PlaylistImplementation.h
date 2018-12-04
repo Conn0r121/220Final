@@ -23,6 +23,12 @@ public:
 
     void removeSong();
 
+    Song getSongByArtist(std::string artistName);
+
+    Song getSongByTitle(std::string songName);
+
+    Song getSongByPosition(int position);
+
 };
 
 
