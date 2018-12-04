@@ -6,89 +6,57 @@
 
 #IncludeRegexTransform: 
 
-/cygdrive/c/Users/conno/CLionProjects/220Final/ArrayLib.cpp
-ArrayLib.h
-/cygdrive/c/Users/conno/CLionProjects/220Final/ArrayLib.h
-string
--
-iostream
--
-random
-/cygdrive/c/Users/conno/CLionProjects/220Final/random
-
-/cygdrive/c/Users/conno/CLionProjects/220Final/ArrayLib.h
+/Users/jeffpage/CLionProjects/220Final/ArrayLib.h
 string
 -
 
-/cygdrive/c/Users/conno/CLionProjects/220Final/ArrayList.h
+/Users/jeffpage/CLionProjects/220Final/ArrayList.h
 stdexcept
 -
 string
 -
 ArrayList.inl
-/cygdrive/c/Users/conno/CLionProjects/220Final/ArrayList.inl
+/Users/jeffpage/CLionProjects/220Final/ArrayList.inl
 
-/cygdrive/c/Users/conno/CLionProjects/220Final/ArrayList.inl
+/Users/jeffpage/CLionProjects/220Final/ArrayList.inl
 ArrayLib.h
-/cygdrive/c/Users/conno/CLionProjects/220Final/ArrayLib.h
+/Users/jeffpage/CLionProjects/220Final/ArrayLib.h
 string
 -
 iostream
 -
 
-/cygdrive/c/Users/conno/CLionProjects/220Final/Inventory.h
+/Users/jeffpage/CLionProjects/220Final/Inventory.h
 string
 -
 Song.h
-/cygdrive/c/Users/conno/CLionProjects/220Final/Song.h
+/Users/jeffpage/CLionProjects/220Final/Song.h
 
-/cygdrive/c/Users/conno/CLionProjects/220Final/InventoryImplementation.cpp
+/Users/jeffpage/CLionProjects/220Final/InventoryImplementation.cpp
 InventoryImplementation.h
-/cygdrive/c/Users/conno/CLionProjects/220Final/InventoryImplementation.h
-Song.cpp
-/cygdrive/c/Users/conno/CLionProjects/220Final/Song.cpp
+/Users/jeffpage/CLionProjects/220Final/InventoryImplementation.h
+Song.h
+/Users/jeffpage/CLionProjects/220Final/Song.h
 
-/cygdrive/c/Users/conno/CLionProjects/220Final/InventoryImplementation.h
+/Users/jeffpage/CLionProjects/220Final/InventoryImplementation.h
 Inventory.h
-/cygdrive/c/Users/conno/CLionProjects/220Final/Inventory.h
+/Users/jeffpage/CLionProjects/220Final/Inventory.h
 string
 -
 List.h
-/cygdrive/c/Users/conno/CLionProjects/220Final/List.h
+/Users/jeffpage/CLionProjects/220Final/List.h
 ArrayList.h
-/cygdrive/c/Users/conno/CLionProjects/220Final/ArrayList.h
+/Users/jeffpage/CLionProjects/220Final/ArrayList.h
 Song.h
-/cygdrive/c/Users/conno/CLionProjects/220Final/Song.h
+/Users/jeffpage/CLionProjects/220Final/Song.h
 
-/cygdrive/c/Users/conno/CLionProjects/220Final/List.h
+/Users/jeffpage/CLionProjects/220Final/List.h
 stdexcept
 -
 string
 -
 
-/cygdrive/c/Users/conno/CLionProjects/220Final/Song.cpp
-Song.h
-/cygdrive/c/Users/conno/CLionProjects/220Final/Song.h
-
-/cygdrive/c/Users/conno/CLionProjects/220Final/Song.h
+/Users/jeffpage/CLionProjects/220Final/Song.h
 string
--
-
-/cygdrive/c/Users/conno/CLionProjects/220Final/SongTest.cpp
-Song.h
-/cygdrive/c/Users/conno/CLionProjects/220Final/Song.h
-TestLib.h
-/cygdrive/c/Users/conno/CLionProjects/220Final/TestLib.h
-
-/cygdrive/c/Users/conno/CLionProjects/220Final/TestLib.cpp
-iostream
--
-TestLib.h
-/cygdrive/c/Users/conno/CLionProjects/220Final/TestLib.h
-
-/cygdrive/c/Users/conno/CLionProjects/220Final/TestLib.h
-string
--
-iostream
 -
 

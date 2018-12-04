@@ -3,19 +3,18 @@
 //
 
 #include "InventoryImplementation.h"
-#include "Song.cpp"
+#include "Song.h"
 
 void InventoryImplementation::addSongToLibrary(Song songIn){
     allSongs.insertAtFront(songIn);
 }
-
 
 void InventoryImplementation::discontinue() {
 
 }
 
 std::string InventoryImplementation::displayLibrary() {
-    return allSongs.toString();
+    return "";
 
 }
 std::string InventoryImplementation::displayByArtist(std::string artistName) {
@@ -42,3 +41,7 @@ void InventoryImplementation::loadLibrary() {
 void InventoryImplementation::saveLibrary() {
 
 }
+void InventoryImplementation::import(){
+
+}
+

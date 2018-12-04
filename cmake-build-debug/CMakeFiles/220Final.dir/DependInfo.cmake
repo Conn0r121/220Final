@@ -4,13 +4,13 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
-  "/cygdrive/c/Users/conno/CLionProjects/220Final/ArrayLib.cpp" "/cygdrive/c/Users/conno/CLionProjects/220Final/cmake-build-debug/CMakeFiles/220Final.dir/ArrayLib.cpp.o"
-  "/cygdrive/c/Users/conno/CLionProjects/220Final/InventoryImplementation.cpp" "/cygdrive/c/Users/conno/CLionProjects/220Final/cmake-build-debug/CMakeFiles/220Final.dir/InventoryImplementation.cpp.o"
-  "/cygdrive/c/Users/conno/CLionProjects/220Final/Song.cpp" "/cygdrive/c/Users/conno/CLionProjects/220Final/cmake-build-debug/CMakeFiles/220Final.dir/Song.cpp.o"
-  "/cygdrive/c/Users/conno/CLionProjects/220Final/SongTest.cpp" "/cygdrive/c/Users/conno/CLionProjects/220Final/cmake-build-debug/CMakeFiles/220Final.dir/SongTest.cpp.o"
-  "/cygdrive/c/Users/conno/CLionProjects/220Final/TestLib.cpp" "/cygdrive/c/Users/conno/CLionProjects/220Final/cmake-build-debug/CMakeFiles/220Final.dir/TestLib.cpp.o"
+  "/Users/jeffpage/CLionProjects/220Final/ArrayLib.cpp" "/Users/jeffpage/CLionProjects/220Final/cmake-build-debug/CMakeFiles/220Final.dir/ArrayLib.cpp.o"
+  "/Users/jeffpage/CLionProjects/220Final/InventoryImplementation.cpp" "/Users/jeffpage/CLionProjects/220Final/cmake-build-debug/CMakeFiles/220Final.dir/InventoryImplementation.cpp.o"
+  "/Users/jeffpage/CLionProjects/220Final/Song.cpp" "/Users/jeffpage/CLionProjects/220Final/cmake-build-debug/CMakeFiles/220Final.dir/Song.cpp.o"
+  "/Users/jeffpage/CLionProjects/220Final/SongTest.cpp" "/Users/jeffpage/CLionProjects/220Final/cmake-build-debug/CMakeFiles/220Final.dir/SongTest.cpp.o"
+  "/Users/jeffpage/CLionProjects/220Final/TestLib.cpp" "/Users/jeffpage/CLionProjects/220Final/cmake-build-debug/CMakeFiles/220Final.dir/TestLib.cpp.o"
   )
-set(CMAKE_CXX_COMPILER_ID "GNU")
+set(CMAKE_CXX_COMPILER_ID "AppleClang")
 
 # The include file search paths:
 set(CMAKE_CXX_TARGET_INCLUDE_PATH

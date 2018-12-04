@@ -11,7 +11,6 @@ CMakeFiles/220Final.dir/InventoryImplementation.cpp.o: ../Inventory.h
 CMakeFiles/220Final.dir/InventoryImplementation.cpp.o: ../InventoryImplementation.cpp
 CMakeFiles/220Final.dir/InventoryImplementation.cpp.o: ../InventoryImplementation.h
 CMakeFiles/220Final.dir/InventoryImplementation.cpp.o: ../List.h
-CMakeFiles/220Final.dir/InventoryImplementation.cpp.o: ../Song.cpp
 CMakeFiles/220Final.dir/InventoryImplementation.cpp.o: ../Song.h
 
 CMakeFiles/220Final.dir/Song.cpp.o: ../Song.cpp

@@ -25,7 +25,7 @@ private:
      * @post: array points to a new array of twice the size with values copied from the old one,
      *        the old array is deleted.
      */
-    void doubleCapacity();
+     void doubleCapacity();
 
 public:
     /**
@@ -57,12 +57,6 @@ public:
      */
     T getValueAt(int index);
 
-    /**
-     * gives a string representation of the current list
-     * @returns a string representing the given list in the exact format shown below
-     * {1, 2, 3, 4, 5}
-     */
-    std::string toString();
 
     /**
      * checks if there are any valid items in the list
