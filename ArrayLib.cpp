@@ -6,23 +6,23 @@
 #include <iostream>
 #include "random"
 
-int binFind(const int* const arrayPtr, const int size, const int numToFind,int startPos,int &numLinesRun);
-
-int binFind(const int* const arrayPtr, const int size, const int numToFind,int& numLinesRun ) { //stub function
+template <class T>
+int binFind(const int* const arrayPtr, const int size, const T itemToFind,int& numLinesRun ) { //stub function
     numLinesRun+=4;
     if (size > 0) {
         numLinesRun+=2;
-        return binFind(arrayPtr, size, numToFind, 0, numLinesRun);
+        return binFind(arrayPtr, size, itemToFind, 0, numLinesRun);
     } else {
         numLinesRun+=2;
         return -1;
     }
 
 }
-int binFind(const int* const arrayPtr, const int size, const int numToFind,int startPos,int &numLinesRun ) { //tail
+template <class T>
+int binFind(const int* const arrayPtr, const int size, const T itemToFind,int startPos,int &numLinesRun ) { //tail
     if (size <= 1) {
         numLinesRun+=1;
-        if (numToFind == arrayPtr[0]) {
+        if (itemToFind == arrayPtr[0]) {
             numLinesRun+=2;
             return startPos;
         }
@@ -37,33 +37,34 @@ int binFind(const int* const arrayPtr, const int size, const int numToFind,int s
             numLinesRun+=1;
             int middleNum = size / 2;
             numLinesRun+=1;
-            if (arrayPtr[middleNum] == numToFind) {
+            if (arrayPtr[middleNum] == itemToFind) {
                 numLinesRun+=2;
                 return startPos + middleNum;
-            } else if (arrayPtr[middleNum] < numToFind) { //right
+            } else if (arrayPtr[middleNum] < itemToFind) { //right
                 numLinesRun+=2;
-                return binFind((arrayPtr+middleNum+1), middleNum-1, numToFind, startPos+middleNum+1,numLinesRun);
+                return binFind((arrayPtr+middleNum+1), middleNum-1, itemToFind, startPos+middleNum+1,numLinesRun);
             } else { //left
                 numLinesRun+=2;
-                return binFind(arrayPtr, middleNum, numToFind, startPos,numLinesRun);
+                return binFind(arrayPtr, middleNum, itemToFind, startPos,numLinesRun);
             }
 
         } else {//odd
             int middleNum = (size - 1) / 2;
             numLinesRun+=2;
-            if (arrayPtr[middleNum] == numToFind) {
+            if (arrayPtr[middleNum] == itemToFind) {
                 numLinesRun+=2;
                 return (startPos + middleNum);
-            } else if (arrayPtr[middleNum] > numToFind) { //left
+            } else if (arrayPtr[middleNum] > itemToFind) { //left
                 numLinesRun+=2;
-                return binFind(arrayPtr, middleNum, numToFind, startPos,numLinesRun);
+                return binFind(arrayPtr, middleNum, itemToFind, startPos,numLinesRun);
             } else { //right
                 numLinesRun+=2;
-                return binFind((arrayPtr + middleNum + 1), middleNum , numToFind, (startPos + middleNum + 1),numLinesRun);
+                return binFind((arrayPtr + middleNum + 1), middleNum , itemToFind, (startPos + middleNum + 1),numLinesRun);
             }
         }
     }
 }
+template <class T>
 int genRandInt(int min, int max, int& numLinesRun){
     numLinesRun += 3;
     if(min>max){
@@ -80,7 +81,7 @@ int genRandInt(int min, int max, int& numLinesRun){
     numLinesRun+=4;
     return distr(eng);
 }
-
+template <class T>
 int* genRandArray(int size, int min, int max, int& numLinesRun){
     int i;
     int *newArray = new int[size];
@@ -101,7 +102,7 @@ int* genRandArray(int size, int min, int max, int& numLinesRun){
     return newArray;
 
 }
-
+template <class T>
 std::string toString( const int* arrayPtr, int size){
     int i;
     std::string array ="{";
@@ -123,7 +124,7 @@ std::string toString( const int* arrayPtr, int size){
         return array;
     }
 }
-
+template <class T>
 int find(const int* arrayPtr, int size, int numToFind, int& numLinesRun){
     int i;
     numLinesRun+=5;
@@ -138,7 +139,7 @@ int find(const int* arrayPtr, int size, int numToFind, int& numLinesRun){
     i=-1;
     return i;
 }
-
+template <class T>
 int findLast(const int* arrayPtr, int size, int numToFind, int& numLinesRun){
     int i;
     int num;
@@ -161,7 +162,7 @@ int findLast(const int* arrayPtr, int size, int numToFind, int& numLinesRun){
         return -1;
     }
 }
-
+template <class T>
 int findMaxIndex(const int* arrayPtr, int size, int&numLinesRun){
     int i;
     int maxIndex;
@@ -185,7 +186,7 @@ int findMaxIndex(const int* arrayPtr, int size, int&numLinesRun){
         return maxIndex;
     }
 }
-
+template <class T>
 int* copyArray(const int* arrayToCopy, int size, int& numLinesRun){
     int *newArray = new int[size];
     int i;
@@ -197,7 +198,7 @@ int* copyArray(const int* arrayToCopy, int size, int& numLinesRun){
     numLinesRun+=1;
     return newArray;
 }
-
+template <class T>
 int* genShuffledArray(int size, int& numLinesRun){
     int i;
     int unusedTimer=0;
@@ -227,6 +228,7 @@ int* genShuffledArray(int size, int& numLinesRun){
     numLinesRun+=1;
     return newArray;
 }
+template <class T>
 int countOccurrences(const int* arrayPtr, int size, int numToFind, int& numLinesRun){
     int i;
     int occurrenceNum=0;
@@ -242,7 +244,7 @@ int countOccurrences(const int* arrayPtr, int size, int numToFind, int& numLines
     numLinesRun+=1;
     return occurrenceNum;
 }
-
+template <class T>
 void sort(int* arrayToSort, int size, int& numLinesRun){ //bubble sort
     bool swap=false;
     int i;
@@ -261,6 +263,7 @@ void sort(int* arrayToSort, int size, int& numLinesRun){ //bubble sort
         sort(arrayToSort,size,numLinesRun);
     }
 }
+template <class T>
 int* merge(const int*a1, int size1, const int* a2, int size2, int& numLinesRun) {
     if (size1 + size2 < 1) {
         numLinesRun+=2;
@@ -331,7 +334,7 @@ int* merge(const int*a1, int size1, const int* a2, int size2, int& numLinesRun) 
         return newArray;
     }
 }
-
+template <class T>
 int* mergeSort(const int* arrayToSort, int size, int& numLinesRun){
     if(size<1){
         numLinesRun+=2;

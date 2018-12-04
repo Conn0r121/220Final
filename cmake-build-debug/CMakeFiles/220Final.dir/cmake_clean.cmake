@@ -1,7 +1,7 @@
 file(REMOVE_RECURSE
   "CMakeFiles/220Final.dir/Song.cpp.o"
+  "CMakeFiles/220Final.dir/ArrayLib.cpp.o"
   "CMakeFiles/220Final.dir/TestLib.cpp.o"
-  "CMakeFiles/220Final.dir/ArrayList.cpp.o"
   "CMakeFiles/220Final.dir/PlaylistList.cpp.o"
   "CMakeFiles/220Final.dir/SongList.cpp.o"
   "CMakeFiles/220Final.dir/PlaylistImplementation.cpp.o"

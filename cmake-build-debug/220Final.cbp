@@ -80,10 +80,13 @@
 				</MakeCommands>
 			</Target>
 		</Build>
-		<Unit filename="/Users/jeffpage/CLionProjects/220Final/ArrayList.cpp">
+		<Unit filename="/Users/jeffpage/CLionProjects/220Final/ArrayLib.cpp">
 			<Option target="220Final"/>
 		</Unit>
-		<Unit filename="/Users/jeffpage/CLionProjects/220Final/ArrayList.h">
+		<Unit filename="/Users/jeffpage/CLionProjects/220Final/ArrayLib.h">
+			<Option target="220Final"/>
+		</Unit>
+		<Unit filename="/Users/jeffpage/CLionProjects/220Final/ArrayList.inl">
 			<Option target="220Final"/>
 		</Unit>
 		<Unit filename="/Users/jeffpage/CLionProjects/220Final/Inventory.h">
@@ -93,6 +96,9 @@
 			<Option target="220Final"/>
 		</Unit>
 		<Unit filename="/Users/jeffpage/CLionProjects/220Final/InventoryImplementation.h">
+			<Option target="220Final"/>
+		</Unit>
+		<Unit filename="/Users/jeffpage/CLionProjects/220Final/List.h">
 			<Option target="220Final"/>
 		</Unit>
 		<Unit filename="/Users/jeffpage/CLionProjects/220Final/PlayList.h">

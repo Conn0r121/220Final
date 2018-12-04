@@ -123,32 +123,32 @@ depend:
 	$(MAKE) -f CMakeFiles/220Final.dir/build.make CMakeFiles/220Final.dir/build
 .PHONY : 220Final/fast
 
-ArrayList.o: ArrayList.cpp.o
+ArrayLib.o: ArrayLib.cpp.o
 
-.PHONY : ArrayList.o
+.PHONY : ArrayLib.o
 
 # target to build an object file
-ArrayList.cpp.o:
-	$(MAKE) -f CMakeFiles/220Final.dir/build.make CMakeFiles/220Final.dir/ArrayList.cpp.o
-.PHONY : ArrayList.cpp.o
+ArrayLib.cpp.o:
+	$(MAKE) -f CMakeFiles/220Final.dir/build.make CMakeFiles/220Final.dir/ArrayLib.cpp.o
+.PHONY : ArrayLib.cpp.o
 
-ArrayList.i: ArrayList.cpp.i
+ArrayLib.i: ArrayLib.cpp.i
 
-.PHONY : ArrayList.i
+.PHONY : ArrayLib.i
 
 # target to preprocess a source file
-ArrayList.cpp.i:
-	$(MAKE) -f CMakeFiles/220Final.dir/build.make CMakeFiles/220Final.dir/ArrayList.cpp.i
-.PHONY : ArrayList.cpp.i
+ArrayLib.cpp.i:
+	$(MAKE) -f CMakeFiles/220Final.dir/build.make CMakeFiles/220Final.dir/ArrayLib.cpp.i
+.PHONY : ArrayLib.cpp.i
 
-ArrayList.s: ArrayList.cpp.s
+ArrayLib.s: ArrayLib.cpp.s
 
-.PHONY : ArrayList.s
+.PHONY : ArrayLib.s
 
 # target to generate assembly for a file
-ArrayList.cpp.s:
-	$(MAKE) -f CMakeFiles/220Final.dir/build.make CMakeFiles/220Final.dir/ArrayList.cpp.s
-.PHONY : ArrayList.cpp.s
+ArrayLib.cpp.s:
+	$(MAKE) -f CMakeFiles/220Final.dir/build.make CMakeFiles/220Final.dir/ArrayLib.cpp.s
+.PHONY : ArrayLib.cpp.s
 
 InventoryImplementation.o: InventoryImplementation.cpp.o
 
@@ -375,9 +375,9 @@ help:
 	@echo "... rebuild_cache"
 	@echo "... edit_cache"
 	@echo "... 220Final"
-	@echo "... ArrayList.o"
-	@echo "... ArrayList.i"
-	@echo "... ArrayList.s"
+	@echo "... ArrayLib.o"
+	@echo "... ArrayLib.i"
+	@echo "... ArrayLib.s"
 	@echo "... InventoryImplementation.o"
 	@echo "... InventoryImplementation.i"
 	@echo "... InventoryImplementation.s"

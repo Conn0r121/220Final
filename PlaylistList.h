@@ -8,7 +8,7 @@
 #include "Playlist.h"
 
 
-class PlaylistList {
+class PlaylistList : public List {
 private:
     Playlist* playlistList;
     int listSize;
@@ -18,7 +18,7 @@ private:
 public:
     void addPlaylist(Playlist playlistToAdd);
     void removePlaylist(std::string name);
-    Playlist getPlaylist(std::string name)
+    Playlist getPlaylist(std::string name);
 };
 
 

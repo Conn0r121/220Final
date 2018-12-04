@@ -70,9 +70,22 @@ CMakeFiles/220Final.dir/Song.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/220Final.dir/Song.cpp.s"
 	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/jeffpage/CLionProjects/220Final/Song.cpp -o CMakeFiles/220Final.dir/Song.cpp.s
 
+CMakeFiles/220Final.dir/ArrayLib.cpp.o: CMakeFiles/220Final.dir/flags.make
+CMakeFiles/220Final.dir/ArrayLib.cpp.o: ../ArrayLib.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/jeffpage/CLionProjects/220Final/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/220Final.dir/ArrayLib.cpp.o"
+	/Library/Developer/CommandLineTools/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/220Final.dir/ArrayLib.cpp.o -c /Users/jeffpage/CLionProjects/220Final/ArrayLib.cpp
+
+CMakeFiles/220Final.dir/ArrayLib.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/220Final.dir/ArrayLib.cpp.i"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/jeffpage/CLionProjects/220Final/ArrayLib.cpp > CMakeFiles/220Final.dir/ArrayLib.cpp.i
+
+CMakeFiles/220Final.dir/ArrayLib.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/220Final.dir/ArrayLib.cpp.s"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/jeffpage/CLionProjects/220Final/ArrayLib.cpp -o CMakeFiles/220Final.dir/ArrayLib.cpp.s
+
 CMakeFiles/220Final.dir/TestLib.cpp.o: CMakeFiles/220Final.dir/flags.make
 CMakeFiles/220Final.dir/TestLib.cpp.o: ../TestLib.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/jeffpage/CLionProjects/220Final/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/220Final.dir/TestLib.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/jeffpage/CLionProjects/220Final/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/220Final.dir/TestLib.cpp.o"
 	/Library/Developer/CommandLineTools/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/220Final.dir/TestLib.cpp.o -c /Users/jeffpage/CLionProjects/220Final/TestLib.cpp
 
 CMakeFiles/220Final.dir/TestLib.cpp.i: cmake_force
@@ -82,19 +95,6 @@ CMakeFiles/220Final.dir/TestLib.cpp.i: cmake_force
 CMakeFiles/220Final.dir/TestLib.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/220Final.dir/TestLib.cpp.s"
 	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/jeffpage/CLionProjects/220Final/TestLib.cpp -o CMakeFiles/220Final.dir/TestLib.cpp.s
-
-CMakeFiles/220Final.dir/ArrayList.cpp.o: CMakeFiles/220Final.dir/flags.make
-CMakeFiles/220Final.dir/ArrayList.cpp.o: ../ArrayList.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/jeffpage/CLionProjects/220Final/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/220Final.dir/ArrayList.cpp.o"
-	/Library/Developer/CommandLineTools/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/220Final.dir/ArrayList.cpp.o -c /Users/jeffpage/CLionProjects/220Final/ArrayList.cpp
-
-CMakeFiles/220Final.dir/ArrayList.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/220Final.dir/ArrayList.cpp.i"
-	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/jeffpage/CLionProjects/220Final/ArrayList.cpp > CMakeFiles/220Final.dir/ArrayList.cpp.i
-
-CMakeFiles/220Final.dir/ArrayList.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/220Final.dir/ArrayList.cpp.s"
-	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/jeffpage/CLionProjects/220Final/ArrayList.cpp -o CMakeFiles/220Final.dir/ArrayList.cpp.s
 
 CMakeFiles/220Final.dir/PlaylistList.cpp.o: CMakeFiles/220Final.dir/flags.make
 CMakeFiles/220Final.dir/PlaylistList.cpp.o: ../PlaylistList.cpp
@@ -177,8 +177,8 @@ CMakeFiles/220Final.dir/SongTest.cpp.s: cmake_force
 # Object files for target 220Final
 220Final_OBJECTS = \
 "CMakeFiles/220Final.dir/Song.cpp.o" \
+"CMakeFiles/220Final.dir/ArrayLib.cpp.o" \
 "CMakeFiles/220Final.dir/TestLib.cpp.o" \
-"CMakeFiles/220Final.dir/ArrayList.cpp.o" \
 "CMakeFiles/220Final.dir/PlaylistList.cpp.o" \
 "CMakeFiles/220Final.dir/SongList.cpp.o" \
 "CMakeFiles/220Final.dir/PlaylistImplementation.cpp.o" \
@@ -190,8 +190,8 @@ CMakeFiles/220Final.dir/SongTest.cpp.s: cmake_force
 220Final_EXTERNAL_OBJECTS =
 
 220Final: CMakeFiles/220Final.dir/Song.cpp.o
+220Final: CMakeFiles/220Final.dir/ArrayLib.cpp.o
 220Final: CMakeFiles/220Final.dir/TestLib.cpp.o
-220Final: CMakeFiles/220Final.dir/ArrayList.cpp.o
 220Final: CMakeFiles/220Final.dir/PlaylistList.cpp.o
 220Final: CMakeFiles/220Final.dir/SongList.cpp.o
 220Final: CMakeFiles/220Final.dir/PlaylistImplementation.cpp.o

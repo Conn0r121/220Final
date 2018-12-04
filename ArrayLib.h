@@ -14,6 +14,7 @@
  * @post numLinesRun is updated to add the number of lines run by this function
  * @return an integer between min and max inclusive (i.e., including both min and max)
  */
+template <class T>
 int genRandInt(int min, int max, int& numLinesRun);
 
 
@@ -24,6 +25,7 @@ int genRandInt(int min, int max, int& numLinesRun);
  * @post numLinesRun is updated to add the number of lines run by this function
  * @return a pointer to the array, which must be deleted by the user, or nullptr if size < 1
  */
+template <class T>
 int* genRandArray(int size, int min, int max, int& numLinesRun);
 
 /**
@@ -33,6 +35,7 @@ int* genRandArray(int size, int min, int max, int& numLinesRun);
  *  {1, 2, 3, 4, 5}
  *  {} for size < 1
  */
+template <class T>
 std::string toString(const int* arrayPtr, int size);
 
 /**
@@ -40,13 +43,15 @@ std::string toString(const int* arrayPtr, int size);
  * @post numLinesRun is updated to add the number of lines run by this function
  * @return the index of the first occurrence of numToFind if it is present, otherwise returns -1
  */
-int find(const int* arrayPtr, int size, int numToFind, int& numLinesRun);
+template <class T>
+int find(const int* arrayPtr, int size, T itemToFind, int& numLinesRun);
 
 /**
  * Searches an int array for a certain value
  * @post numLinesRun is updated to add the number of lines run by this function
  * @return the index of the last occurrence of numToFind if it is present, otherwise returns -1
  */
+template <class T>
 int findLast(const int* arrayPtr, int size, int numToFind, int& numLinesRun);
 
 /**
@@ -55,6 +60,7 @@ int findLast(const int* arrayPtr, int size, int numToFind, int& numLinesRun);
  * @post numLinesRun is updated to add the number of lines run by this function
  * @return the first index of the maximum value
  */
+template <class T>
 int findMaxIndex(const int* arrayPtr, int size, int& numLinesRun);
 
 /**
@@ -62,6 +68,7 @@ int findMaxIndex(const int* arrayPtr, int size, int& numLinesRun);
  * @post numLinesRun is updated to add the number of lines run by this function
  * @return a pointer to the copy array, which must be deleted by the user, or nullptr, if size < 1
  */
+template <class T>
 int* copyArray(const int* arrayToCopy, int size, int& numLinesRun);
 
 /**
@@ -71,6 +78,7 @@ int* copyArray(const int* arrayToCopy, int size, int& numLinesRun);
  * @post numLinesRun is updated to add the number of lines run by this function
  * @return a pointer to the array, which must be deleted by the user, or nullptr if size < 1
  */
+template <class T>
 int* genShuffledArray(int size, int& numLinesRun);
 
 /**
@@ -78,12 +86,14 @@ int* genShuffledArray(int size, int& numLinesRun);
  * @post numLinesRun is updated to add the number of lines run by this function
  * @return the count of occurrences of numToFind if it is present, otherwise returns 0
  */
+template <class T>
 int countOccurrences(const int* arrayPtr, int size, int numToFind, int& numLinesRun);
 
 /**
  * @post numLinesRun is updated to include lines run by this function
  * @post the array is sorted in ascending order (from min to max values)
  */
+template <class T>
 void sort(int* arrayToSort, int size, int& numLinesRun);
 
 /**
@@ -91,6 +101,7 @@ void sort(int* arrayToSort, int size, int& numLinesRun);
  * @pre the array must be sorted before this function is called
  * @return the index of the first occurrence of numToFind if it is present, otherwise returns -1
  */
+template <class T>
 int binFind(const int* const arrayPtr, const int size, const int numToFind, int& numLinesRun);
 
 /**
@@ -101,6 +112,7 @@ int binFind(const int* const arrayPtr, const int size, const int numToFind, int&
  * @return an array of size (size1+size2) that is an in-order (sorted) copy of all values from a1 and a2,
  *   to be deleted by the user, * or nullptr if (size1+size2) < 1
  */
+template <class T>
 int* merge(const int*a1, int size1, const int* a2, int size2, int& numLinesRun);
 
 /**
@@ -108,6 +120,7 @@ int* merge(const int*a1, int size1, const int* a2, int size2, int& numLinesRun);
  * @post numLinesRun is updated to include lines run by this function
  * @return a copy of the array sorted from min to max values, or nullptr if size < 1, to be deleted by the user
  */
+template <class T>
 int* mergeSort(const int* arrayToSort, int size, int& numLinesRun);
 
 #endif //COMP220LAB_ARRAYLIB_H
