@@ -5,12 +5,13 @@
 #include "ArrayLib.h"
 #include <string>
 #include <iostream>
+#include "ArrayList.h"
 
 
 int numLinesRun=0;
 template <class T>
 void ArrayList<T>::doubleCapacity() {
-    T* newArray=copyArray(this->array,currCapacity*2,numLinesRun);
+    T* newArray=::copyArray(this->array,currCapacity*2,numLinesRun);
     this->currCapacity=currCapacity*2;
     delete [] this->array;
     this->array = newArray;

@@ -25,7 +25,7 @@ private:
      * @post: array points to a new array of twice the size with values copied from the old one,
      *        the old array is deleted.
      */
-     void doubleCapacity();
+
 
 public:
     /**
@@ -42,6 +42,8 @@ public:
 
     //Destructor
     ~ArrayList();
+
+    void doubleCapacity();
 
     /**
      * appends the new item to the end of the list
@@ -137,6 +139,6 @@ public:
     T removeValueAt(int index);
 
 };
-
 #include "ArrayList.inl"
+
 #endif //COMP220_ARRAYLIST_H

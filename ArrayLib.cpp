@@ -293,7 +293,3 @@ int* merge(const int*a1, int size1, const int* a2, int size2, int& numLinesRun) 
     }
 }
 
-
-
-
-

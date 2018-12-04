@@ -5,6 +5,7 @@
 #include "InventoryImplementation.h"
 #include "Song.h"
 
+
 void InventoryImplementation::addSongToLibrary(Song songIn){
     allSongs.insertAtFront(songIn);
 }
@@ -33,6 +34,7 @@ std::string InventoryImplementation::displaySong(std::string songName) {
             return allSongs.getValueAt(i).toString();
         }
     }
+    return "No Songs to Display";
 }
 void InventoryImplementation::loadLibrary() {
 
