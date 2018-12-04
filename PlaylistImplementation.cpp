@@ -3,3 +3,26 @@
 //
 
 #include "PlaylistImplementation.h"
+std::string PlaylistImplementation::toString() {
+    return "";
+}
+
+void PlaylistImplementation::calcDuration() {
+
+}
+
+std::string PlaylistImplementation::playNext() {
+
+}
+
+bool PlaylistImplementation::isEmpty() {
+    return true;
+}
+
+void PlaylistImplementation::addSong() {
+
+}
+
+void PlaylistImplementation::removeSong() {
+
+}

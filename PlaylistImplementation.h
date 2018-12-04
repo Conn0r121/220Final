@@ -11,7 +11,17 @@ class PlaylistImplementation: public Playlist {
 private:
 
 public:
+    std::string toString();
 
+    void calcDuration();
+
+    std::string playNext();
+
+    bool isEmpty();
+
+    void addSong();
+
+    void removeSong();
 
 };
 

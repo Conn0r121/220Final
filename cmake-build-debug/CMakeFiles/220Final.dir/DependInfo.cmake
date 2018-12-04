@@ -4,17 +4,17 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
-  "/Users/jeffpage/CLionProjects/220Final/ArrayLib.cpp" "/Users/jeffpage/CLionProjects/220Final/cmake-build-debug/CMakeFiles/220Final.dir/ArrayLib.cpp.o"
-  "/Users/jeffpage/CLionProjects/220Final/InventoryImplementation.cpp" "/Users/jeffpage/CLionProjects/220Final/cmake-build-debug/CMakeFiles/220Final.dir/InventoryImplementation.cpp.o"
-  "/Users/jeffpage/CLionProjects/220Final/PlaylistCollectionImplementation.cpp" "/Users/jeffpage/CLionProjects/220Final/cmake-build-debug/CMakeFiles/220Final.dir/PlaylistCollectionImplementation.cpp.o"
-  "/Users/jeffpage/CLionProjects/220Final/PlaylistImplementation.cpp" "/Users/jeffpage/CLionProjects/220Final/cmake-build-debug/CMakeFiles/220Final.dir/PlaylistImplementation.cpp.o"
-  "/Users/jeffpage/CLionProjects/220Final/PlaylistList.cpp" "/Users/jeffpage/CLionProjects/220Final/cmake-build-debug/CMakeFiles/220Final.dir/PlaylistList.cpp.o"
-  "/Users/jeffpage/CLionProjects/220Final/Song.cpp" "/Users/jeffpage/CLionProjects/220Final/cmake-build-debug/CMakeFiles/220Final.dir/Song.cpp.o"
-  "/Users/jeffpage/CLionProjects/220Final/SongList.cpp" "/Users/jeffpage/CLionProjects/220Final/cmake-build-debug/CMakeFiles/220Final.dir/SongList.cpp.o"
-  "/Users/jeffpage/CLionProjects/220Final/SongTest.cpp" "/Users/jeffpage/CLionProjects/220Final/cmake-build-debug/CMakeFiles/220Final.dir/SongTest.cpp.o"
-  "/Users/jeffpage/CLionProjects/220Final/TestLib.cpp" "/Users/jeffpage/CLionProjects/220Final/cmake-build-debug/CMakeFiles/220Final.dir/TestLib.cpp.o"
+  "/cygdrive/c/Users/conno/CLionProjects/220Final/ArrayLib.cpp" "/cygdrive/c/Users/conno/CLionProjects/220Final/cmake-build-debug/CMakeFiles/220Final.dir/ArrayLib.cpp.o"
+  "/cygdrive/c/Users/conno/CLionProjects/220Final/InventoryImplementation.cpp" "/cygdrive/c/Users/conno/CLionProjects/220Final/cmake-build-debug/CMakeFiles/220Final.dir/InventoryImplementation.cpp.o"
+  "/cygdrive/c/Users/conno/CLionProjects/220Final/PlaylistCollectionImplementation.cpp" "/cygdrive/c/Users/conno/CLionProjects/220Final/cmake-build-debug/CMakeFiles/220Final.dir/PlaylistCollectionImplementation.cpp.o"
+  "/cygdrive/c/Users/conno/CLionProjects/220Final/PlaylistImplementation.cpp" "/cygdrive/c/Users/conno/CLionProjects/220Final/cmake-build-debug/CMakeFiles/220Final.dir/PlaylistImplementation.cpp.o"
+  "/cygdrive/c/Users/conno/CLionProjects/220Final/PlaylistList.cpp" "/cygdrive/c/Users/conno/CLionProjects/220Final/cmake-build-debug/CMakeFiles/220Final.dir/PlaylistList.cpp.o"
+  "/cygdrive/c/Users/conno/CLionProjects/220Final/Song.cpp" "/cygdrive/c/Users/conno/CLionProjects/220Final/cmake-build-debug/CMakeFiles/220Final.dir/Song.cpp.o"
+  "/cygdrive/c/Users/conno/CLionProjects/220Final/SongList.cpp" "/cygdrive/c/Users/conno/CLionProjects/220Final/cmake-build-debug/CMakeFiles/220Final.dir/SongList.cpp.o"
+  "/cygdrive/c/Users/conno/CLionProjects/220Final/SongTest.cpp" "/cygdrive/c/Users/conno/CLionProjects/220Final/cmake-build-debug/CMakeFiles/220Final.dir/SongTest.cpp.o"
+  "/cygdrive/c/Users/conno/CLionProjects/220Final/TestLib.cpp" "/cygdrive/c/Users/conno/CLionProjects/220Final/cmake-build-debug/CMakeFiles/220Final.dir/TestLib.cpp.o"
   )
-set(CMAKE_CXX_COMPILER_ID "AppleClang")
+set(CMAKE_CXX_COMPILER_ID "GNU")
 
 # The include file search paths:
 set(CMAKE_CXX_TARGET_INCLUDE_PATH
