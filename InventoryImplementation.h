@@ -8,7 +8,7 @@
 #include "Inventory.h"
 #include <string>
 #include "List.h"
-#include "ArrayList.inl"
+#include "ArrayList.h"
 #include "Song.h"
 
 
