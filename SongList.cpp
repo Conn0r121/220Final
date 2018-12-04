@@ -6,7 +6,7 @@
 SongList::SongList(){
     listSize=5;
     songCount=0;
-    songList=new Song[5];
+    songList=new Song(5);
 }
 //add copy constructor ad equals operator if needed
 SongList::~SongList(){

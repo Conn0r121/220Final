@@ -5,20 +5,21 @@
 #ifndef INC_220FINAL_PLAYLISTLIST_H
 #define INC_220FINAL_PLAYLISTLIST_H
 
-#include "Playlist.h"
+#include "PlaylistCollection.h"
+#include "List.h"
 
-
-class PlaylistList : public List {
+class PlaylistList : PlaylistCollection {
 private:
-    Playlist* playlistList;
+    List* playlistList;
     int listSize;
     int playlistCount;
     void doubleCapacity();
 
 public:
-    void addPlaylist(Playlist playlistToAdd);
+    PlaylistList();
+    void addPlaylist(std::string playlistName);
     void removePlaylist(std::string name);
-    Playlist getPlaylist(std::string name);
+    PlaylistList getPlaylist(std::string name);
 };
 
 

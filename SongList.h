@@ -5,6 +5,7 @@
 #ifndef INC_220FINAL_SONGLIST_H
 #define INC_220FINAL_SONGLIST_H
 
+#include "Song.h"
 
 class SongList {
 private:
@@ -13,6 +14,8 @@ private:
     int songCount;
     void doubleCapacity();
 public:
+    SongList();
+    ~SongList();
     void addSong(Song songToAdd);
     void removeSong(std::string name);
     Song getSongByName(std::string name);
