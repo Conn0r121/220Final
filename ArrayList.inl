@@ -69,10 +69,6 @@ T ArrayList<T>::getValueAt(int index){
     }
 }
 template <class T>
-std::string ArrayList<T>::toString(){
-    return ::toString(array,currItemCount);
-}
-template <class T>
 bool ArrayList<T>::isEmpty(){
     if(currItemCount==0){
         return true;

@@ -6,17 +6,20 @@
 #define INC_220FINAL_INVENTORYIMPLEMENTATION_H
 
 #include "Inventory.h"
-#include "PlaylistCollectionImplementation.h"
-#include "PlaylistImplementation.h"
+#include <string>
+#include "List.h"
+#include "ArrayList.inl"
+#include "Song.h"
+
 
 class InventoryImplementation: public Inventory {
 private:
-    PlaylistCollectionImplementation allPlaylists;
-    PlaylistImplementation allSongs;
+    ArrayList<Song> allSongs;
     int totalSongCount;
 
 
 public:
+    virtual void addSongToLibrary(Song songIn);
     /**
      * reads songs from a file and adds with no duplicates
      */

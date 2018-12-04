@@ -17,7 +17,6 @@
 template <class T>
 int genRandInt(int min, int max, int& numLinesRun);
 
-
 /**
  * generates an array filled with random numbers, values between min and max inclusive
  * If min > max, it switches min and max values to make them valid
@@ -69,7 +68,7 @@ int findMaxIndex(const int* arrayPtr, int size, int& numLinesRun);
  * @return a pointer to the copy array, which must be deleted by the user, or nullptr, if size < 1
  */
 template <class T>
-int* copyArray(const int* arrayToCopy, int size, int& numLinesRun);
+T* copyArray(const T* arrayToCopy, int size, int& numLinesRun);
 
 /**
  * Generates an array with all values 1 through size occurring once each, shuffled in random order
@@ -79,7 +78,7 @@ int* copyArray(const int* arrayToCopy, int size, int& numLinesRun);
  * @return a pointer to the array, which must be deleted by the user, or nullptr if size < 1
  */
 template <class T>
-int* genShuffledArray(int size, int& numLinesRun);
+T* genShuffledArray(int size, int& numLinesRun);
 
 /**
  * Counts the number of times a certain value occurs within an array

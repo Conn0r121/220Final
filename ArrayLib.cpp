@@ -81,27 +81,7 @@ int genRandInt(int min, int max, int& numLinesRun){
     numLinesRun+=4;
     return distr(eng);
 }
-template <class T>
-int* genRandArray(int size, int min, int max, int& numLinesRun){
-    int i;
-    int *newArray = new int[size];
-    numLinesRun+=6;
-    if(size<=0){
-        numLinesRun+=2;
-        throw std::invalid_argument("Arrays must be greater than 0");
 
-    }
-    else{
-        for (i=0; i<size; i++){
-
-            *(newArray+i)=genRandInt(min,max, numLinesRun);
-            numLinesRun+=5;
-        }
-    }
-    numLinesRun+=1;
-    return newArray;
-
-}
 template <class T>
 std::string toString( const int* arrayPtr, int size){
     int i;
@@ -187,19 +167,16 @@ int findMaxIndex(const int* arrayPtr, int size, int&numLinesRun){
     }
 }
 template <class T>
-int* copyArray(const int* arrayToCopy, int size, int& numLinesRun){
-    int *newArray = new int[size];
+T* copyArray(const T* arrayToCopy, int size, int& numLinesRun){
+    T *newArray = new T[size];
     int i;
-    numLinesRun+=6;
     for(i=0;i<size;i++){
-        numLinesRun+=4;
         newArray[i]=arrayToCopy[i];
     }
-    numLinesRun+=1;
     return newArray;
 }
 template <class T>
-int* genShuffledArray(int size, int& numLinesRun){
+T* genShuffledArray(int size, int& numLinesRun){
     int i;
     int unusedTimer=0;
     int *newArray = new int[size];
@@ -219,7 +196,7 @@ int* genShuffledArray(int size, int& numLinesRun){
         return newArray;
     }
     for(i=0;i<size;i++){
-        numLinesRun+=7;                  //sets array index values to random then assigns random number in range
+        numLinesRun+=7;//sets array index values to random then assigns random number in range
         int randNum=genRandInt(1,size-1,numLinesRun);
         int temp = newArray[i];
         newArray[i]=newArray[randNum];
@@ -244,25 +221,7 @@ int countOccurrences(const int* arrayPtr, int size, int numToFind, int& numLines
     numLinesRun+=1;
     return occurrenceNum;
 }
-template <class T>
-void sort(int* arrayToSort, int size, int& numLinesRun){ //bubble sort
-    bool swap=false;
-    int i;
-    numLinesRun+=5;
-    for (i = 0; i < size - 1; i++) {
-        if (arrayToSort[i] > arrayToSort[i + 1]) {
-            int temp = arrayToSort[i];
-            arrayToSort[i] = arrayToSort[i + 1];
-            arrayToSort[i + 1] = temp;
-            swap=true;
-            numLinesRun+=5;
-        }
-    }
-    if(swap==true){
-        numLinesRun+=2;
-        sort(arrayToSort,size,numLinesRun);
-    }
-}
+
 template <class T>
 int* merge(const int*a1, int size1, const int* a2, int size2, int& numLinesRun) {
     if (size1 + size2 < 1) {
@@ -334,28 +293,7 @@ int* merge(const int*a1, int size1, const int* a2, int size2, int& numLinesRun) 
         return newArray;
     }
 }
-template <class T>
-int* mergeSort(const int* arrayToSort, int size, int& numLinesRun){
-    if(size<1){
-        numLinesRun+=2;
-        return nullptr;
-    }
-    else if(size==1){
-       int* Copy = new int[1];
-       Copy[0]=arrayToSort[0];
-       numLinesRun+=3;
-       return Copy;
-    }
-    else {
-        int middle = size / 2;
-        const int *tempRightHalf = arrayToSort + middle;
-        int *tempResult1 = mergeSort(arrayToSort, middle, numLinesRun); //left half
-        int *tempResult2 = mergeSort(tempRightHalf, size-middle, numLinesRun); //right half
-        int *finalResult = merge(tempResult1, middle, tempResult2, size-middle, numLinesRun);//merge results
-        numLinesRun+=6;
-        return finalResult;
-    }
-}
+
 
 
 

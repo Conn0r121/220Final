@@ -177,60 +177,6 @@ InventoryImplementation.cpp.s:
 	$(MAKE) -f CMakeFiles/220Final.dir/build.make CMakeFiles/220Final.dir/InventoryImplementation.cpp.s
 .PHONY : InventoryImplementation.cpp.s
 
-PlaylistCollectionImplementation.o: PlaylistCollectionImplementation.cpp.o
-
-.PHONY : PlaylistCollectionImplementation.o
-
-# target to build an object file
-PlaylistCollectionImplementation.cpp.o:
-	$(MAKE) -f CMakeFiles/220Final.dir/build.make CMakeFiles/220Final.dir/PlaylistCollectionImplementation.cpp.o
-.PHONY : PlaylistCollectionImplementation.cpp.o
-
-PlaylistCollectionImplementation.i: PlaylistCollectionImplementation.cpp.i
-
-.PHONY : PlaylistCollectionImplementation.i
-
-# target to preprocess a source file
-PlaylistCollectionImplementation.cpp.i:
-	$(MAKE) -f CMakeFiles/220Final.dir/build.make CMakeFiles/220Final.dir/PlaylistCollectionImplementation.cpp.i
-.PHONY : PlaylistCollectionImplementation.cpp.i
-
-PlaylistCollectionImplementation.s: PlaylistCollectionImplementation.cpp.s
-
-.PHONY : PlaylistCollectionImplementation.s
-
-# target to generate assembly for a file
-PlaylistCollectionImplementation.cpp.s:
-	$(MAKE) -f CMakeFiles/220Final.dir/build.make CMakeFiles/220Final.dir/PlaylistCollectionImplementation.cpp.s
-.PHONY : PlaylistCollectionImplementation.cpp.s
-
-PlaylistImplementation.o: PlaylistImplementation.cpp.o
-
-.PHONY : PlaylistImplementation.o
-
-# target to build an object file
-PlaylistImplementation.cpp.o:
-	$(MAKE) -f CMakeFiles/220Final.dir/build.make CMakeFiles/220Final.dir/PlaylistImplementation.cpp.o
-.PHONY : PlaylistImplementation.cpp.o
-
-PlaylistImplementation.i: PlaylistImplementation.cpp.i
-
-.PHONY : PlaylistImplementation.i
-
-# target to preprocess a source file
-PlaylistImplementation.cpp.i:
-	$(MAKE) -f CMakeFiles/220Final.dir/build.make CMakeFiles/220Final.dir/PlaylistImplementation.cpp.i
-.PHONY : PlaylistImplementation.cpp.i
-
-PlaylistImplementation.s: PlaylistImplementation.cpp.s
-
-.PHONY : PlaylistImplementation.s
-
-# target to generate assembly for a file
-PlaylistImplementation.cpp.s:
-	$(MAKE) -f CMakeFiles/220Final.dir/build.make CMakeFiles/220Final.dir/PlaylistImplementation.cpp.s
-.PHONY : PlaylistImplementation.cpp.s
-
 Song.o: Song.cpp.o
 
 .PHONY : Song.o
@@ -327,12 +273,6 @@ help:
 	@echo "... InventoryImplementation.o"
 	@echo "... InventoryImplementation.i"
 	@echo "... InventoryImplementation.s"
-	@echo "... PlaylistCollectionImplementation.o"
-	@echo "... PlaylistCollectionImplementation.i"
-	@echo "... PlaylistCollectionImplementation.s"
-	@echo "... PlaylistImplementation.o"
-	@echo "... PlaylistImplementation.i"
-	@echo "... PlaylistImplementation.s"
 	@echo "... Song.o"
 	@echo "... Song.i"
 	@echo "... Song.s"

@@ -12,7 +12,7 @@ template <class T>
 class ArrayList {
 private:
     //pointer to the start of the array
-    int* array;
+    T* array;
     //count of the number of valid items currently stored in the array
     int currItemCount;
     //size of the current array

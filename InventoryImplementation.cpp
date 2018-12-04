@@ -3,6 +3,12 @@
 //
 
 #include "InventoryImplementation.h"
+
+void InventoryImplementation::addSongToLibrary(Song songIn){
+    allSongs.insertAtFront(songIn);
+}
+
+
 void InventoryImplementation::discontinue() {
 
 }
@@ -14,8 +20,8 @@ std::string InventoryImplementation::displayLibrary() {
 std::string InventoryImplementation::displayByArtist(std::string artistName) {
     std::string returnString="";
     for(int i=0; i<totalSongCount; i++){
-        if(allSongs.getSongByPosition(i).getArtist()==artistName){
-            returnString+=allSongs.getSongByPosition(i).toString()+"\n";
+        if(allSongs.getValueAt(i).getArtist()==artistName){
+            returnString+=allSongs.getValueAt(i).toString()+"\n";
         }
     }
     return returnString;
@@ -23,8 +29,8 @@ std::string InventoryImplementation::displayByArtist(std::string artistName) {
 
 std::string InventoryImplementation::displaySong(std::string songName) {
     for (int i = 0; i < totalSongCount; i++) {
-        if (allSongs.getSongByPosition(i).getArtist() == songName) {
-            return allSongs.getSongByPosition(i).toString();
+        if (allSongs.getValueAt(i).getArtist() == songName) {
+            return allSongs.getValueAt(i).toString();
         }
     }
 }
