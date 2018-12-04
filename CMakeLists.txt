@@ -15,9 +15,7 @@ add_executable(
         PlaylistCollection.h
         PlayList.h
         Inventory.h
-        PlaylistList.cpp
         Playlist.h
-        SongList.cpp
         SongList.h
         PlaylistImplementation.cpp
         PlaylistImplementation.h
