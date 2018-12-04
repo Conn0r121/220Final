@@ -8,6 +8,7 @@
 #include <stdexcept>
 #include <string>
 
+
 template <class T>
 class ArrayList {
 private:
@@ -143,5 +144,5 @@ public:
 
 };
 
-
+#include "ArrayList.inl"
 #endif //COMP220_ARRAYLIST_H

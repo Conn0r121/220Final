@@ -3,6 +3,7 @@
 //
 
 #include "InventoryImplementation.h"
+#include "Song.cpp"
 
 void InventoryImplementation::addSongToLibrary(Song songIn){
     allSongs.insertAtFront(songIn);

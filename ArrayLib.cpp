@@ -64,7 +64,6 @@ int binFind(const int* const arrayPtr, const int size, const T itemToFind,int st
         }
     }
 }
-template <class T>
 int genRandInt(int min, int max, int& numLinesRun){
     numLinesRun += 3;
     if(min>max){

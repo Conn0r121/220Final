@@ -89,9 +89,6 @@
 		<Unit filename="/Users/jeffpage/CLionProjects/220Final/ArrayList.h">
 			<Option target="220Final"/>
 		</Unit>
-		<Unit filename="/Users/jeffpage/CLionProjects/220Final/ArrayList.inl">
-			<Option target="220Final"/>
-		</Unit>
 		<Unit filename="/Users/jeffpage/CLionProjects/220Final/Inventory.h">
 			<Option target="220Final"/>
 		</Unit>

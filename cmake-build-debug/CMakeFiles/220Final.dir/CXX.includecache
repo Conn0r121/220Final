@@ -6,16 +6,6 @@
 
 #IncludeRegexTransform: 
 
-/Users/jeffpage/CLionProjects/220Final/ArrayLib.cpp
-ArrayLib.h
-/Users/jeffpage/CLionProjects/220Final/ArrayLib.h
-string
--
-iostream
--
-random
-/Users/jeffpage/CLionProjects/220Final/random
-
 /Users/jeffpage/CLionProjects/220Final/ArrayLib.h
 string
 -
@@ -25,6 +15,8 @@ stdexcept
 -
 string
 -
+ArrayList.inl
+/Users/jeffpage/CLionProjects/220Final/ArrayList.inl
 
 /Users/jeffpage/CLionProjects/220Final/ArrayList.inl
 ArrayLib.h
@@ -45,6 +37,8 @@ Song.h
 /Users/jeffpage/CLionProjects/220Final/InventoryImplementation.cpp
 InventoryImplementation.h
 /Users/jeffpage/CLionProjects/220Final/InventoryImplementation.h
+Song.cpp
+/Users/jeffpage/CLionProjects/220Final/Song.cpp
 
 /Users/jeffpage/CLionProjects/220Final/InventoryImplementation.h
 Inventory.h
@@ -63,6 +57,10 @@ stdexcept
 -
 string
 -
+
+/Users/jeffpage/CLionProjects/220Final/Song.cpp
+Song.h
+/Users/jeffpage/CLionProjects/220Final/Song.h
 
 /Users/jeffpage/CLionProjects/220Final/Song.h
 string

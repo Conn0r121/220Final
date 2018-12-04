@@ -7,7 +7,7 @@
 #include <string>
 #include <iostream>
 
-int numLinesRun=0;
+numLinesRun=0;
 template <class T>
 void ArrayList<T>::doubleCapacity() {
     T* newArray=::copyArray(this->array,currCapacity*2,numLinesRun);
