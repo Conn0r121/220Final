@@ -39,19 +39,19 @@ cmake_force:
 SHELL = /bin/sh
 
 # The CMake executable.
-CMAKE_COMMAND = /Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake
+CMAKE_COMMAND = /cygdrive/c/Users/conno/.CLion2018.2/system/cygwin_cmake/bin/cmake.exe
 
 # The command to remove a file.
-RM = /Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake -E remove -f
+RM = /cygdrive/c/Users/conno/.CLion2018.2/system/cygwin_cmake/bin/cmake.exe -E remove -f
 
 # Escaping for special characters.
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /Users/jeffpage/CLionProjects/220Final
+CMAKE_SOURCE_DIR = /cygdrive/c/Users/conno/CLionProjects/220Final
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /Users/jeffpage/CLionProjects/220Final/cmake-build-debug
+CMAKE_BINARY_DIR = /cygdrive/c/Users/conno/CLionProjects/220Final/cmake-build-debug
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -59,7 +59,7 @@ CMAKE_BINARY_DIR = /Users/jeffpage/CLionProjects/220Final/cmake-build-debug
 # Special rule for the target rebuild_cache
 rebuild_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake to regenerate build system..."
-	/Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
+	/cygdrive/c/Users/conno/.CLion2018.2/system/cygwin_cmake/bin/cmake.exe -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
 .PHONY : rebuild_cache
 
 # Special rule for the target rebuild_cache
@@ -70,7 +70,7 @@ rebuild_cache/fast: rebuild_cache
 # Special rule for the target edit_cache
 edit_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "No interactive CMake dialog available..."
-	/Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
+	/cygdrive/c/Users/conno/.CLion2018.2/system/cygwin_cmake/bin/cmake.exe -E echo No\ interactive\ CMake\ dialog\ available.
 .PHONY : edit_cache
 
 # Special rule for the target edit_cache
@@ -80,9 +80,9 @@ edit_cache/fast: edit_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/jeffpage/CLionProjects/220Final/cmake-build-debug/CMakeFiles /Users/jeffpage/CLionProjects/220Final/cmake-build-debug/CMakeFiles/progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start /cygdrive/c/Users/conno/CLionProjects/220Final/cmake-build-debug/CMakeFiles /cygdrive/c/Users/conno/CLionProjects/220Final/cmake-build-debug/CMakeFiles/progress.marks
 	$(MAKE) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/jeffpage/CLionProjects/220Final/cmake-build-debug/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /cygdrive/c/Users/conno/CLionProjects/220Final/cmake-build-debug/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
@@ -150,32 +150,59 @@ ArrayLib.cpp.s:
 	$(MAKE) -f CMakeFiles/220Final.dir/build.make CMakeFiles/220Final.dir/ArrayLib.cpp.s
 .PHONY : ArrayLib.cpp.s
 
-InventoryImplementation.o: InventoryImplementation.cpp.o
+PlaylistImplementation.o: PlaylistImplementation.cpp.o
 
-.PHONY : InventoryImplementation.o
+.PHONY : PlaylistImplementation.o
 
 # target to build an object file
-InventoryImplementation.cpp.o:
-	$(MAKE) -f CMakeFiles/220Final.dir/build.make CMakeFiles/220Final.dir/InventoryImplementation.cpp.o
-.PHONY : InventoryImplementation.cpp.o
+PlaylistImplementation.cpp.o:
+	$(MAKE) -f CMakeFiles/220Final.dir/build.make CMakeFiles/220Final.dir/PlaylistImplementation.cpp.o
+.PHONY : PlaylistImplementation.cpp.o
 
-InventoryImplementation.i: InventoryImplementation.cpp.i
+PlaylistImplementation.i: PlaylistImplementation.cpp.i
 
-.PHONY : InventoryImplementation.i
+.PHONY : PlaylistImplementation.i
 
 # target to preprocess a source file
-InventoryImplementation.cpp.i:
-	$(MAKE) -f CMakeFiles/220Final.dir/build.make CMakeFiles/220Final.dir/InventoryImplementation.cpp.i
-.PHONY : InventoryImplementation.cpp.i
+PlaylistImplementation.cpp.i:
+	$(MAKE) -f CMakeFiles/220Final.dir/build.make CMakeFiles/220Final.dir/PlaylistImplementation.cpp.i
+.PHONY : PlaylistImplementation.cpp.i
 
-InventoryImplementation.s: InventoryImplementation.cpp.s
+PlaylistImplementation.s: PlaylistImplementation.cpp.s
 
-.PHONY : InventoryImplementation.s
+.PHONY : PlaylistImplementation.s
 
 # target to generate assembly for a file
-InventoryImplementation.cpp.s:
-	$(MAKE) -f CMakeFiles/220Final.dir/build.make CMakeFiles/220Final.dir/InventoryImplementation.cpp.s
-.PHONY : InventoryImplementation.cpp.s
+PlaylistImplementation.cpp.s:
+	$(MAKE) -f CMakeFiles/220Final.dir/build.make CMakeFiles/220Final.dir/PlaylistImplementation.cpp.s
+.PHONY : PlaylistImplementation.cpp.s
+
+PlaylistTest.o: PlaylistTest.cpp.o
+
+.PHONY : PlaylistTest.o
+
+# target to build an object file
+PlaylistTest.cpp.o:
+	$(MAKE) -f CMakeFiles/220Final.dir/build.make CMakeFiles/220Final.dir/PlaylistTest.cpp.o
+.PHONY : PlaylistTest.cpp.o
+
+PlaylistTest.i: PlaylistTest.cpp.i
+
+.PHONY : PlaylistTest.i
+
+# target to preprocess a source file
+PlaylistTest.cpp.i:
+	$(MAKE) -f CMakeFiles/220Final.dir/build.make CMakeFiles/220Final.dir/PlaylistTest.cpp.i
+.PHONY : PlaylistTest.cpp.i
+
+PlaylistTest.s: PlaylistTest.cpp.s
+
+.PHONY : PlaylistTest.s
+
+# target to generate assembly for a file
+PlaylistTest.cpp.s:
+	$(MAKE) -f CMakeFiles/220Final.dir/build.make CMakeFiles/220Final.dir/PlaylistTest.cpp.s
+.PHONY : PlaylistTest.cpp.s
 
 Song.o: Song.cpp.o
 
@@ -203,33 +230,6 @@ Song.s: Song.cpp.s
 Song.cpp.s:
 	$(MAKE) -f CMakeFiles/220Final.dir/build.make CMakeFiles/220Final.dir/Song.cpp.s
 .PHONY : Song.cpp.s
-
-SongTest.o: SongTest.cpp.o
-
-.PHONY : SongTest.o
-
-# target to build an object file
-SongTest.cpp.o:
-	$(MAKE) -f CMakeFiles/220Final.dir/build.make CMakeFiles/220Final.dir/SongTest.cpp.o
-.PHONY : SongTest.cpp.o
-
-SongTest.i: SongTest.cpp.i
-
-.PHONY : SongTest.i
-
-# target to preprocess a source file
-SongTest.cpp.i:
-	$(MAKE) -f CMakeFiles/220Final.dir/build.make CMakeFiles/220Final.dir/SongTest.cpp.i
-.PHONY : SongTest.cpp.i
-
-SongTest.s: SongTest.cpp.s
-
-.PHONY : SongTest.s
-
-# target to generate assembly for a file
-SongTest.cpp.s:
-	$(MAKE) -f CMakeFiles/220Final.dir/build.make CMakeFiles/220Final.dir/SongTest.cpp.s
-.PHONY : SongTest.cpp.s
 
 TestLib.o: TestLib.cpp.o
 
@@ -265,20 +265,20 @@ help:
 	@echo "... clean"
 	@echo "... depend"
 	@echo "... rebuild_cache"
-	@echo "... edit_cache"
 	@echo "... 220Final"
+	@echo "... edit_cache"
 	@echo "... ArrayLib.o"
 	@echo "... ArrayLib.i"
 	@echo "... ArrayLib.s"
-	@echo "... InventoryImplementation.o"
-	@echo "... InventoryImplementation.i"
-	@echo "... InventoryImplementation.s"
+	@echo "... PlaylistImplementation.o"
+	@echo "... PlaylistImplementation.i"
+	@echo "... PlaylistImplementation.s"
+	@echo "... PlaylistTest.o"
+	@echo "... PlaylistTest.i"
+	@echo "... PlaylistTest.s"
 	@echo "... Song.o"
 	@echo "... Song.i"
 	@echo "... Song.s"
-	@echo "... SongTest.o"
-	@echo "... SongTest.i"
-	@echo "... SongTest.s"
 	@echo "... TestLib.o"
 	@echo "... TestLib.i"
 	@echo "... TestLib.s"
