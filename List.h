@@ -18,11 +18,10 @@ private:
 
 public:
     //constructor
-
-    List<T>(int initialCapacity) {};
+    List<T>(){}
 
     //Destructor
-    ~List<T>() {};
+    virtual ~List<T>() {};
 
     /**
      * appends the new item to the end of the list
@@ -43,7 +42,7 @@ public:
      * @returns a string representing the given list in the exact format shown below
      * {1, 2, 3, 4, 5}
      */
-    virtual std::string toString()=0;
+//    virtual std::string toString()=0;
 
     /**
      * checks if there are any valid items in the list
@@ -63,24 +62,24 @@ public:
      */
     virtual void clearList()=0;
 
-    /**
-     * Searches an int array for a certain value
-     * @return the index of the first occurrence of numToFind if it is present, otherwise returns -1
-     */
-    virtual T find(T numToFind)=0;
-
-    /**
-     * Searches an int array for a certain value
-     * @return the index of the last occurrence of numToFind if it is present, otherwise returns -1
-     */
-    virtual T findLast(T numToFind)=0;
-
-    /**
-     * finds the largest value in the array
-     * @return the first index of the maximum value
-     * @throws out_of_range exception if there is no item to remove
-     */
-    virtual int findMaxIndex()=0;
+//    /**
+//     * Searches an int array for a certain value
+//     * @return the index of the first occurrence of numToFind if it is present, otherwise returns -1
+//     */
+//    virtual T find(T numToFind)=0;
+//
+//    /**
+//     * Searches an int array for a certain value
+//     * @return the index of the last occurrence of numToFind if it is present, otherwise returns -1
+//     */
+//    virtual T findLast(T numToFind)=0;
+//
+//    /**
+//     * finds the largest value in the array
+//     * @return the first index of the maximum value
+//     * @throws out_of_range exception if there is no item to remove
+//     */
+//    virtual int findMaxIndex()=0;
 
     /**
      * appends the new item to the beginning of the list
@@ -122,8 +121,6 @@ public:
      * @throws out_of_range exception if index is invalid
      */
     virtual T removeValueAt(int index)=0;
-
-    virtual int getItemCount() =0;
 
 };
 

@@ -17,14 +17,14 @@ PlaylistImplementation::PlaylistImplementation(std::string name) {
 std::string PlaylistImplementation::toString() {
     std::string result = "";
     result += songList->getValueAt(0)->toString();
-    for (int i = 1; i < songList->getItemCount(); i++) {
+    for (int i = 1; i < songList->itemCount(); i++) {
         result += "\n" + songList->getValueAt(i)->toString();
     }
     return result;
 }
 
 void PlaylistImplementation::calcDuration() {
-    for (int i = 0; i < songList->getItemCount(); i++) {
+    for (int i = 0; i < songList->itemCount(); i++) {
         duration += songList->getValueAt(i)->getDuration();
     }
 }
@@ -44,20 +44,20 @@ void PlaylistImplementation::addSong(std::string artist, std::string title) {
 }
 
 void PlaylistImplementation::removeSong(std::string artist, std::string title) {
-    for (int i = 0; i < songList->getItemCount(); i++) {
+    for (int i = 0; i < songList->itemCount(); i++) {
         if (songList->getValueAt(i)->getArtist() == artist || songList->getValueAt(i)->getTitle() == title) {
             songList->removeValueAt(i);
         }
     }
 }
-
-Song PlaylistImplementation::getSongByArtist(std::string artistName) {
-
-}
-Song PlaylistImplementation::getSongByTitle(std::string songName) {
-
-}
-
-Song getSongByPosition(int position){
-
-}
+//
+//Song PlaylistImplementation::getSongByArtist(std::string artistName) {
+//
+//}
+//Song PlaylistImplementation::getSongByTitle(std::string songName) {
+//
+//}
+//
+//Song getSongByPosition(int position){
+//
+//}

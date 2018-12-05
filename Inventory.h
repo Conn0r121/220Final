@@ -13,6 +13,7 @@ private:
     Inventory& operator=(const Inventory& invToCopy);
 
 public:
+    Inventory() {}
     virtual void addSongToLibrary(Song songIn)=0;
     /**
      * reads songs from a file and adds with no duplicates to master file

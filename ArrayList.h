@@ -11,7 +11,7 @@
 
 
 template <class T>
-class ArrayList : public List {
+class ArrayList : public List<T> {
 private:
     //pointer to the start of the array
     T* array;
@@ -27,24 +27,25 @@ private:
      *        the old array is deleted.
      */
 
+    //Copy Constructor
+    ArrayList<T>(const ArrayList& arrayListToCopy);
+
+    //Overloaded Assignment Operator
+    ArrayList<T>& operator=(const ArrayList& arrayListToCopy);
+
 
 public:
     /**
      * Constructor
      * @throws an std::invalid_argument exception if size < 1
      */
-    ArrayList(int initialCapacity);
+    ArrayList<T>(int initialCapacity);
 
-    //Copy Constructor
-    ArrayList(const ArrayList& arrayListToCopy);
-
-    //Overloaded Assignment Operator
-    ArrayList& operator=(const ArrayList& arrayListToCopy);
 
     //Destructor
     ~ArrayList();
 
-    void doubleCapacity();
+//    void doubleCapacity();
 
     /**
      * appends the new item to the end of the list
@@ -79,24 +80,24 @@ public:
      */
     void clearList();
 
-    /**
-     * Searches an int array for a certain value
-     * @return the index of the first occurrence of numToFind if it is present, otherwise returns -1
-     */
-    int find(T itemToFind);
-
-    /**
-     * Searches an int array for a certain value
-     * @return the index of the last occurrence of numToFind if it is present, otherwise returns -1
-     */
-    int findLast(T itemToFind);
-
-    /**
-     * finds the largest value in the array
-     * @return the first index of the maximum value
-     * @throws out_of_range exception if there is no item to remove
-     */
-    int findMaxIndex();
+//    /**
+//     * Searches an int array for a certain value
+//     * @return the index of the first occurrence of numToFind if it is present, otherwise returns -1
+//     */
+//    T find(T itemToFind);
+//
+//    /**
+//     * Searches an int array for a certain value
+//     * @return the index of the last occurrence of numToFind if it is present, otherwise returns -1
+//     */
+//    T findLast(T itemToFind);
+//
+//    /**
+//     * finds the largest value in the array
+//     * @return the first index of the maximum value
+//     * @throws out_of_range exception if there is no item to remove
+//     */
+//    int findMaxIndex();
 
     /**
      * appends the new item to the beginning of the list
@@ -138,9 +139,6 @@ public:
      * @throws out_of_range exception if index is invalid
      */
     T removeValueAt(int index);
-
-    int getItemCount();
-
 };
 #include "ArrayList.inl"
 

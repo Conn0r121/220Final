@@ -3,19 +3,19 @@
 //
 
 #include "ArrayLib.h"
-#include <string>
 #include <iostream>
 #include "ArrayList.h"
 
 
-int numLinesRun=0;
-template <class T>
-void ArrayList<T>::doubleCapacity() {
-    T* newArray=::copyArray(this->array,currCapacity*2,numLinesRun);
-    this->currCapacity=currCapacity*2;
-    delete [] this->array;
-    this->array = newArray;
-}
+//int numLinesRun=0;
+//template <class T>
+//void ArrayList<T>::doubleCapacity() {
+//    T* newArray = ::copyArray(this->array,currCapacity*2,numLinesRun);
+//    this->currCapacity=currCapacity*2;
+//    delete [] this->array;
+//    this->array = newArray;
+//}
+
 template <class T>
 ArrayList<T>::ArrayList(int initialCapacity) {
     if(initialCapacity<1){
@@ -86,23 +86,24 @@ template <class T>
 void ArrayList<T>::clearList(){
     currItemCount=0;
 }
-template <class T>
-int ArrayList<T>::find(T itemToFind){
-    return ::find(array,currItemCount,itemToFind,numLinesRun);
-}
-template <class T>
-int ArrayList<T>::findLast(T itemToFind){
-    return ::findLast(array,currItemCount,itemToFind,numLinesRun);
-}
-template <class T>
-int ArrayList<T>::findMaxIndex(){
-    if(currItemCount<1){
-        throw std::out_of_range("Arrays must be greater than 0");
-    }
-    else {
-        return ::findMaxIndex(array, currItemCount, numLinesRun);
-    }
-}
+//template <class T>
+//T ArrayList<T>::find(T itemToFind){
+//    return ::find(array,currItemCount,itemToFind,numLinesRun);
+//}
+//template <class T>
+//T ArrayList<T>::findLast(T itemToFind){
+//    return ::findLast(array,currItemCount,itemToFind,numLinesRun);
+//}
+//template <class T>
+//int ArrayList<T>::findMaxIndex(){
+//    if(currItemCount<1){
+//        throw std::out_of_range("Arrays must be greater than 0");
+//    }
+//    else {
+//        return ::findMaxIndex(array, currItemCount, numLinesRun);
+//    }
+//}
+
 template <class T>
 void ArrayList<T>::insertAtFront(T itemToAdd){
     insertAt(itemToAdd,0);
@@ -115,7 +116,7 @@ void ArrayList<T>::insertAt(T itemToAdd, int index){
     else {
         currItemCount += 1;
         if(currItemCount>currCapacity){
-            doubleCapacity();
+//            doubleCapacity();
         }
         for (int i = currItemCount; i > -1; i--) {
             if (i < index) {
@@ -144,17 +145,13 @@ T ArrayList<T>::removeValueAt(int index){
         throw std::out_of_range("Cannot remove anything from an empty list");
     }
     else {
-        int tempNum = array[index];
+        T tempNum = array[index];
         for (int i = index; i < currItemCount - 1; ++i) {
             array[i] = array[i + 1];
         }
         currItemCount = currItemCount - 1;
         return tempNum;
     }
-}
-
-int ArrayList<T>::getItemCount() {
-    return currItemCount;
 }
 
 

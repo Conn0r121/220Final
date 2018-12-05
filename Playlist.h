@@ -15,13 +15,13 @@ private:
     Playlist& operator=(const Playlist& playlistToCopy);
 
 public:
-    virtual Playlist() =0;
+    Playlist() {}
     virtual std::string toString() =0;
     virtual void calcDuration() =0;
     virtual std::string playNext() =0;
     virtual bool isEmpty() =0;
     virtual void addSong(std::string artist, std::string title) =0;
     virtual void removeSong(std::string artist, std::string title) =0;
-    virtual Song getSongByPosition(int position)=0;
+//    virtual Song getSongByPosition(int position)=0;
 };
 #endif //INC_220FINAL_PLAYLIST_H
