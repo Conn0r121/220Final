@@ -15,7 +15,7 @@ PlaylistImplementation::PlaylistImplementation(std::string name) {
 }
 
 std::string PlaylistImplementation::toString() {
-    std::string result = "";
+    std::string result = playlistName + ":\n";
     result += songList->getValueAt(0)->toString();
     for (int i = 1; i < songList->itemCount(); i++) {
         result += "\n" + songList->getValueAt(i)->toString();
@@ -84,4 +84,8 @@ Song* PlaylistImplementation::getSongByArtistandTitle(std::string artistIn, std:
         }
     }
     throw std::invalid_argument("Song Not Found");
+}
+
+std::string PlaylistImplementation::getName() {
+    return playlistName;
 }

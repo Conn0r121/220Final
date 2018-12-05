@@ -4,12 +4,25 @@
 
 #include "PlaylistCollectionImplementation.h"
 
+PlaylistCollectionImplementation::PlaylistCollectionImplementation() {
+    playlistList = new ArrayList<Playlist*>*(10);
+}
+
+
 std::string PlaylistCollectionImplementation::displayAll() {
-    return "";
+    std::string result = "";
+    for (int i = 0; i < playlistList->itemCount(); i++) {
+        result += playlistList->getValueAt(i)->toString();
+    }
+    return result;
 }
 
 std::string PlaylistCollectionImplementation::displayPlaylist(std::string playlistToFind) {
-    return "";
+    for (int i = 0; i < playlistList->itemCount(); i++) {
+        if (playlistList->getValueAt(i)->getName() == playlistToFind) {
+            return playlistList->getValueAt(i)->toString();
+        }
+    }
 }
 
 void PlaylistCollectionImplementation::delWhenEmpty() {

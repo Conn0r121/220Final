@@ -40,6 +40,8 @@ public:
 
     Song* getSongByArtistandTitle(std::string artistIn, std::string titleIn);
 
+    std::string getName();
+
 };
 
 

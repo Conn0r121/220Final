@@ -45,7 +45,7 @@ public:
     //Destructor
     ~ArrayList();
 
-//    void doubleCapacity();
+    void doubleCapacity();
 
     /**
      * appends the new item to the end of the list

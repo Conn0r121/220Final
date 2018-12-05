@@ -6,8 +6,7 @@
 #include <iostream>
 #include "ArrayList.h"
 
-
-//int numLinesRun=0;
+//int numLinesRun = 0;
 //template <class T>
 //void ArrayList<T>::doubleCapacity() {
 //    T* newArray = ::copyArray(this->array,currCapacity*2,numLinesRun);

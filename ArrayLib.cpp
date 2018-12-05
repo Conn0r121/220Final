@@ -97,6 +97,7 @@ T copyArray(const T arrayToCopy, int size, int& numLinesRun){
     }
     return newArray;
 }
+
 template <class T>
 T* genShuffledArray(int size, int& numLinesRun){
     int i;
