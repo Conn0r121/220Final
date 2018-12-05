@@ -44,9 +44,18 @@ void PlaylistImplementation::addSong(std::string artist, std::string title) {
 }
 
 void PlaylistImplementation::removeSong(std::string artist, std::string title) {
-    for (int i = 0; i < songList->itemCount(); i++) {
-        if (songList->getValueAt(i)->getArtist() == artist || songList->getValueAt(i)->getTitle() == title) {
-            songList->removeValueAt(i);
+    if (isEmpty()) {
+        throw std::out_of_range("Playlist is empty");
+    } else {
+        bool found = false;
+        for (int i = 0; i < songList->itemCount(); i++) {
+            if (songList->getValueAt(i)->getArtist() == artist || songList->getValueAt(i)->getTitle() == title) {
+                songList->removeValueAt(i);
+                found = true;
+            }
+        }
+        if (!found) {
+            throw std::out_of_range("Song is not in playlist");
         }
     }
 }
