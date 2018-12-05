@@ -29,12 +29,14 @@ public:
     void addSong(std::string artist, std::string title);
 
     void removeSong(std::string artist, std::string title);
-//
+
 //    Song getSongByArtist(std::string artistName);
 //
 //    Song getSongByTitle(std::string songName);
 //
-//    Song getSongByPosition(int position);
+    Song* getSongByPosition(int position);
+
+    int getPlaylistSize();
 
 };
 

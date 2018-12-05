@@ -61,12 +61,18 @@ void PlaylistImplementation::removeSong(std::string artist, std::string title) {
 }
 //
 //Song PlaylistImplementation::getSongByArtist(std::string artistName) {
+//    for(int i=0;i<songList->itemCount(); i++){
+//        if(songList->getValueAt(i)->getArtist())
+//    }
 //
 //}
 //Song PlaylistImplementation::getSongByTitle(std::string songName) {
 //
 //}
 //
-//Song getSongByPosition(int position){
-//
-//}
+Song* PlaylistImplementation::getSongByPosition(int position){
+    return songList->getValueAt(position);
+}
+int PlaylistImplementation::getPlaylistSize(){
+    return songList->itemCount();
+}

@@ -54,6 +54,13 @@ int main() {
     std::cout << testPlaylist->toString() << std::endl;
     std::cout << std::endl;
 
+    std::cout <<"-----Song By Position Test--------"<<std::endl;
+    for (int i=0;i<testPlaylist->getPlaylistSize();i++){
+        std::string s = std::to_string(i);
+        std::cout<< "Getting at Position "+ s <<std::endl;
+        std::cout<< testPlaylist->getSongByPosition(i)->toString() <<std::endl;
+    }
+
     std::cout << "Testing removing from empty playlist:" << std::endl;
     testPlaylist->playNext();
     testPlaylist->playNext();

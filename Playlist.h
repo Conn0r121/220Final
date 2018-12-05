@@ -22,6 +22,7 @@ public:
     virtual bool isEmpty() =0;
     virtual void addSong(std::string artist, std::string title) =0;
     virtual void removeSong(std::string artist, std::string title) =0;
-//    virtual Song getSongByPosition(int position)=0;
+    virtual Song* getSongByPosition(int position)=0;
+    virtual int getPlaylistSize()=0;
 };
 #endif //INC_220FINAL_PLAYLIST_H

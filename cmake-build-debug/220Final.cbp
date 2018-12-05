@@ -89,25 +89,28 @@
 		<Unit filename="/Users/jeffpage/CLionProjects/220Final/ArrayList.h">
 			<Option target="220Final"/>
 		</Unit>
+		<Unit filename="/Users/jeffpage/CLionProjects/220Final/ArrayList.inl">
+			<Option target="220Final"/>
+		</Unit>
 		<Unit filename="/Users/jeffpage/CLionProjects/220Final/Inventory.h">
 			<Option target="220Final"/>
 		</Unit>
-		<Unit filename="/Users/jeffpage/CLionProjects/220Final/InventoryImplementation.cpp">
-			<Option target="220Final"/>
-		</Unit>
-		<Unit filename="/Users/jeffpage/CLionProjects/220Final/InventoryImplementation.h">
-			<Option target="220Final"/>
-		</Unit>
 		<Unit filename="/Users/jeffpage/CLionProjects/220Final/List.h">
+			<Option target="220Final"/>
+		</Unit>
+		<Unit filename="/Users/jeffpage/CLionProjects/220Final/PlaylistImplementation.cpp">
+			<Option target="220Final"/>
+		</Unit>
+		<Unit filename="/Users/jeffpage/CLionProjects/220Final/PlaylistImplementation.h">
+			<Option target="220Final"/>
+		</Unit>
+		<Unit filename="/Users/jeffpage/CLionProjects/220Final/PlaylistTest.cpp">
 			<Option target="220Final"/>
 		</Unit>
 		<Unit filename="/Users/jeffpage/CLionProjects/220Final/Song.cpp">
 			<Option target="220Final"/>
 		</Unit>
 		<Unit filename="/Users/jeffpage/CLionProjects/220Final/Song.h">
-			<Option target="220Final"/>
-		</Unit>
-		<Unit filename="/Users/jeffpage/CLionProjects/220Final/SongTest.cpp">
 			<Option target="220Final"/>
 		</Unit>
 		<Unit filename="/Users/jeffpage/CLionProjects/220Final/TestLib.cpp">
