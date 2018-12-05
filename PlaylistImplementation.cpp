@@ -76,3 +76,12 @@ Song* PlaylistImplementation::getSongByPosition(int position){
 int PlaylistImplementation::getPlaylistSize(){
     return songList->itemCount();
 }
+
+Song* PlaylistImplementation::getSongByArtistandTitle(std::string artistIn, std::string titleIn){
+    for(int i=0;i<songList->itemCount();i++){
+        if(songList->getValueAt(i)->getArtist()==artistIn && songList->getValueAt(i)->getTitle()==titleIn){
+            return songList->getValueAt(i);
+        }
+    }
+    throw std::invalid_argument("Song Not Found");
+}

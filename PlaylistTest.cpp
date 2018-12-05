@@ -60,7 +60,38 @@ int main() {
         std::cout<< "Getting at Position "+ s <<std::endl;
         std::cout<< testPlaylist->getSongByPosition(i)->toString() <<std::endl;
     }
+    std::cout <<std::endl;
 
+    std::cout << "------Get Song by Artist and Title Test------"<<std::endl;
+    for (int i=0;i<testPlaylist->getPlaylistSize();i++){
+        std::cout<<"Getting "+testPlaylist->getSongByPosition(i)->getTitle() +" by "+testPlaylist->getSongByPosition(i)->getArtist() <<std::endl;
+        std::cout <<testPlaylist->getSongByArtistandTitle(testPlaylist->getSongByPosition(i)->getArtist(),testPlaylist->getSongByPosition(i)->getTitle())->toString()<<std::endl;
+    }
+    std::cout<<std::endl;
+    std::cout << "Testing getting Song by Artist and Title not present" <<std::endl;
+    try{
+        testPlaylist->getSongByArtistandTitle("NickelBack","Rockstar");
+        std::cout<<" FAIL: getting song not present should throw exception";
+    }
+    catch(std::invalid_argument & e) {
+        std::cout<< "pass" <<std::endl;
+
+    }
+    try{
+        testPlaylist->getSongByArtistandTitle("Metallica","Nothing Else Matters");
+        std::cout<<" FAIL: getting song not present should throw exception";
+    }
+    catch(std::invalid_argument & e) {
+        std::cout<< "pass" <<std::endl;
+    }
+    try{
+        testPlaylist->getSongByArtistandTitle("Smash Mouth","September");
+        std::cout<<" FAIL: getting song not present should throw exception";
+    }
+    catch(std::invalid_argument & e) {
+        std::cout<< "pass" <<std::endl;
+    }
+    std::cout<<std::endl;
     std::cout << "Testing removing from empty playlist:" << std::endl;
     testPlaylist->playNext();
     testPlaylist->playNext();
