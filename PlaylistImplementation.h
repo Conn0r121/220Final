@@ -26,9 +26,9 @@ public:
 
     bool isEmpty();
 
-    void addSong();
+    void addSong(std::string artist, std::string title);
 
-    void removeSong();
+    void removeSong(std::string artist, std::string title);
 
     Song getSongByArtist(std::string artistName);
 

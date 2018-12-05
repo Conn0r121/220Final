@@ -9,7 +9,8 @@
 #include <string>
 
 template <class T>
-class List<T> {
+
+class List {
 private:
     //Private to disable copying and assigning from outside class, don't implement these methods
     List<T>(const List& listToCopy);
@@ -18,10 +19,10 @@ private:
 public:
     //constructor
 
-    virtual List<T>(int initialCapacity) =0;
+    List<T>(int initialCapacity) {};
 
     //Destructor
-    virtual ~List<T>() =0;
+    ~List<T>() {};
 
     /**
      * appends the new item to the end of the list

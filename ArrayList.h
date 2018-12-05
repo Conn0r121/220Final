@@ -10,7 +10,7 @@
 
 
 template <class T>
-class ArrayList: public List{
+class ArrayList : public List {
 private:
     //pointer to the start of the array
     T* array;

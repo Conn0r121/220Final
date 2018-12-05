@@ -18,7 +18,7 @@ std::string PlaylistImplementation::toString() {
     std::string result = "";
     result += songList->getValueAt(0)->toString();
     for (int i = 1; i < songList->getItemCount(); i++) {
-        result += ", " + songList->getValueAt(i)->toString();
+        result += "\n" + songList->getValueAt(i)->toString();
     }
     return result;
 }
@@ -43,8 +43,12 @@ void PlaylistImplementation::addSong(std::string artist, std::string title) {
     return songList->insertAtEnd(newSong);
 }
 
-void PlaylistImplementation::removeSong() {
-
+void PlaylistImplementation::removeSong(std::string artist, std::string title) {
+    for (int i = 0; i < songList->getItemCount(); i++) {
+        if (songList->getValueAt(i)->getArtist() == artist || songList->getValueAt(i)->getTitle() == title) {
+            songList->removeValueAt(i);
+        }
+    }
 }
 
 Song PlaylistImplementation::getSongByArtist(std::string artistName) {
