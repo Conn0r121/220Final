@@ -7,14 +7,15 @@
 
 #include "Song.h"
 #include "ArrayList.h"
+#include "List.h"
 
 class Playlist {
 private:
-    std::string title;
-    ArrayList<Song>* songs;
-    int duration;
+    Playlist(const Playlist& playlistToCopy);
+    Playlist& operator=(const Playlist& playlistToCopy);
 
 public:
+    virtual Playlist() =0;
     virtual std::string toString() =0;
     virtual void calcDuration() =0;
     virtual std::string playNext() =0;

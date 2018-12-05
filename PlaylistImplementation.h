@@ -9,8 +9,15 @@
 
 class PlaylistImplementation: public Playlist {
 private:
+    List<Song*>* songList;
+    std::string playlistName;
+    int duration;
 
 public:
+    PlaylistImplementation();
+
+    PlaylistImplementation(std::string name);
+
     std::string toString();
 
     void calcDuration();

@@ -8,18 +8,20 @@
 #include <stdexcept>
 #include <string>
 
-class List {
+template <class T>
+class List<T> {
 private:
     //Private to disable copying and assigning from outside class, don't implement these methods
-    List(const List& listToCopy);
-    List& operator=(const List& listToCopy);
+    List<T>(const List& listToCopy);
+    List<T>& operator=(const List& listToCopy);
 
 public:
     //constructor
-    List() {}
+
+    virtual List<T>(int initialCapacity) =0;
 
     //Destructor
-    virtual ~List() {}
+    virtual ~List<T>() =0;
 
     /**
      * appends the new item to the end of the list
@@ -119,6 +121,8 @@ public:
      * @throws out_of_range exception if index is invalid
      */
     virtual int removeValueAt(int index)=0;
+
+    virtual int getItemCount() =0;
 
 };
 

@@ -153,5 +153,8 @@ T ArrayList<T>::removeValueAt(int index){
     }
 }
 
+int ArrayList<T>::getItemCount() {
+    return currItemCount;
+}
 
 

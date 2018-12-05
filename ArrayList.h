@@ -10,7 +10,7 @@
 
 
 template <class T>
-class ArrayList {
+class ArrayList: public List{
 private:
     //pointer to the start of the array
     T* array;
@@ -137,6 +137,8 @@ public:
      * @throws out_of_range exception if index is invalid
      */
     T removeValueAt(int index);
+
+    int getItemCount();
 
 };
 #include "ArrayList.inl"

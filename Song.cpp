@@ -26,6 +26,6 @@ const int Song::getPlayCount() {
     return playCount;
 }
 std::string Song::toString(){
-    return "";
+    return "Artist: " + artist + " Title: " + title + " Duration: " + std::to_string(duration) + " Play Count: " + std::to_string(playCount);
 }
 
