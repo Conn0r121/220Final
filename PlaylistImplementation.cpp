@@ -16,28 +16,31 @@ PlaylistImplementation::PlaylistImplementation(std::string name) {
 
 std::string PlaylistImplementation::toString() {
     std::string result = "";
-    result = songList->getValueAt(0)->toString();
-    for (int i = 0; i < songList->getItemCount(); i++) {
-        resultsongList[i]
+    result += songList->getValueAt(0)->toString();
+    for (int i = 1; i < songList->getItemCount(); i++) {
+        result += ", " + songList->getValueAt(i)->toString();
     }
-    return "";
+    return result;
 }
 
 void PlaylistImplementation::calcDuration() {
-
+    for (int i = 0; i < songList->getItemCount(); i++) {
+        duration += songList->getValueAt(i)->getDuration();
+    }
 }
 
 std::string PlaylistImplementation::playNext() {
-    Song* currSong;
+    return songList->removeValueAtFront()->toString();
 
 }
 
 bool PlaylistImplementation::isEmpty() {
-    return true;
+    return songList->isEmpty();
 }
 
-void PlaylistImplementation::addSong() {
-
+void PlaylistImplementation::addSong(std::string artist, std::string title) {
+    Song* newSong = new Song(artist, title, 0, 0);
+    return songList->insertAtEnd(newSong);
 }
 
 void PlaylistImplementation::removeSong() {
