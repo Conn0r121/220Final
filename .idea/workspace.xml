@@ -11,7 +11,69 @@
     </configurations>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="23a2a833-20d2-4d52-b26b-7b28bf0a3bf8" name="Default Changelist" comment="" />
+    <list default="true" id="23a2a833-20d2-4d52-b26b-7b28bf0a3bf8" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ArrayLib.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/ArrayLib.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ArrayLib.h" beforeDir="false" afterPath="$PROJECT_DIR$/ArrayLib.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ArrayList.h" beforeDir="false" afterPath="$PROJECT_DIR$/ArrayList.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ArrayList.inl" beforeDir="false" afterPath="$PROJECT_DIR$/ArrayList.inl" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CMakeLists.txt" beforeDir="false" afterPath="$PROJECT_DIR$/CMakeLists.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Inventory.h" beforeDir="false" afterPath="$PROJECT_DIR$/Inventory.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/InventoryImplementation.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/InventoryImplementation.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/InventoryImplementation.h" beforeDir="false" afterPath="$PROJECT_DIR$/InventoryImplementation.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/List.h" beforeDir="false" afterPath="$PROJECT_DIR$/List.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Playlist.h" beforeDir="false" afterPath="$PROJECT_DIR$/Playlist.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PlaylistCollection.h" beforeDir="false" afterPath="$PROJECT_DIR$/PlaylistCollection.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PlaylistCollectionImplementation.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/PlaylistCollectionImplementation.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PlaylistCollectionImplementation.h" beforeDir="false" afterPath="$PROJECT_DIR$/PlaylistCollectionImplementation.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PlaylistImplementation.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/PlaylistImplementation.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PlaylistImplementation.h" beforeDir="false" afterPath="$PROJECT_DIR$/PlaylistImplementation.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PlaylistTest.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/PlaylistTest.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Song.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Song.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Song.h" beforeDir="false" afterPath="$PROJECT_DIR$/Song.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SongTest.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/SongTest.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TestLib.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/TestLib.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TestLib.h" beforeDir="false" afterPath="$PROJECT_DIR$/TestLib.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/220Final.cbp" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/220Final.cbp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeCache.txt" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeCache.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/220Final.dir/ArrayLib.cpp.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/220Final.dir/CXX.includecache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/220Final.dir/DependInfo.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/220Final.dir/DependInfo.cmake" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/220Final.dir/InventoryImplementation.cpp.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/220Final.dir/Song.cpp.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/220Final.dir/SongTest.cpp.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/220Final.dir/TestLib.cpp.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/220Final.dir/build.make" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/220Final.dir/build.make" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/220Final.dir/cmake_clean.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/220Final.dir/cmake_clean.cmake" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/220Final.dir/depend.internal" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/220Final.dir/depend.make" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/220Final.dir/depend.make" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/220Final.dir/flags.make" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/220Final.dir/flags.make" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/220Final.dir/link.txt" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/220Final.dir/link.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/3.12.0/CMakeCCompiler.cmake" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/3.12.0/CMakeCXXCompiler.cmake" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/3.12.0/CMakeDetermineCompilerABI_C.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/3.12.0/CMakeDetermineCompilerABI_CXX.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/3.12.0/CMakeSystem.cmake" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/3.12.0/CompilerIdC/CMakeCCompilerId.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/3.12.0/CompilerIdC/a.out" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/3.12.0/CompilerIdCXX/CMakeCXXCompilerId.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/3.12.0/CompilerIdCXX/a.out" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/CMakeDirectoryInformation.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/CMakeDirectoryInformation.cmake" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/CMakeOutput.log" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/CMakeOutput.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Makefile.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Makefile.cmake" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Makefile2" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Makefile2" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Progress/6" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Progress/count.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/TargetDirectories.txt" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/TargetDirectories.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/clion-environment.txt" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/clion-environment.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/clion-log.txt" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/clion-log.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/feature_tests.bin" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/feature_tests.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/feature_tests.c" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/feature_tests.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/feature_tests.cxx" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/feature_tests.cxx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/Makefile" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/Makefile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/cmake_install.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/cmake_install.cmake" afterDir="false" />
+    </list>
     <ignored path="$PROJECT_DIR$/cmake-build-debug/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -404,12 +466,12 @@
       <workItem from="1543950301333" duration="10090000" />
       <workItem from="1544025962720" duration="100000" />
       <workItem from="1544029663313" duration="1254000" />
-      <workItem from="1544293806170" duration="2947000" />
+      <workItem from="1544293806170" duration="3328000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="55912000" />
+    <option name="totallyTimeSpent" value="56293000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
