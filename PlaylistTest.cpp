@@ -11,22 +11,22 @@ Playlist* hardcodedSongPlaylist() {
     std::cout << "---AddSong tests---" << std::endl;
 
     std::cout << "First Song:" << std::endl;
-    newPlaylist->addSong("Billy Joel", "Piano Man");
+    newPlaylist->addSongAtFront("Billy Joel", "Piano Man");
     std::cout << newPlaylist->toString() << std::endl;
     std::cout << std::endl;
 
     std::cout << "Second Song:" << std::endl;
-    newPlaylist->addSong("Miley Cyrus", "Party in the USA");
+    newPlaylist->addSongAtFront("Miley Cyrus", "Party in the USA");
     std::cout << newPlaylist->toString() << std::endl;
     std::cout << std::endl;
 
     std::cout << "Third Song:" << std::endl;
-    newPlaylist->addSong("Metallica", "Enter Sandman");
+    newPlaylist->addSongAtFront("Metallica", "Enter Sandman");
     std::cout << newPlaylist->toString() << std::endl;
     std::cout << std::endl;
 
     std::cout << "Fourth Song:" << std::endl;
-    newPlaylist->addSong("Earth Wind and Fire", "September");
+    newPlaylist->addSongAtFront("Earth Wind and Fire", "September");
     std::cout << newPlaylist->toString() << std::endl;
     std::cout << std::endl;
 
@@ -101,6 +101,6 @@ int main() {
     } catch (std::out_of_range& e) {
         std::cout << "pass" << std::endl;
     }
-
+    std::cout<<"\n\nend of tests"<<std::endl;
     return 0;
 }

@@ -4,6 +4,30 @@
 CMakeFiles/220Final.dir/ArrayLib.cpp.o: ../ArrayLib.cpp
 CMakeFiles/220Final.dir/ArrayLib.cpp.o: ../ArrayLib.h
 
+CMakeFiles/220Final.dir/InventoryImplementation.cpp.o: ../ArrayLib.h
+CMakeFiles/220Final.dir/InventoryImplementation.cpp.o: ../ArrayList.h
+CMakeFiles/220Final.dir/InventoryImplementation.cpp.o: ../ArrayList.inl
+CMakeFiles/220Final.dir/InventoryImplementation.cpp.o: ../Inventory.h
+CMakeFiles/220Final.dir/InventoryImplementation.cpp.o: ../InventoryImplementation.cpp
+CMakeFiles/220Final.dir/InventoryImplementation.cpp.o: ../InventoryImplementation.h
+CMakeFiles/220Final.dir/InventoryImplementation.cpp.o: ../List.h
+CMakeFiles/220Final.dir/InventoryImplementation.cpp.o: ../Playlist.h
+CMakeFiles/220Final.dir/InventoryImplementation.cpp.o: ../PlaylistCollection.h
+CMakeFiles/220Final.dir/InventoryImplementation.cpp.o: ../PlaylistCollectionImplementation.h
+CMakeFiles/220Final.dir/InventoryImplementation.cpp.o: ../PlaylistImplementation.h
+CMakeFiles/220Final.dir/InventoryImplementation.cpp.o: ../Song.h
+
+CMakeFiles/220Final.dir/PlaylistCollectionImplementation.cpp.o: ../ArrayLib.h
+CMakeFiles/220Final.dir/PlaylistCollectionImplementation.cpp.o: ../ArrayList.h
+CMakeFiles/220Final.dir/PlaylistCollectionImplementation.cpp.o: ../ArrayList.inl
+CMakeFiles/220Final.dir/PlaylistCollectionImplementation.cpp.o: ../List.h
+CMakeFiles/220Final.dir/PlaylistCollectionImplementation.cpp.o: ../Playlist.h
+CMakeFiles/220Final.dir/PlaylistCollectionImplementation.cpp.o: ../PlaylistCollection.h
+CMakeFiles/220Final.dir/PlaylistCollectionImplementation.cpp.o: ../PlaylistCollectionImplementation.cpp
+CMakeFiles/220Final.dir/PlaylistCollectionImplementation.cpp.o: ../PlaylistCollectionImplementation.h
+CMakeFiles/220Final.dir/PlaylistCollectionImplementation.cpp.o: ../PlaylistImplementation.h
+CMakeFiles/220Final.dir/PlaylistCollectionImplementation.cpp.o: ../Song.h
+
 CMakeFiles/220Final.dir/PlaylistImplementation.cpp.o: ../ArrayLib.h
 CMakeFiles/220Final.dir/PlaylistImplementation.cpp.o: ../ArrayList.h
 CMakeFiles/220Final.dir/PlaylistImplementation.cpp.o: ../ArrayList.inl

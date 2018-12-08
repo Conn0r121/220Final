@@ -23,10 +23,11 @@ std::string PlaylistImplementation::toString() {
     return result;
 }
 
-void PlaylistImplementation::calcDuration() {
+int PlaylistImplementation::calcDuration() {
     for (int i = 0; i < songList->itemCount(); i++) {
         duration += songList->getValueAt(i)->getDuration();
     }
+    return duration;
 }
 
 std::string PlaylistImplementation::playNext() {
@@ -38,7 +39,12 @@ bool PlaylistImplementation::isEmpty() {
     return songList->isEmpty();
 }
 
-void PlaylistImplementation::addSong(std::string artist, std::string title) {
+void PlaylistImplementation::addSongAtFront(std::string artist, std::string title) {
+    Song* newSong = new Song(artist, title, 0, 0);
+    return songList->insertAtEnd(newSong);
+}
+
+void PlaylistImplementation::addSongAlphabetically(std::string artist, std::string title) {
     Song* newSong = new Song(artist, title, 0, 0);
     return songList->insertAtEnd(newSong);
 }
@@ -85,3 +91,5 @@ Song* PlaylistImplementation::getSongByArtistandTitle(std::string artistIn, std:
     }
     throw std::invalid_argument("Song Not Found");
 }
+
+

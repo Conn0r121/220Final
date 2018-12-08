@@ -5,45 +5,49 @@
 #include "InventoryImplementation.h"
 #include "Song.h"
 
+InventoryImplementation::InventoryImplementation(){
 
-void InventoryImplementation::addSongToLibrary(Song songIn){
-    allSongs.insertAtFront(songIn);
+
+}
+
+void InventoryImplementation::addSongToLibrary(std::string artist, std::string title){
+    allSongs.addSongAlphabetically(artist, title);
 }
 
 void InventoryImplementation::discontinue() {
-
+//TODO
 }
 
 std::string InventoryImplementation::displayLibrary() {
-    return "";
+    return allSongs.toString();
 
 }
 std::string InventoryImplementation::displayByArtist(std::string artistName) {
     std::string returnString="";
-    for(int i=0; i<totalSongCount; i++){
-        if(allSongs.getValueAt(i).getArtist()==artistName){
-            returnString+=allSongs.getValueAt(i).toString()+"\n";
+    for(int i=0; i<allSongs.getPlaylistSize(); i++){
+        if(allSongs.getSongByPosition(i)->getArtist()==artistName){
+            returnString+=allSongs.getSongByPosition(i)->toString()+"\n";
         }
     }
     return returnString;
 }
 
-std::string InventoryImplementation::displaySong(std::string songName) {
-    for (int i = 0; i < totalSongCount; i++) {
-        if (allSongs.getValueAt(i).getArtist() == songName) {
-            return allSongs.getValueAt(i).toString();
+std::string InventoryImplementation::displaySong(std::string artist, std::string title) {
+    for (int i = 0; i < allSongs.getPlaylistSize(); i++) {
+        if (allSongs.getSongByPosition(i)->getArtist() == artist && allSongs.getSongByPosition(i)->getTitle() == title) {
+            return allSongs.getSongByPosition(i)->toString();
         }
     }
     return "No Songs to Display";
 }
 void InventoryImplementation::loadLibrary() {
-
+//TODO
 }
 
 void InventoryImplementation::saveLibrary() {
-
+//TODO
 }
 void InventoryImplementation::import(){
-
+//TODO
 }
 

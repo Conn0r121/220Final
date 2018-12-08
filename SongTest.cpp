@@ -36,7 +36,15 @@ void songTest() {
     printAssertEquals(116435849, song4->getPlayCount());
 };
 
+
+
+
+
+
+}
+
 int main() {
     songTest();
+    playlistTest()
     return 0;
 }

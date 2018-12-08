@@ -5,14 +5,20 @@
 #ifndef INC_220FINAL_PLAYLISTCOLLECTION_H
 #define INC_220FINAL_PLAYLISTCOLLECTION_H
 
+#include "ArrayList.h"
+#include "PlaylistImplementation.h"
+#include "Song.h"
 #include "Playlist.h"
+
+
 
 class PlaylistCollection {
 private:
     PlaylistCollection(const PlaylistCollection& playlistCollectionToCopy);
     PlaylistCollection& operator=(const PlaylistCollection& playlistCollectionToCopy);
 public:
-    //virtual PlaylistCollection() =0;
+
+    PlaylistCollection() {}
     virtual std::string displayAll() =0;
     virtual std::string displayPlaylist(std::string playlistToFind) =0;
     virtual void delWhenEmpty() =0;

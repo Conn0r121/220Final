@@ -4,6 +4,10 @@
 
 #include "PlaylistCollectionImplementation.h"
 
+PlaylistCollectionImplementation::PlaylistCollectionImplementation() {
+    List<Playlist*>* allPlaylists = new ArrayList<Playlist*>(5);
+}
+
 std::string PlaylistCollectionImplementation::displayAll() {
     return "";
 }

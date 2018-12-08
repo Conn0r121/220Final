@@ -14,26 +14,28 @@ private:
     int duration;
 
 public:
+    /**
+     * constructor
+     */
     PlaylistImplementation();
+
 
     PlaylistImplementation(std::string name);
 
     std::string toString();
 
-    void calcDuration();
+    int calcDuration();
 
     std::string playNext();
 
     bool isEmpty();
 
-    void addSong(std::string artist, std::string title);
+    void addSongAtFront(std::string artist, std::string title);
+
+    void addSongAlphabetically(std::string artist, std::string title);
 
     void removeSong(std::string artist, std::string title);
 
-//    Song getSongByArtist(std::string artistName);
-//
-//    Song getSongByTitle(std::string songName);
-//
     Song* getSongByPosition(int position);
 
     int getPlaylistSize();

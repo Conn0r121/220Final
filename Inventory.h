@@ -6,15 +6,27 @@
 #define INC_220FINAL_INVENTORY_H
 #include <string>
 #include "Song.h"
+#include "List.h"
+#include "PlaylistImplementation.h"
+#include "PlaylistCollectionImplementation.h"
 
 class Inventory {
 private:
     Inventory(const Inventory& invToCopy);
     Inventory& operator=(const Inventory& invToCopy);
 
+
 public:
+    /**
+     * constructor
+     */
     Inventory() {}
-    virtual void addSongToLibrary(Song songIn)=0;
+    /**
+     * add songs to the library
+     * @param artist
+     * @param title
+     */
+    virtual void addSongToLibrary(std::string artist, std::string title)=0;
     /**
      * reads songs from a file and adds with no duplicates to master file
      */
@@ -41,9 +53,15 @@ public:
      * display information on a given song from master file
      * @return a string
      */
-    virtual std::string displaySong() =0;
+    virtual std::string displaySong(std::string artist, std::string title) =0;
+    /**
+     * takes info from a file and populates inventory
+     */
 
     virtual void loadLibrary() =0;
+    /**
+     * populates a file with song and playlist info
+     */
 
     virtual void saveLibrary() =0;
 
