@@ -7,10 +7,15 @@
 
 #include "PlaylistCollection.h"
 
+
+
 class PlaylistCollectionImplementation:public PlaylistCollection {
 private:
-    List<Playlist*>* allPlaylists;
+    List<PlaylistImplementation*>* allPlaylists;
+
 public:
+    PlaylistCollectionImplementation(const PlaylistCollectionImplementation& playlistCollectionToCopy);
+    PlaylistCollectionImplementation& operator=(const PlaylistCollectionImplementation& playlistCollectionToCopy);
     /**
      * constructor
      */
@@ -19,6 +24,8 @@ public:
      * lists all the playlist names
      * @return a string of all the playlist names, line by line
      */
+
+
 
     std::string displayAll();
     /**

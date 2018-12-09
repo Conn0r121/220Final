@@ -38,13 +38,8 @@ void songTest() {
 
 
 
-
-
-
-}
-
 int main() {
     songTest();
-    playlistTest()
     return 0;
+
 }

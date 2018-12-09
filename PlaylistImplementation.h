@@ -7,6 +7,7 @@
 
 #include "Playlist.h"
 
+
 class PlaylistImplementation: public Playlist {
 private:
     List<Song*>* songList;

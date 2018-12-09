@@ -3,6 +3,7 @@
 //
 #include "PlaylistImplementation.h"
 #include "TestLib.h"
+#include "PlaylistCollectionImplementation.h"
 
 
 Playlist* hardcodedSongPlaylist() {

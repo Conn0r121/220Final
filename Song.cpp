@@ -10,6 +10,13 @@ Song::Song(const std::string artistIn, const std::string titleIn, const int dura
     playCount = playCountIn;
 }
 
+Song::Song(){
+    artist="";
+    title="";
+    duration=0;
+    playCount=0;
+}
+
 const std::string Song::getArtist() {
     return artist;
 }

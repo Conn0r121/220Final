@@ -12,6 +12,7 @@
 
 
 
+
 class PlaylistCollection {
 private:
     PlaylistCollection(const PlaylistCollection& playlistCollectionToCopy);
@@ -19,10 +20,15 @@ private:
 public:
 
     PlaylistCollection() {}
+
     virtual std::string displayAll() =0;
+
     virtual std::string displayPlaylist(std::string playlistToFind) =0;
+
     virtual void delWhenEmpty() =0;
+
     virtual void newPlaylist() =0;
+
     virtual void newRandPlaylist() =0;
 
 };

@@ -5,11 +5,13 @@
 #include "PlaylistImplementation.h"
 
 PlaylistImplementation::PlaylistImplementation() {
-    songList = new ArrayList<Song*>(10);
+    songList = new ArrayList<Song*>(1);
+    playlistName="";
+    duration=0;
 };
 
 PlaylistImplementation::PlaylistImplementation(std::string name) {
-    songList = new ArrayList<Song*>(10);
+    songList = new ArrayList<Song*>(1);
     playlistName = name;
     duration = 0;
 }

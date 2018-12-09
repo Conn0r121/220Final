@@ -8,6 +8,9 @@ add_executable(220Final
         Song.cpp
         TestLib.cpp
         TestLib.h
+        Playlist.h
+        PlaylistImplementation.h
+        PlaylistImplementation.cpp
         Inventory.h
         InventoryImplementation.h
         InventoryImplementation.cpp
@@ -20,7 +23,4 @@ add_executable(220Final
         ArrayList.inl
         ArrayLib.h
         ArrayLib.cpp
-        Playlist.h
-        PlaylistImplementation.h
-        PlaylistImplementation.cpp
         )

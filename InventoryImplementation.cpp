@@ -3,11 +3,12 @@
 //
 
 #include "InventoryImplementation.h"
-#include "Song.h"
 
 InventoryImplementation::InventoryImplementation(){
-
-
+    std::cout<<"pl made"<<std::endl;
+    PlaylistImplementation *allSongs = new PlaylistImplementation();
+    std::cout<<"pc made"<<std::endl;
+    PlaylistCollectionImplementation *allPlaylists = new PlaylistCollectionImplementation();
 }
 
 void InventoryImplementation::addSongToLibrary(std::string artist, std::string title){

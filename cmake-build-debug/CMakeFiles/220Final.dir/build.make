@@ -83,9 +83,22 @@ CMakeFiles/220Final.dir/TestLib.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/220Final.dir/TestLib.cpp.s"
 	/usr/bin/c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /cygdrive/c/Users/conno/220FinalRepo/220Final/TestLib.cpp -o CMakeFiles/220Final.dir/TestLib.cpp.s
 
+CMakeFiles/220Final.dir/PlaylistImplementation.cpp.o: CMakeFiles/220Final.dir/flags.make
+CMakeFiles/220Final.dir/PlaylistImplementation.cpp.o: ../PlaylistImplementation.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/cygdrive/c/Users/conno/220FinalRepo/220Final/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/220Final.dir/PlaylistImplementation.cpp.o"
+	/usr/bin/c++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/220Final.dir/PlaylistImplementation.cpp.o -c /cygdrive/c/Users/conno/220FinalRepo/220Final/PlaylistImplementation.cpp
+
+CMakeFiles/220Final.dir/PlaylistImplementation.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/220Final.dir/PlaylistImplementation.cpp.i"
+	/usr/bin/c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /cygdrive/c/Users/conno/220FinalRepo/220Final/PlaylistImplementation.cpp > CMakeFiles/220Final.dir/PlaylistImplementation.cpp.i
+
+CMakeFiles/220Final.dir/PlaylistImplementation.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/220Final.dir/PlaylistImplementation.cpp.s"
+	/usr/bin/c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /cygdrive/c/Users/conno/220FinalRepo/220Final/PlaylistImplementation.cpp -o CMakeFiles/220Final.dir/PlaylistImplementation.cpp.s
+
 CMakeFiles/220Final.dir/InventoryImplementation.cpp.o: CMakeFiles/220Final.dir/flags.make
 CMakeFiles/220Final.dir/InventoryImplementation.cpp.o: ../InventoryImplementation.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/cygdrive/c/Users/conno/220FinalRepo/220Final/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/220Final.dir/InventoryImplementation.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/cygdrive/c/Users/conno/220FinalRepo/220Final/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/220Final.dir/InventoryImplementation.cpp.o"
 	/usr/bin/c++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/220Final.dir/InventoryImplementation.cpp.o -c /cygdrive/c/Users/conno/220FinalRepo/220Final/InventoryImplementation.cpp
 
 CMakeFiles/220Final.dir/InventoryImplementation.cpp.i: cmake_force
@@ -98,7 +111,7 @@ CMakeFiles/220Final.dir/InventoryImplementation.cpp.s: cmake_force
 
 CMakeFiles/220Final.dir/PlaylistTest.cpp.o: CMakeFiles/220Final.dir/flags.make
 CMakeFiles/220Final.dir/PlaylistTest.cpp.o: ../PlaylistTest.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/cygdrive/c/Users/conno/220FinalRepo/220Final/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/220Final.dir/PlaylistTest.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/cygdrive/c/Users/conno/220FinalRepo/220Final/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/220Final.dir/PlaylistTest.cpp.o"
 	/usr/bin/c++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/220Final.dir/PlaylistTest.cpp.o -c /cygdrive/c/Users/conno/220FinalRepo/220Final/PlaylistTest.cpp
 
 CMakeFiles/220Final.dir/PlaylistTest.cpp.i: cmake_force
@@ -111,7 +124,7 @@ CMakeFiles/220Final.dir/PlaylistTest.cpp.s: cmake_force
 
 CMakeFiles/220Final.dir/PlaylistCollectionImplementation.cpp.o: CMakeFiles/220Final.dir/flags.make
 CMakeFiles/220Final.dir/PlaylistCollectionImplementation.cpp.o: ../PlaylistCollectionImplementation.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/cygdrive/c/Users/conno/220FinalRepo/220Final/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/220Final.dir/PlaylistCollectionImplementation.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/cygdrive/c/Users/conno/220FinalRepo/220Final/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/220Final.dir/PlaylistCollectionImplementation.cpp.o"
 	/usr/bin/c++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/220Final.dir/PlaylistCollectionImplementation.cpp.o -c /cygdrive/c/Users/conno/220FinalRepo/220Final/PlaylistCollectionImplementation.cpp
 
 CMakeFiles/220Final.dir/PlaylistCollectionImplementation.cpp.i: cmake_force
@@ -124,7 +137,7 @@ CMakeFiles/220Final.dir/PlaylistCollectionImplementation.cpp.s: cmake_force
 
 CMakeFiles/220Final.dir/ArrayLib.cpp.o: CMakeFiles/220Final.dir/flags.make
 CMakeFiles/220Final.dir/ArrayLib.cpp.o: ../ArrayLib.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/cygdrive/c/Users/conno/220FinalRepo/220Final/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/220Final.dir/ArrayLib.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/cygdrive/c/Users/conno/220FinalRepo/220Final/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/220Final.dir/ArrayLib.cpp.o"
 	/usr/bin/c++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/220Final.dir/ArrayLib.cpp.o -c /cygdrive/c/Users/conno/220FinalRepo/220Final/ArrayLib.cpp
 
 CMakeFiles/220Final.dir/ArrayLib.cpp.i: cmake_force
@@ -135,39 +148,26 @@ CMakeFiles/220Final.dir/ArrayLib.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/220Final.dir/ArrayLib.cpp.s"
 	/usr/bin/c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /cygdrive/c/Users/conno/220FinalRepo/220Final/ArrayLib.cpp -o CMakeFiles/220Final.dir/ArrayLib.cpp.s
 
-CMakeFiles/220Final.dir/PlaylistImplementation.cpp.o: CMakeFiles/220Final.dir/flags.make
-CMakeFiles/220Final.dir/PlaylistImplementation.cpp.o: ../PlaylistImplementation.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/cygdrive/c/Users/conno/220FinalRepo/220Final/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/220Final.dir/PlaylistImplementation.cpp.o"
-	/usr/bin/c++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/220Final.dir/PlaylistImplementation.cpp.o -c /cygdrive/c/Users/conno/220FinalRepo/220Final/PlaylistImplementation.cpp
-
-CMakeFiles/220Final.dir/PlaylistImplementation.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/220Final.dir/PlaylistImplementation.cpp.i"
-	/usr/bin/c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /cygdrive/c/Users/conno/220FinalRepo/220Final/PlaylistImplementation.cpp > CMakeFiles/220Final.dir/PlaylistImplementation.cpp.i
-
-CMakeFiles/220Final.dir/PlaylistImplementation.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/220Final.dir/PlaylistImplementation.cpp.s"
-	/usr/bin/c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /cygdrive/c/Users/conno/220FinalRepo/220Final/PlaylistImplementation.cpp -o CMakeFiles/220Final.dir/PlaylistImplementation.cpp.s
-
 # Object files for target 220Final
 220Final_OBJECTS = \
 "CMakeFiles/220Final.dir/Song.cpp.o" \
 "CMakeFiles/220Final.dir/TestLib.cpp.o" \
+"CMakeFiles/220Final.dir/PlaylistImplementation.cpp.o" \
 "CMakeFiles/220Final.dir/InventoryImplementation.cpp.o" \
 "CMakeFiles/220Final.dir/PlaylistTest.cpp.o" \
 "CMakeFiles/220Final.dir/PlaylistCollectionImplementation.cpp.o" \
-"CMakeFiles/220Final.dir/ArrayLib.cpp.o" \
-"CMakeFiles/220Final.dir/PlaylistImplementation.cpp.o"
+"CMakeFiles/220Final.dir/ArrayLib.cpp.o"
 
 # External object files for target 220Final
 220Final_EXTERNAL_OBJECTS =
 
 220Final.exe: CMakeFiles/220Final.dir/Song.cpp.o
 220Final.exe: CMakeFiles/220Final.dir/TestLib.cpp.o
+220Final.exe: CMakeFiles/220Final.dir/PlaylistImplementation.cpp.o
 220Final.exe: CMakeFiles/220Final.dir/InventoryImplementation.cpp.o
 220Final.exe: CMakeFiles/220Final.dir/PlaylistTest.cpp.o
 220Final.exe: CMakeFiles/220Final.dir/PlaylistCollectionImplementation.cpp.o
 220Final.exe: CMakeFiles/220Final.dir/ArrayLib.cpp.o
-220Final.exe: CMakeFiles/220Final.dir/PlaylistImplementation.cpp.o
 220Final.exe: CMakeFiles/220Final.dir/build.make
 220Final.exe: CMakeFiles/220Final.dir/link.txt
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/cygdrive/c/Users/conno/220FinalRepo/220Final/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Linking CXX executable 220Final.exe"
