@@ -22,16 +22,21 @@ void inventoryTest(){
     newInventory->addSongToLibrary(song3);
     newInventory->addSongToLibrary(song4);
     newInventory->addSongToLibrary(song5);
+    std::cout<<"\n"<<std::endl;
 
 
     std::cout<<"testing display Library\nThis should be each songs info in alphabetical info by artist"<<std::endl;
-    newInventory->displayLibrary();
+    std::cout<<newInventory->displayLibrary()<<std::endl;
+    std::cout<<"\n"<<std::endl;
+
     std::cout<<"Testing display by artist"<<std::endl;
     std::cout<<"This should be the 2 miley cyrus songs info"<<std::endl;
-    newInventory->displayByArtist("Miley Cyrus");
+    std::cout<<newInventory->displayByArtist("Miley Cyrus")<<std::endl;
+    std::cout<<"\n"<<std::endl;
+
     std::cout<<"Testing displayBySong"<<std::endl;
     std::cout<<"This should be party in the usa info"<<std::endl;
-    newInventory->displaySong("Miley Cyrus","Party in the USA");
+    std::cout<<newInventory->displaySong("Miley Cyrus","Party in the USA")<<std::endl;
 
 }
 
@@ -39,5 +44,6 @@ void inventoryTest(){
 
 int main(){
     inventoryTest();
+    std::cout<<"\nend Tests"<<std::endl;
     return 0;
 }

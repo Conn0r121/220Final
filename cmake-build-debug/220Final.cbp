@@ -101,6 +101,9 @@
 		<Unit filename="/cygdrive/c/Users/conno/220FinalRepo/220Final/InventoryImplementation.h">
 			<Option target="220Final"/>
 		</Unit>
+		<Unit filename="/cygdrive/c/Users/conno/220FinalRepo/220Final/InventoryTest.cpp">
+			<Option target="220Final"/>
+		</Unit>
 		<Unit filename="/cygdrive/c/Users/conno/220FinalRepo/220Final/List.h">
 			<Option target="220Final"/>
 		</Unit>
@@ -120,9 +123,6 @@
 			<Option target="220Final"/>
 		</Unit>
 		<Unit filename="/cygdrive/c/Users/conno/220FinalRepo/220Final/PlaylistImplementation.h">
-			<Option target="220Final"/>
-		</Unit>
-		<Unit filename="/cygdrive/c/Users/conno/220FinalRepo/220Final/PlaylistTest.cpp">
 			<Option target="220Final"/>
 		</Unit>
 		<Unit filename="/cygdrive/c/Users/conno/220FinalRepo/220Final/Song.cpp">

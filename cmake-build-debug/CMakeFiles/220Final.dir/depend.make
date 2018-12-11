@@ -17,6 +17,19 @@ CMakeFiles/220Final.dir/InventoryImplementation.cpp.o: ../PlaylistCollectionImpl
 CMakeFiles/220Final.dir/InventoryImplementation.cpp.o: ../PlaylistImplementation.h
 CMakeFiles/220Final.dir/InventoryImplementation.cpp.o: ../Song.h
 
+CMakeFiles/220Final.dir/InventoryTest.cpp.o: ../ArrayLib.h
+CMakeFiles/220Final.dir/InventoryTest.cpp.o: ../ArrayList.h
+CMakeFiles/220Final.dir/InventoryTest.cpp.o: ../ArrayList.inl
+CMakeFiles/220Final.dir/InventoryTest.cpp.o: ../Inventory.h
+CMakeFiles/220Final.dir/InventoryTest.cpp.o: ../InventoryImplementation.h
+CMakeFiles/220Final.dir/InventoryTest.cpp.o: ../InventoryTest.cpp
+CMakeFiles/220Final.dir/InventoryTest.cpp.o: ../List.h
+CMakeFiles/220Final.dir/InventoryTest.cpp.o: ../Playlist.h
+CMakeFiles/220Final.dir/InventoryTest.cpp.o: ../PlaylistCollection.h
+CMakeFiles/220Final.dir/InventoryTest.cpp.o: ../PlaylistCollectionImplementation.h
+CMakeFiles/220Final.dir/InventoryTest.cpp.o: ../PlaylistImplementation.h
+CMakeFiles/220Final.dir/InventoryTest.cpp.o: ../Song.h
+
 CMakeFiles/220Final.dir/PlaylistCollectionImplementation.cpp.o: ../ArrayLib.h
 CMakeFiles/220Final.dir/PlaylistCollectionImplementation.cpp.o: ../ArrayList.h
 CMakeFiles/220Final.dir/PlaylistCollectionImplementation.cpp.o: ../ArrayList.inl
@@ -36,18 +49,6 @@ CMakeFiles/220Final.dir/PlaylistImplementation.cpp.o: ../Playlist.h
 CMakeFiles/220Final.dir/PlaylistImplementation.cpp.o: ../PlaylistImplementation.cpp
 CMakeFiles/220Final.dir/PlaylistImplementation.cpp.o: ../PlaylistImplementation.h
 CMakeFiles/220Final.dir/PlaylistImplementation.cpp.o: ../Song.h
-
-CMakeFiles/220Final.dir/PlaylistTest.cpp.o: ../ArrayLib.h
-CMakeFiles/220Final.dir/PlaylistTest.cpp.o: ../ArrayList.h
-CMakeFiles/220Final.dir/PlaylistTest.cpp.o: ../ArrayList.inl
-CMakeFiles/220Final.dir/PlaylistTest.cpp.o: ../List.h
-CMakeFiles/220Final.dir/PlaylistTest.cpp.o: ../Playlist.h
-CMakeFiles/220Final.dir/PlaylistTest.cpp.o: ../PlaylistCollection.h
-CMakeFiles/220Final.dir/PlaylistTest.cpp.o: ../PlaylistCollectionImplementation.h
-CMakeFiles/220Final.dir/PlaylistTest.cpp.o: ../PlaylistImplementation.h
-CMakeFiles/220Final.dir/PlaylistTest.cpp.o: ../PlaylistTest.cpp
-CMakeFiles/220Final.dir/PlaylistTest.cpp.o: ../Song.h
-CMakeFiles/220Final.dir/PlaylistTest.cpp.o: ../TestLib.h
 
 CMakeFiles/220Final.dir/Song.cpp.o: ../Song.cpp
 CMakeFiles/220Final.dir/Song.cpp.o: ../Song.h

@@ -177,6 +177,33 @@ InventoryImplementation.cpp.s:
 	$(MAKE) -f CMakeFiles/220Final.dir/build.make CMakeFiles/220Final.dir/InventoryImplementation.cpp.s
 .PHONY : InventoryImplementation.cpp.s
 
+InventoryTest.o: InventoryTest.cpp.o
+
+.PHONY : InventoryTest.o
+
+# target to build an object file
+InventoryTest.cpp.o:
+	$(MAKE) -f CMakeFiles/220Final.dir/build.make CMakeFiles/220Final.dir/InventoryTest.cpp.o
+.PHONY : InventoryTest.cpp.o
+
+InventoryTest.i: InventoryTest.cpp.i
+
+.PHONY : InventoryTest.i
+
+# target to preprocess a source file
+InventoryTest.cpp.i:
+	$(MAKE) -f CMakeFiles/220Final.dir/build.make CMakeFiles/220Final.dir/InventoryTest.cpp.i
+.PHONY : InventoryTest.cpp.i
+
+InventoryTest.s: InventoryTest.cpp.s
+
+.PHONY : InventoryTest.s
+
+# target to generate assembly for a file
+InventoryTest.cpp.s:
+	$(MAKE) -f CMakeFiles/220Final.dir/build.make CMakeFiles/220Final.dir/InventoryTest.cpp.s
+.PHONY : InventoryTest.cpp.s
+
 PlaylistCollectionImplementation.o: PlaylistCollectionImplementation.cpp.o
 
 .PHONY : PlaylistCollectionImplementation.o
@@ -230,33 +257,6 @@ PlaylistImplementation.s: PlaylistImplementation.cpp.s
 PlaylistImplementation.cpp.s:
 	$(MAKE) -f CMakeFiles/220Final.dir/build.make CMakeFiles/220Final.dir/PlaylistImplementation.cpp.s
 .PHONY : PlaylistImplementation.cpp.s
-
-PlaylistTest.o: PlaylistTest.cpp.o
-
-.PHONY : PlaylistTest.o
-
-# target to build an object file
-PlaylistTest.cpp.o:
-	$(MAKE) -f CMakeFiles/220Final.dir/build.make CMakeFiles/220Final.dir/PlaylistTest.cpp.o
-.PHONY : PlaylistTest.cpp.o
-
-PlaylistTest.i: PlaylistTest.cpp.i
-
-.PHONY : PlaylistTest.i
-
-# target to preprocess a source file
-PlaylistTest.cpp.i:
-	$(MAKE) -f CMakeFiles/220Final.dir/build.make CMakeFiles/220Final.dir/PlaylistTest.cpp.i
-.PHONY : PlaylistTest.cpp.i
-
-PlaylistTest.s: PlaylistTest.cpp.s
-
-.PHONY : PlaylistTest.s
-
-# target to generate assembly for a file
-PlaylistTest.cpp.s:
-	$(MAKE) -f CMakeFiles/220Final.dir/build.make CMakeFiles/220Final.dir/PlaylistTest.cpp.s
-.PHONY : PlaylistTest.cpp.s
 
 Song.o: Song.cpp.o
 
@@ -327,15 +327,15 @@ help:
 	@echo "... InventoryImplementation.o"
 	@echo "... InventoryImplementation.i"
 	@echo "... InventoryImplementation.s"
+	@echo "... InventoryTest.o"
+	@echo "... InventoryTest.i"
+	@echo "... InventoryTest.s"
 	@echo "... PlaylistCollectionImplementation.o"
 	@echo "... PlaylistCollectionImplementation.i"
 	@echo "... PlaylistCollectionImplementation.s"
 	@echo "... PlaylistImplementation.o"
 	@echo "... PlaylistImplementation.i"
 	@echo "... PlaylistImplementation.s"
-	@echo "... PlaylistTest.o"
-	@echo "... PlaylistTest.i"
-	@echo "... PlaylistTest.s"
 	@echo "... Song.o"
 	@echo "... Song.i"
 	@echo "... Song.s"
