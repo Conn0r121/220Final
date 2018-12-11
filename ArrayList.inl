@@ -8,14 +8,17 @@
 
 
 //int numLinesRun=0;
-//template <class T>
-//void ArrayList<T>::doubleCapacity() {
-//    T* newArray = ::copyArray(this->ourList,currCapacity*2,numLinesRun);
-//    this->currCapacity=currCapacity*2;
-//    delete [] this->ourList;
-//    this->ourList = newArray;
-//}
+template <class T>
+void ArrayList<T>::doubleCapacity() {
+    T *newArray = new T[currCapacity*2];
+    for(int i=0; i<currCapacity; i++){
+        newArray[i]=ourList[i];
+    }
+    delete [] ourList;
+    ourList = newArray;
+    currCapacity *= 2;
 
+}
 template <class T>
 ArrayList<T>::ArrayList(int initialCapacity) {
     if(initialCapacity<1){
@@ -59,11 +62,9 @@ ArrayList<T>::~ArrayList() {
 template <class T>
 void ArrayList<T>::insertAtEnd(T itemToAdd){
     if(currItemCount==currCapacity){
-        //double capacity;
+        doubleCapacity();
     }
     ourList[currItemCount]=itemToAdd;
-    //TODO this is the issue currently, item to add is a song and im trying to put it into ourlist, but from the print statement
-    //TODO a different memory address is being added if i add &, and the list wont let me use it as is. ASK TOBY ABOUT THIS ISSUE
     currItemCount++;
 }
 template <class T>
@@ -124,7 +125,7 @@ void ArrayList<T>::insertAt(T itemToAdd, int index){
     } else {
         currItemCount += 1;
         if(currItemCount>currCapacity){
-//            doubleCapacity();
+            doubleCapacity();
         }
         for (int i = currItemCount; i > -1; i--) {
             if (i < index) {

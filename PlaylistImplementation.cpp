@@ -11,7 +11,7 @@ PlaylistImplementation::PlaylistImplementation() {
 };
 
 PlaylistImplementation::PlaylistImplementation(std::string name) {
-    songList = new ArrayList<Song*>(10);
+    songList = new ArrayList<Song*>(1);
     playlistName = name;
     duration = 0;
 }

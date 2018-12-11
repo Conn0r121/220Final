@@ -40,39 +40,15 @@ Song.h
 ArrayList.h
 /cygdrive/c/Users/conno/220FinalRepo/220Final/ArrayList.h
 
-/cygdrive/c/Users/conno/220FinalRepo/220Final/PlaylistCollection.h
-ArrayList.h
-/cygdrive/c/Users/conno/220FinalRepo/220Final/ArrayList.h
+/cygdrive/c/Users/conno/220FinalRepo/220Final/PlaylistImplementation.cpp
 PlaylistImplementation.h
 /cygdrive/c/Users/conno/220FinalRepo/220Final/PlaylistImplementation.h
-Song.h
-/cygdrive/c/Users/conno/220FinalRepo/220Final/Song.h
-Playlist.h
-/cygdrive/c/Users/conno/220FinalRepo/220Final/Playlist.h
-
-/cygdrive/c/Users/conno/220FinalRepo/220Final/PlaylistCollectionImplementation.h
-PlaylistCollection.h
-/cygdrive/c/Users/conno/220FinalRepo/220Final/PlaylistCollection.h
 
 /cygdrive/c/Users/conno/220FinalRepo/220Final/PlaylistImplementation.h
 Playlist.h
 /cygdrive/c/Users/conno/220FinalRepo/220Final/Playlist.h
 
-/cygdrive/c/Users/conno/220FinalRepo/220Final/PlaylistTest.cpp
-PlaylistImplementation.h
-/cygdrive/c/Users/conno/220FinalRepo/220Final/PlaylistImplementation.h
-TestLib.h
-/cygdrive/c/Users/conno/220FinalRepo/220Final/TestLib.h
-PlaylistCollectionImplementation.h
-/cygdrive/c/Users/conno/220FinalRepo/220Final/PlaylistCollectionImplementation.h
-
 /cygdrive/c/Users/conno/220FinalRepo/220Final/Song.h
 string
--
-
-/cygdrive/c/Users/conno/220FinalRepo/220Final/TestLib.h
-string
--
-iostream
 -
 

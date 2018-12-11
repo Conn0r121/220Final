@@ -26,6 +26,7 @@ private:
      * @post: array points to a new array of twice the size with values copied from the old one,
      *        the old array is deleted.
      */
+    void doubleCapacity();
 
     //Copy Constructor
     ArrayList<T>(const ArrayList& arrayListToCopy);
