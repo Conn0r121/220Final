@@ -13,7 +13,6 @@ Playlist* hardcodedSongPlaylist() {
 
     std::cout << "First Song:" << std::endl;
     Song* song1 = new Song("Billy Joel", "Piano Man", 100, 0);
-    std::cout<<song1<<"  inPlaylistTest"<<std::endl;
     newPlaylist->addSongAtEnd(song1);
 
     std::cout << newPlaylist->toString() << std::endl;
@@ -48,13 +47,14 @@ int main() {
     std::cout << std::endl;
 
     std::cout << "---RemoveSong Test---" << std::endl;
+    std::cout<< " removing the billy Joel Song " << std::endl;
     testPlaylist->removeSong("Billy Joel", "Piano Man");
     std::cout << testPlaylist->toString() << std::endl;
     std::cout << std::endl;
 
     std::cout << "---PlayNext Test---" << std::endl;
     std::string testString = testPlaylist->playNext();
-    printAssertEquals(testString, "Artist: Miley Cyrus, Title: Party in the USA, Duration: 0, Play Count: 0");
+    printAssertEquals("Artist: Miley Cyrus, Title: Party in the USA, Duration: 0, Play Count: 0", testString);
     std::cout << std::endl;
 
     std::cout << "Should be without Miley Cyrus:" << std::endl;

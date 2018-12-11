@@ -24,7 +24,7 @@ ArrayList<T>::ArrayList(int initialCapacity) {
     else {
         this->currItemCount = 0;
         this->currCapacity = initialCapacity;
-        ourList = new T*[initialCapacity];
+        ourList = new T[initialCapacity];
     }
 }
 template <class T>
@@ -61,11 +61,9 @@ void ArrayList<T>::insertAtEnd(T itemToAdd){
     if(currItemCount==currCapacity){
         //double capacity;
     }
-    std::cout<<itemToAdd<<"  in insertAtEnd in ArraylistInl"<<std::endl;
     ourList[currItemCount]=itemToAdd;
     //TODO this is the issue currently, item to add is a song and im trying to put it into ourlist, but from the print statement
     //TODO a different memory address is being added if i add &, and the list wont let me use it as is. ASK TOBY ABOUT THIS ISSUE
-    std::cout<<ourList[currItemCount]<<"  IN the arrayList"<<std::endl;
     currItemCount++;
 }
 template <class T>
@@ -74,7 +72,7 @@ T ArrayList<T>::getValueAt(int index){
         throw std::out_of_range( "Out of Range" );
     }
     else{
-        T returnObject = *ourList[index];
+        T returnObject = ourList[index];
         return returnObject;
 
     }
@@ -133,7 +131,7 @@ void ArrayList<T>::insertAt(T itemToAdd, int index){
                 ourList[i] = ourList[i];
             }
             if (i == index) {
-                ourList[i] = &itemToAdd;
+                ourList[i] = itemToAdd;
             }
             if (i > index) {
                 ourList[i] = ourList[i -1 ];
@@ -155,7 +153,7 @@ T ArrayList<T>::removeValueAt(int index){
         throw std::out_of_range("Cannot remove anything from an empty list");
     }
     else {
-        T tempNum = *ourList[index];
+        T tempNum = ourList[index];
         for (int i = index; i < currItemCount - 1; ++i) {
             *ourList[i] = *ourList[i + 1];
         }

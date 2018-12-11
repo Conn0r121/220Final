@@ -20,7 +20,7 @@ std::string PlaylistImplementation::toString() {
     std::string result = songList->getValueAt(0)->toString();
     for (int i = 1; i < songList->itemCount(); i++) {
         result = result +  "\n" + songList->getValueAt(i)->toString();
-        std::cout<<result<<std::endl;
+
     }
 
 
@@ -44,7 +44,6 @@ bool PlaylistImplementation::isEmpty() {
 }
 
 void PlaylistImplementation::addSongAtEnd(Song* &newSong) {
-    std::cout<<newSong<<" inaddSongAtEnd in PlaylistImplementation"<<std::endl;
     songList->insertAtEnd(newSong);
 }
 
