@@ -46,8 +46,18 @@ bool PlaylistImplementation::isEmpty() {
 void PlaylistImplementation::addSongAtEnd(Song* &newSong) {
     songList->insertAtEnd(newSong);
 }
-
-void PlaylistImplementation::addSongAlphabetically(Song* &newSong) {
+void PlaylistImplementation::addSongAlphabetically(Song* &newSong){
+    if(songList->itemCount()==0){
+        songList->insertAtEnd(newSong);
+        return;
+    }
+    int q = songList->itemCount();
+    for(int i=0;i<q;i++){
+        if(newSong->toString()<songList->getValueAt(i)->toString()){
+            songList->insertAt(newSong,i);
+            return;
+        }
+    }
     songList->insertAtEnd(newSong);
 }
 

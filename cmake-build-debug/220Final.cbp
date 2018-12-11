@@ -8,136 +8,136 @@
 		<Option virtualFolders="CMake Files\;"/>
 		<Build>
 			<Target title="all">
-				<Option working_dir="/cygdrive/c/Users/conno/220FinalRepo/220Final/cmake-build-debug"/>
+				<Option working_dir="/Users/jeffpage/CLionProjects/220Final/cmake-build-debug"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="/usr/bin/make.exe -j4 -f &quot;/cygdrive/c/Users/conno/220FinalRepo/220Final/cmake-build-debug/Makefile&quot;  VERBOSE=1 all"/>
-					<CompileFile command="/usr/bin/make.exe -j4 -f &quot;/cygdrive/c/Users/conno/220FinalRepo/220Final/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make.exe -j4 -f &quot;/cygdrive/c/Users/conno/220FinalRepo/220Final/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make.exe -j4 -f &quot;/cygdrive/c/Users/conno/220FinalRepo/220Final/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j4 -f &quot;/Users/jeffpage/CLionProjects/220Final/cmake-build-debug/Makefile&quot;  VERBOSE=1 all"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/Users/jeffpage/CLionProjects/220Final/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/Users/jeffpage/CLionProjects/220Final/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/jeffpage/CLionProjects/220Final/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="rebuild_cache">
-				<Option working_dir="/cygdrive/c/Users/conno/220FinalRepo/220Final/cmake-build-debug"/>
+				<Option working_dir="/Users/jeffpage/CLionProjects/220Final/cmake-build-debug"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="/usr/bin/make.exe -j4 -f &quot;/cygdrive/c/Users/conno/220FinalRepo/220Final/cmake-build-debug/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
-					<CompileFile command="/usr/bin/make.exe -j4 -f &quot;/cygdrive/c/Users/conno/220FinalRepo/220Final/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make.exe -j4 -f &quot;/cygdrive/c/Users/conno/220FinalRepo/220Final/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make.exe -j4 -f &quot;/cygdrive/c/Users/conno/220FinalRepo/220Final/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-				</MakeCommands>
-			</Target>
-			<Target title="220Final">
-				<Option output="/cygdrive/c/Users/conno/220FinalRepo/220Final/cmake-build-debug/220Final.exe" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="/cygdrive/c/Users/conno/220FinalRepo/220Final/cmake-build-debug"/>
-				<Option object_output="./"/>
-				<Option type="1"/>
-				<Option compiler="gcc"/>
-				<Compiler>
-					<Add directory="/usr/lib/gcc/x86_64-pc-cygwin/7.3.0/include/c++"/>
-					<Add directory="/usr/lib/gcc/x86_64-pc-cygwin/7.3.0/include/c++/x86_64-pc-cygwin"/>
-					<Add directory="/usr/lib/gcc/x86_64-pc-cygwin/7.3.0/include/c++/backward"/>
-					<Add directory="/usr/lib/gcc/x86_64-pc-cygwin/7.3.0/include"/>
-					<Add directory="/usr/include"/>
-					<Add directory="/usr/lib/gcc/x86_64-pc-cygwin/7.3.0/../../../../lib/../include/w32api"/>
-				</Compiler>
-				<MakeCommands>
-					<Build command="/usr/bin/make.exe -j4 -f &quot;/cygdrive/c/Users/conno/220FinalRepo/220Final/cmake-build-debug/Makefile&quot;  VERBOSE=1 220Final"/>
-					<CompileFile command="/usr/bin/make.exe -j4 -f &quot;/cygdrive/c/Users/conno/220FinalRepo/220Final/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make.exe -j4 -f &quot;/cygdrive/c/Users/conno/220FinalRepo/220Final/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make.exe -j4 -f &quot;/cygdrive/c/Users/conno/220FinalRepo/220Final/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-				</MakeCommands>
-			</Target>
-			<Target title="220Final/fast">
-				<Option output="/cygdrive/c/Users/conno/220FinalRepo/220Final/cmake-build-debug/220Final.exe" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="/cygdrive/c/Users/conno/220FinalRepo/220Final/cmake-build-debug"/>
-				<Option object_output="./"/>
-				<Option type="1"/>
-				<Option compiler="gcc"/>
-				<Compiler>
-					<Add directory="/usr/lib/gcc/x86_64-pc-cygwin/7.3.0/include/c++"/>
-					<Add directory="/usr/lib/gcc/x86_64-pc-cygwin/7.3.0/include/c++/x86_64-pc-cygwin"/>
-					<Add directory="/usr/lib/gcc/x86_64-pc-cygwin/7.3.0/include/c++/backward"/>
-					<Add directory="/usr/lib/gcc/x86_64-pc-cygwin/7.3.0/include"/>
-					<Add directory="/usr/include"/>
-					<Add directory="/usr/lib/gcc/x86_64-pc-cygwin/7.3.0/../../../../lib/../include/w32api"/>
-				</Compiler>
-				<MakeCommands>
-					<Build command="/usr/bin/make.exe -j4 -f &quot;/cygdrive/c/Users/conno/220FinalRepo/220Final/cmake-build-debug/Makefile&quot;  VERBOSE=1 220Final/fast"/>
-					<CompileFile command="/usr/bin/make.exe -j4 -f &quot;/cygdrive/c/Users/conno/220FinalRepo/220Final/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make.exe -j4 -f &quot;/cygdrive/c/Users/conno/220FinalRepo/220Final/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make.exe -j4 -f &quot;/cygdrive/c/Users/conno/220FinalRepo/220Final/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j4 -f &quot;/Users/jeffpage/CLionProjects/220Final/cmake-build-debug/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/Users/jeffpage/CLionProjects/220Final/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/Users/jeffpage/CLionProjects/220Final/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/jeffpage/CLionProjects/220Final/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="edit_cache">
-				<Option working_dir="/cygdrive/c/Users/conno/220FinalRepo/220Final/cmake-build-debug"/>
+				<Option working_dir="/Users/jeffpage/CLionProjects/220Final/cmake-build-debug"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="/usr/bin/make.exe -j4 -f &quot;/cygdrive/c/Users/conno/220FinalRepo/220Final/cmake-build-debug/Makefile&quot;  VERBOSE=1 edit_cache"/>
-					<CompileFile command="/usr/bin/make.exe -j4 -f &quot;/cygdrive/c/Users/conno/220FinalRepo/220Final/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make.exe -j4 -f &quot;/cygdrive/c/Users/conno/220FinalRepo/220Final/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make.exe -j4 -f &quot;/cygdrive/c/Users/conno/220FinalRepo/220Final/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j4 -f &quot;/Users/jeffpage/CLionProjects/220Final/cmake-build-debug/Makefile&quot;  VERBOSE=1 edit_cache"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/Users/jeffpage/CLionProjects/220Final/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/Users/jeffpage/CLionProjects/220Final/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/jeffpage/CLionProjects/220Final/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="220Final">
+				<Option output="/Users/jeffpage/CLionProjects/220Final/cmake-build-debug/220Final" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/jeffpage/CLionProjects/220Final/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/Library/Developer/CommandLineTools/usr/include/c++/v1"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/lib/clang/9.1.0/include"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/include"/>
+					<Add directory="/usr/include"/>
+					<Add directory="/System/Library/Frameworks"/>
+					<Add directory="/Library/Frameworks"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/Users/jeffpage/CLionProjects/220Final/cmake-build-debug/Makefile&quot;  VERBOSE=1 220Final"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/Users/jeffpage/CLionProjects/220Final/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/Users/jeffpage/CLionProjects/220Final/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/jeffpage/CLionProjects/220Final/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="220Final/fast">
+				<Option output="/Users/jeffpage/CLionProjects/220Final/cmake-build-debug/220Final" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/jeffpage/CLionProjects/220Final/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/Library/Developer/CommandLineTools/usr/include/c++/v1"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/lib/clang/9.1.0/include"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/include"/>
+					<Add directory="/usr/include"/>
+					<Add directory="/System/Library/Frameworks"/>
+					<Add directory="/Library/Frameworks"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/Users/jeffpage/CLionProjects/220Final/cmake-build-debug/Makefile&quot;  VERBOSE=1 220Final/fast"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/Users/jeffpage/CLionProjects/220Final/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/Users/jeffpage/CLionProjects/220Final/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/jeffpage/CLionProjects/220Final/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 		</Build>
-		<Unit filename="/cygdrive/c/Users/conno/220FinalRepo/220Final/ArrayLib.cpp">
+		<Unit filename="/Users/jeffpage/CLionProjects/220Final/ArrayLib.cpp">
 			<Option target="220Final"/>
 		</Unit>
-		<Unit filename="/cygdrive/c/Users/conno/220FinalRepo/220Final/ArrayLib.h">
+		<Unit filename="/Users/jeffpage/CLionProjects/220Final/ArrayLib.h">
 			<Option target="220Final"/>
 		</Unit>
-		<Unit filename="/cygdrive/c/Users/conno/220FinalRepo/220Final/ArrayList.h">
+		<Unit filename="/Users/jeffpage/CLionProjects/220Final/ArrayList.h">
 			<Option target="220Final"/>
 		</Unit>
-		<Unit filename="/cygdrive/c/Users/conno/220FinalRepo/220Final/ArrayList.inl">
+		<Unit filename="/Users/jeffpage/CLionProjects/220Final/ArrayList.inl">
 			<Option target="220Final"/>
 		</Unit>
-		<Unit filename="/cygdrive/c/Users/conno/220FinalRepo/220Final/Inventory.h">
+		<Unit filename="/Users/jeffpage/CLionProjects/220Final/Inventory.h">
 			<Option target="220Final"/>
 		</Unit>
-		<Unit filename="/cygdrive/c/Users/conno/220FinalRepo/220Final/InventoryImplementation.cpp">
+		<Unit filename="/Users/jeffpage/CLionProjects/220Final/InventoryImplementation.cpp">
 			<Option target="220Final"/>
 		</Unit>
-		<Unit filename="/cygdrive/c/Users/conno/220FinalRepo/220Final/InventoryImplementation.h">
+		<Unit filename="/Users/jeffpage/CLionProjects/220Final/InventoryImplementation.h">
 			<Option target="220Final"/>
 		</Unit>
-		<Unit filename="/cygdrive/c/Users/conno/220FinalRepo/220Final/InventoryTest.cpp">
+		<Unit filename="/Users/jeffpage/CLionProjects/220Final/InventoryTest.cpp">
 			<Option target="220Final"/>
 		</Unit>
-		<Unit filename="/cygdrive/c/Users/conno/220FinalRepo/220Final/List.h">
+		<Unit filename="/Users/jeffpage/CLionProjects/220Final/List.h">
 			<Option target="220Final"/>
 		</Unit>
-		<Unit filename="/cygdrive/c/Users/conno/220FinalRepo/220Final/Playlist.h">
+		<Unit filename="/Users/jeffpage/CLionProjects/220Final/Playlist.h">
 			<Option target="220Final"/>
 		</Unit>
-		<Unit filename="/cygdrive/c/Users/conno/220FinalRepo/220Final/PlaylistCollection.h">
+		<Unit filename="/Users/jeffpage/CLionProjects/220Final/PlaylistCollection.h">
 			<Option target="220Final"/>
 		</Unit>
-		<Unit filename="/cygdrive/c/Users/conno/220FinalRepo/220Final/PlaylistCollectionImplementation.cpp">
+		<Unit filename="/Users/jeffpage/CLionProjects/220Final/PlaylistCollectionImplementation.cpp">
 			<Option target="220Final"/>
 		</Unit>
-		<Unit filename="/cygdrive/c/Users/conno/220FinalRepo/220Final/PlaylistCollectionImplementation.h">
+		<Unit filename="/Users/jeffpage/CLionProjects/220Final/PlaylistCollectionImplementation.h">
 			<Option target="220Final"/>
 		</Unit>
-		<Unit filename="/cygdrive/c/Users/conno/220FinalRepo/220Final/PlaylistImplementation.cpp">
+		<Unit filename="/Users/jeffpage/CLionProjects/220Final/PlaylistImplementation.cpp">
 			<Option target="220Final"/>
 		</Unit>
-		<Unit filename="/cygdrive/c/Users/conno/220FinalRepo/220Final/PlaylistImplementation.h">
+		<Unit filename="/Users/jeffpage/CLionProjects/220Final/PlaylistImplementation.h">
 			<Option target="220Final"/>
 		</Unit>
-		<Unit filename="/cygdrive/c/Users/conno/220FinalRepo/220Final/Song.cpp">
+		<Unit filename="/Users/jeffpage/CLionProjects/220Final/Song.cpp">
 			<Option target="220Final"/>
 		</Unit>
-		<Unit filename="/cygdrive/c/Users/conno/220FinalRepo/220Final/Song.h">
+		<Unit filename="/Users/jeffpage/CLionProjects/220Final/Song.h">
 			<Option target="220Final"/>
 		</Unit>
-		<Unit filename="/cygdrive/c/Users/conno/220FinalRepo/220Final/TestLib.cpp">
+		<Unit filename="/Users/jeffpage/CLionProjects/220Final/TestLib.cpp">
 			<Option target="220Final"/>
 		</Unit>
-		<Unit filename="/cygdrive/c/Users/conno/220FinalRepo/220Final/TestLib.h">
+		<Unit filename="/Users/jeffpage/CLionProjects/220Final/TestLib.h">
 			<Option target="220Final"/>
 		</Unit>
-		<Unit filename="/cygdrive/c/Users/conno/220FinalRepo/220Final/CMakeLists.txt">
+		<Unit filename="/Users/jeffpage/CLionProjects/220Final/CMakeLists.txt">
 			<Option virtualFolder="CMake Files\"/>
 		</Unit>
 	</Project>

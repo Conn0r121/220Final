@@ -60,14 +60,6 @@ ArrayList<T>::~ArrayList() {
     this->ourList = nullptr;
 }
 template <class T>
-void ArrayList<T>::insertAtEnd(T itemToAdd){
-    if(currItemCount==currCapacity){
-        doubleCapacity();
-    }
-    ourList[currItemCount]=itemToAdd;
-    currItemCount++;
-}
-template <class T>
 T ArrayList<T>::getValueAt(int index){
     if(index>=currItemCount || index<0){
         throw std::out_of_range( "Out of Range" );
@@ -112,7 +104,14 @@ void ArrayList<T>::clearList(){
 //        return ::findMaxIndex(ourList, currItemCount, numLinesRun);
 //    }
 //}
-
+template <class T>
+void ArrayList<T>::insertAtEnd(T itemToAdd){
+    if(currItemCount==currCapacity){
+        doubleCapacity();
+    }
+    ourList[currItemCount]=itemToAdd;
+    currItemCount++;
+}
 template <class T>
 void ArrayList<T>::insertAtFront(T itemToAdd){
     insertAt(itemToAdd,0);
