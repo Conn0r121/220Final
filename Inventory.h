@@ -12,8 +12,8 @@
 
 class Inventory {
 private:
-    Inventory(const Inventory& invToCopy);
-    Inventory& operator=(const Inventory& invToCopy);
+//    Inventory(const Inventory& invToCopy);
+//    Inventory& operator=(const Inventory& invToCopy);
 
 
 public:
@@ -26,7 +26,7 @@ public:
      * @param artist
      * @param title
      */
-    virtual void addSongToLibrary(std::string artist, std::string title)=0;
+    virtual void addSongToLibrary(Song* &newSong)=0;
     /**
      * reads songs from a file and adds with no duplicates to master file
      */

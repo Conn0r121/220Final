@@ -15,13 +15,13 @@ void inventoryTest(){
     Song* song5 = new Song("Miley Cyrus", "Blarty in the Bu Bus Bay", 202, 100275463);
     std::cout<<"songsCreated"<<std::endl;
 
-    Inventory *newInventory = new InventoryImplementation();
+    InventoryImplementation *newInventory = new InventoryImplementation();
     std::cout<<"inventoryCreated"<<std::endl;
-    newInventory->addSongToLibrary(song1->getArtist(), song1->getTitle());
-    newInventory->addSongToLibrary(song2->getArtist(), song2->getTitle());
-    newInventory->addSongToLibrary(song3->getArtist(), song3->getTitle());
-    newInventory->addSongToLibrary(song4->getArtist(), song4->getTitle());
-    newInventory->addSongToLibrary(song5->getArtist(), song5->getTitle());
+    newInventory->addSongToLibrary(song1);
+    newInventory->addSongToLibrary(song2);
+    newInventory->addSongToLibrary(song3);
+    newInventory->addSongToLibrary(song4);
+    newInventory->addSongToLibrary(song5);
 
 
     std::cout<<"testing display Library\nThis should be each songs info in alphabetical info by artist"<<std::endl;

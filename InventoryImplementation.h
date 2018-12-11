@@ -23,7 +23,7 @@ private:
 public:
     InventoryImplementation();
 
-    void addSongToLibrary(std::string artist, std::string title);
+    void addSongToLibrary(Song* &newSong);
     /**
      * reads songs from a file and adds with no duplicates
      */

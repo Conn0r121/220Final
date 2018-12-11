@@ -28,6 +28,36 @@ iostream
 ArrayList.h
 /cygdrive/c/Users/conno/220FinalRepo/220Final/ArrayList.h
 
+/cygdrive/c/Users/conno/220FinalRepo/220Final/Inventory.h
+string
+-
+Song.h
+/cygdrive/c/Users/conno/220FinalRepo/220Final/Song.h
+List.h
+/cygdrive/c/Users/conno/220FinalRepo/220Final/List.h
+PlaylistImplementation.h
+/cygdrive/c/Users/conno/220FinalRepo/220Final/PlaylistImplementation.h
+PlaylistCollectionImplementation.h
+/cygdrive/c/Users/conno/220FinalRepo/220Final/PlaylistCollectionImplementation.h
+
+/cygdrive/c/Users/conno/220FinalRepo/220Final/InventoryImplementation.cpp
+InventoryImplementation.h
+/cygdrive/c/Users/conno/220FinalRepo/220Final/InventoryImplementation.h
+
+/cygdrive/c/Users/conno/220FinalRepo/220Final/InventoryImplementation.h
+Inventory.h
+/cygdrive/c/Users/conno/220FinalRepo/220Final/Inventory.h
+string
+-
+List.h
+/cygdrive/c/Users/conno/220FinalRepo/220Final/List.h
+Song.h
+/cygdrive/c/Users/conno/220FinalRepo/220Final/Song.h
+PlaylistImplementation.h
+/cygdrive/c/Users/conno/220FinalRepo/220Final/PlaylistImplementation.h
+PlaylistCollectionImplementation.h
+/cygdrive/c/Users/conno/220FinalRepo/220Final/PlaylistCollectionImplementation.h
+
 /cygdrive/c/Users/conno/220FinalRepo/220Final/List.h
 stdexcept
 -
@@ -50,9 +80,17 @@ Song.h
 Playlist.h
 /cygdrive/c/Users/conno/220FinalRepo/220Final/Playlist.h
 
+/cygdrive/c/Users/conno/220FinalRepo/220Final/PlaylistCollectionImplementation.cpp
+PlaylistCollectionImplementation.h
+/cygdrive/c/Users/conno/220FinalRepo/220Final/PlaylistCollectionImplementation.h
+
 /cygdrive/c/Users/conno/220FinalRepo/220Final/PlaylistCollectionImplementation.h
 PlaylistCollection.h
 /cygdrive/c/Users/conno/220FinalRepo/220Final/PlaylistCollection.h
+
+/cygdrive/c/Users/conno/220FinalRepo/220Final/PlaylistImplementation.cpp
+PlaylistImplementation.h
+/cygdrive/c/Users/conno/220FinalRepo/220Final/PlaylistImplementation.h
 
 /cygdrive/c/Users/conno/220FinalRepo/220Final/PlaylistImplementation.h
 Playlist.h

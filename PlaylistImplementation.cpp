@@ -11,17 +11,19 @@ PlaylistImplementation::PlaylistImplementation() {
 };
 
 PlaylistImplementation::PlaylistImplementation(std::string name) {
-    songList = new ArrayList<Song*>(1);
+    songList = new ArrayList<Song*>(10);
     playlistName = name;
     duration = 0;
 }
 
 std::string PlaylistImplementation::toString() {
-    std::string result = "";
-    result += songList->getValueAt(0)->toString();
+    std::string result = songList->getValueAt(0)->toString();
     for (int i = 1; i < songList->itemCount(); i++) {
-        result += "\n" + songList->getValueAt(i)->toString();
+        result = result +  "\n" + songList->getValueAt(i)->toString();
+        std::cout<<result<<std::endl;
     }
+
+
     return result;
 }
 
@@ -41,14 +43,13 @@ bool PlaylistImplementation::isEmpty() {
     return songList->isEmpty();
 }
 
-void PlaylistImplementation::addSongAtFront(std::string artist, std::string title) {
-    Song* newSong = new Song(artist, title, 0, 0);
-    return songList->insertAtEnd(newSong);
+void PlaylistImplementation::addSongAtEnd(Song* &newSong) {
+    std::cout<<newSong<<" inaddSongAtEnd in PlaylistImplementation"<<std::endl;
+    songList->insertAtEnd(newSong);
 }
 
-void PlaylistImplementation::addSongAlphabetically(std::string artist, std::string title) {
-    Song* newSong = new Song(artist, title, 0, 0);
-    return songList->insertAtEnd(newSong);
+void PlaylistImplementation::addSongAlphabetically(Song* &newSong) {
+    songList->insertAtEnd(newSong);
 }
 
 void PlaylistImplementation::removeSong(std::string artist, std::string title) {

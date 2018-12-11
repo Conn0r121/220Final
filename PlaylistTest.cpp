@@ -7,27 +7,33 @@
 
 
 Playlist* hardcodedSongPlaylist() {
-    Playlist* newPlaylist = new PlaylistImplementation("Example");
+    PlaylistImplementation* newPlaylist = new PlaylistImplementation("Example");
 
     std::cout << "---AddSong tests---" << std::endl;
 
     std::cout << "First Song:" << std::endl;
-    newPlaylist->addSongAtFront("Billy Joel", "Piano Man");
+    Song* song1 = new Song("Billy Joel", "Piano Man", 100, 0);
+    std::cout<<song1<<"  inPlaylistTest"<<std::endl;
+    newPlaylist->addSongAtEnd(song1);
+
     std::cout << newPlaylist->toString() << std::endl;
     std::cout << std::endl;
 
     std::cout << "Second Song:" << std::endl;
-    newPlaylist->addSongAtFront("Miley Cyrus", "Party in the USA");
+    Song* song2 = new Song("Miley Cyrus", "Party in the USA", 100, 0);
+    newPlaylist->addSongAtEnd(song2);
     std::cout << newPlaylist->toString() << std::endl;
     std::cout << std::endl;
 
     std::cout << "Third Song:" << std::endl;
-    newPlaylist->addSongAtFront("Metallica", "Enter Sandman");
+    Song* song3 = new Song("Metallica", "Enter Sandman", 100, 0);
+    newPlaylist->addSongAtEnd(song3);
     std::cout << newPlaylist->toString() << std::endl;
     std::cout << std::endl;
 
     std::cout << "Fourth Song:" << std::endl;
-    newPlaylist->addSongAtFront("Earth Wind and Fire", "September");
+    Song* song4 = new Song("Earth Wind and Fire", "September", 100, 0);
+    newPlaylist->addSongAtEnd(song4);
     std::cout << newPlaylist->toString() << std::endl;
     std::cout << std::endl;
 

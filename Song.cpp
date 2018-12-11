@@ -2,6 +2,9 @@
 // Created by Daniel McCaffrey on 11/27/18.
 //
 #include "Song.h"
+#include <string>
+#include <stdexcept>
+#include <iostream>
 
 Song::Song(const std::string artistIn, const std::string titleIn, const int durationIn, const int playCountIn) {
     artist = artistIn;
@@ -33,6 +36,8 @@ const int Song::getPlayCount() {
     return playCount;
 }
 std::string Song::toString() {
-    return "Artist: " + artist + ", Title: " + title + ", Duration: " + std::to_string(duration) + ", Play Count: " + std::to_string(playCount);
+    std::string returnString = artist + ", " + title + ", " + std::to_string(duration) + ", " + std::to_string(playCount);
+    std::cout<<returnString<<"in toString for song"<<std::endl;
+    return returnString;
 }
 
