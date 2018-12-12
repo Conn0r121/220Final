@@ -4,12 +4,12 @@
 
 #include "InventoryImplementation.h"
 
-InventoryImplementation::InventoryImplementation(){
+InventoryImplementation::InventoryImplementation() {
     PlaylistImplementation *allSongs = new PlaylistImplementation();
     PlaylistCollectionImplementation *allPlaylists = new PlaylistCollectionImplementation();
 }
 
-void InventoryImplementation::addSongToLibrary(Song* &newSong){
+void InventoryImplementation::addSongToLibrary(Song *&newSong) {
     allSongs.addSongAlphabetically(newSong);
 }
 
@@ -21,11 +21,12 @@ std::string InventoryImplementation::displayLibrary() {
     return allSongs.toString();
 
 }
+
 std::string InventoryImplementation::displayByArtist(std::string artistName) {
-    std::string returnString="";
-    for(int i=0; i<allSongs.getPlaylistSize(); i++){
-        if(allSongs.getSongByPosition(i)->getArtist()==artistName){
-            returnString+=allSongs.getSongByPosition(i)->toString()+"\n";
+    std::string returnString = "";
+    for (int i = 0; i < allSongs.getPlaylistSize(); i++) {
+        if (allSongs.getSongByPosition(i)->getArtist() == artistName) {
+            returnString += allSongs.getSongByPosition(i)->toString() + "\n";
         }
     }
     return returnString;
@@ -33,12 +34,14 @@ std::string InventoryImplementation::displayByArtist(std::string artistName) {
 
 std::string InventoryImplementation::displaySong(std::string artist, std::string title) {
     for (int i = 0; i < allSongs.getPlaylistSize(); i++) {
-        if (allSongs.getSongByPosition(i)->getArtist() == artist && allSongs.getSongByPosition(i)->getTitle() == title) {
+        if (allSongs.getSongByPosition(i)->getArtist() == artist &&
+            allSongs.getSongByPosition(i)->getTitle() == title) {
             return allSongs.getSongByPosition(i)->toString();
         }
     }
     return "No Songs to Display";
 }
+
 void InventoryImplementation::loadLibrary() {
 //TODO
 }
@@ -46,7 +49,15 @@ void InventoryImplementation::loadLibrary() {
 void InventoryImplementation::saveLibrary() {
 //TODO
 }
-void InventoryImplementation::import(){
+
+void InventoryImplementation::import(std::string fileName) {
 //TODO
+    std::ifstream songsToAdd;
+    songsToAdd.open(fileName);
+    std::string line;
+    while (std::getline(songsToAdd, line)) {
+        std::cout << line;
+    }
+    songsToAdd.close();
 }
 

@@ -9,6 +9,8 @@
 #include "List.h"
 #include "PlaylistImplementation.h"
 #include "PlaylistCollectionImplementation.h"
+#include <fstream>
+#include <iostream>
 
 class Inventory {
 private:
@@ -30,7 +32,7 @@ public:
     /**
      * reads songs from a file and adds with no duplicates to master file
      */
-    virtual void import() =0;
+    virtual void import(std::string fileName) =0;
 
     /**
      * reads songs from a file and deletes songs from the master file

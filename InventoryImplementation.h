@@ -27,7 +27,7 @@ public:
     /**
      * reads songs from a file and adds with no duplicates
      */
-    void import();
+    void import(std::string fileName);
 
     /**
      * reads songs from a file and deletes songs from libray listed in the file
