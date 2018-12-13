@@ -27,7 +27,10 @@ int main() {
                     "newrandom <name, duration>\tcreates a playlist with random songs that total the given duration\n"
                     "quit\tsaves all songs and quits the program" << std::endl;
         } else if (command == "quit"){
+            inventory->saveLibrary();
             programExit = true;
+        } else if (command == "add") {
+
         }
     }
     return 0;
