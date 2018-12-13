@@ -101,10 +101,17 @@
 		<Unit filename="/cygdrive/c/Users/conno/220FinalRepo/220Final/InventoryImplementation.h">
 			<Option target="220Final"/>
 		</Unit>
+<<<<<<< HEAD
 		<Unit filename="/cygdrive/c/Users/conno/220FinalRepo/220Final/List.h">
 			<Option target="220Final"/>
 		</Unit>
 		<Unit filename="/cygdrive/c/Users/conno/220FinalRepo/220Final/Playlist.h">
+=======
+		<Unit filename="/Users/jeffpage/CLionProjects/220Final/List.h">
+			<Option target="220Final"/>
+		</Unit>
+		<Unit filename="/Users/jeffpage/CLionProjects/220Final/LoadLibraryTest.cpp">
+>>>>>>> d79c6a95a318d14180dac34ee57167a98484da31
 			<Option target="220Final"/>
 		</Unit>
 		<Unit filename="/cygdrive/c/Users/conno/220FinalRepo/220Final/PlaylistCollection.h">

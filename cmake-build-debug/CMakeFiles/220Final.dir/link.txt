@@ -1,1 +1,5 @@
+<<<<<<< HEAD
 /usr/bin/c++.exe -g  -Wl,--enable-auto-import CMakeFiles/220Final.dir/Song.cpp.o CMakeFiles/220Final.dir/TestLib.cpp.o CMakeFiles/220Final.dir/PlaylistImplementation.cpp.o CMakeFiles/220Final.dir/InventoryImplementation.cpp.o CMakeFiles/220Final.dir/PlaylistCollectionTest.cpp.o CMakeFiles/220Final.dir/PlaylistCollectionImplementation.cpp.o CMakeFiles/220Final.dir/ArrayLib.cpp.o  -o 220Final.exe -Wl,--out-implib,lib220Final.dll.a -Wl,--major-image-version,0,--minor-image-version,0 
+=======
+/Library/Developer/CommandLineTools/usr/bin/c++  -g -Wl,-search_paths_first -Wl,-headerpad_max_install_names  CMakeFiles/220Final.dir/Song.cpp.o CMakeFiles/220Final.dir/TestLib.cpp.o CMakeFiles/220Final.dir/PlaylistImplementation.cpp.o CMakeFiles/220Final.dir/InventoryImplementation.cpp.o CMakeFiles/220Final.dir/LoadLibraryTest.cpp.o CMakeFiles/220Final.dir/PlaylistCollectionImplementation.cpp.o CMakeFiles/220Final.dir/ArrayLib.cpp.o  -o 220Final 
+>>>>>>> d79c6a95a318d14180dac34ee57167a98484da31

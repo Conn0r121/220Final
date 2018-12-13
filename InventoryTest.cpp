@@ -38,6 +38,8 @@ void inventoryTest(){
     std::cout<<"This should be party in the usa info"<<std::endl;
     std::cout<<newInventory->displaySong("Miley Cyrus","Party in the USA")<<std::endl;
 
+    std::cout<<"Testing outFile"<<std::endl;
+    newInventory->saveLibrary();
 }
 
 

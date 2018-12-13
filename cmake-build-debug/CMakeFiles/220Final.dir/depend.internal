@@ -5,6 +5,7 @@ CMakeFiles/220Final.dir/ArrayLib.cpp.o
  /cygdrive/c/Users/conno/220FinalRepo/220Final/ArrayLib.cpp
  /cygdrive/c/Users/conno/220FinalRepo/220Final/ArrayLib.h
 CMakeFiles/220Final.dir/InventoryImplementation.cpp.o
+<<<<<<< HEAD
  /cygdrive/c/Users/conno/220FinalRepo/220Final/ArrayLib.h
  /cygdrive/c/Users/conno/220FinalRepo/220Final/ArrayList.h
  /cygdrive/c/Users/conno/220FinalRepo/220Final/ArrayList.inl
@@ -17,6 +18,33 @@ CMakeFiles/220Final.dir/InventoryImplementation.cpp.o
  /cygdrive/c/Users/conno/220FinalRepo/220Final/PlaylistCollectionImplementation.h
  /cygdrive/c/Users/conno/220FinalRepo/220Final/PlaylistImplementation.h
  /cygdrive/c/Users/conno/220FinalRepo/220Final/Song.h
+=======
+ /Users/jeffpage/CLionProjects/220Final/ArrayLib.h
+ /Users/jeffpage/CLionProjects/220Final/ArrayList.h
+ /Users/jeffpage/CLionProjects/220Final/ArrayList.inl
+ /Users/jeffpage/CLionProjects/220Final/Inventory.h
+ /Users/jeffpage/CLionProjects/220Final/InventoryImplementation.cpp
+ /Users/jeffpage/CLionProjects/220Final/InventoryImplementation.h
+ /Users/jeffpage/CLionProjects/220Final/List.h
+ /Users/jeffpage/CLionProjects/220Final/Playlist.h
+ /Users/jeffpage/CLionProjects/220Final/PlaylistCollection.h
+ /Users/jeffpage/CLionProjects/220Final/PlaylistCollectionImplementation.h
+ /Users/jeffpage/CLionProjects/220Final/PlaylistImplementation.h
+ /Users/jeffpage/CLionProjects/220Final/Song.h
+CMakeFiles/220Final.dir/LoadLibraryTest.cpp.o
+ /Users/jeffpage/CLionProjects/220Final/ArrayLib.h
+ /Users/jeffpage/CLionProjects/220Final/ArrayList.h
+ /Users/jeffpage/CLionProjects/220Final/ArrayList.inl
+ /Users/jeffpage/CLionProjects/220Final/Inventory.h
+ /Users/jeffpage/CLionProjects/220Final/InventoryImplementation.h
+ /Users/jeffpage/CLionProjects/220Final/List.h
+ /Users/jeffpage/CLionProjects/220Final/LoadLibraryTest.cpp
+ /Users/jeffpage/CLionProjects/220Final/Playlist.h
+ /Users/jeffpage/CLionProjects/220Final/PlaylistCollection.h
+ /Users/jeffpage/CLionProjects/220Final/PlaylistCollectionImplementation.h
+ /Users/jeffpage/CLionProjects/220Final/PlaylistImplementation.h
+ /Users/jeffpage/CLionProjects/220Final/Song.h
+>>>>>>> d79c6a95a318d14180dac34ee57167a98484da31
 CMakeFiles/220Final.dir/PlaylistCollectionImplementation.cpp.o
  /cygdrive/c/Users/conno/220FinalRepo/220Final/ArrayLib.h
  /cygdrive/c/Users/conno/220FinalRepo/220Final/ArrayList.h

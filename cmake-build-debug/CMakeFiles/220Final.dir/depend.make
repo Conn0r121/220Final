@@ -17,6 +17,22 @@ CMakeFiles/220Final.dir/InventoryImplementation.cpp.o: ../PlaylistCollectionImpl
 CMakeFiles/220Final.dir/InventoryImplementation.cpp.o: ../PlaylistImplementation.h
 CMakeFiles/220Final.dir/InventoryImplementation.cpp.o: ../Song.h
 
+<<<<<<< HEAD
+=======
+CMakeFiles/220Final.dir/LoadLibraryTest.cpp.o: ../ArrayLib.h
+CMakeFiles/220Final.dir/LoadLibraryTest.cpp.o: ../ArrayList.h
+CMakeFiles/220Final.dir/LoadLibraryTest.cpp.o: ../ArrayList.inl
+CMakeFiles/220Final.dir/LoadLibraryTest.cpp.o: ../Inventory.h
+CMakeFiles/220Final.dir/LoadLibraryTest.cpp.o: ../InventoryImplementation.h
+CMakeFiles/220Final.dir/LoadLibraryTest.cpp.o: ../List.h
+CMakeFiles/220Final.dir/LoadLibraryTest.cpp.o: ../LoadLibraryTest.cpp
+CMakeFiles/220Final.dir/LoadLibraryTest.cpp.o: ../Playlist.h
+CMakeFiles/220Final.dir/LoadLibraryTest.cpp.o: ../PlaylistCollection.h
+CMakeFiles/220Final.dir/LoadLibraryTest.cpp.o: ../PlaylistCollectionImplementation.h
+CMakeFiles/220Final.dir/LoadLibraryTest.cpp.o: ../PlaylistImplementation.h
+CMakeFiles/220Final.dir/LoadLibraryTest.cpp.o: ../Song.h
+
+>>>>>>> d79c6a95a318d14180dac34ee57167a98484da31
 CMakeFiles/220Final.dir/PlaylistCollectionImplementation.cpp.o: ../ArrayLib.h
 CMakeFiles/220Final.dir/PlaylistCollectionImplementation.cpp.o: ../ArrayList.h
 CMakeFiles/220Final.dir/PlaylistCollectionImplementation.cpp.o: ../ArrayList.inl

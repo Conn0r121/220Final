@@ -28,7 +28,45 @@ iostream
 ArrayList.h
 /cygdrive/c/Users/conno/220FinalRepo/220Final/ArrayList.h
 
+<<<<<<< HEAD
 /cygdrive/c/Users/conno/220FinalRepo/220Final/List.h
+=======
+/Users/jeffpage/CLionProjects/220Final/Inventory.h
+string
+-
+Song.h
+/Users/jeffpage/CLionProjects/220Final/Song.h
+List.h
+/Users/jeffpage/CLionProjects/220Final/List.h
+PlaylistImplementation.h
+/Users/jeffpage/CLionProjects/220Final/PlaylistImplementation.h
+PlaylistCollectionImplementation.h
+/Users/jeffpage/CLionProjects/220Final/PlaylistCollectionImplementation.h
+fstream
+-
+iostream
+-
+
+/Users/jeffpage/CLionProjects/220Final/InventoryImplementation.cpp
+InventoryImplementation.h
+/Users/jeffpage/CLionProjects/220Final/InventoryImplementation.h
+
+/Users/jeffpage/CLionProjects/220Final/InventoryImplementation.h
+Inventory.h
+/Users/jeffpage/CLionProjects/220Final/Inventory.h
+string
+-
+List.h
+/Users/jeffpage/CLionProjects/220Final/List.h
+Song.h
+/Users/jeffpage/CLionProjects/220Final/Song.h
+PlaylistImplementation.h
+/Users/jeffpage/CLionProjects/220Final/PlaylistImplementation.h
+PlaylistCollectionImplementation.h
+/Users/jeffpage/CLionProjects/220Final/PlaylistCollectionImplementation.h
+
+/Users/jeffpage/CLionProjects/220Final/List.h
+>>>>>>> d79c6a95a318d14180dac34ee57167a98484da31
 stdexcept
 -
 string
@@ -40,6 +78,7 @@ Song.h
 ArrayList.h
 /cygdrive/c/Users/conno/220FinalRepo/220Final/ArrayList.h
 
+<<<<<<< HEAD
 /cygdrive/c/Users/conno/220FinalRepo/220Final/PlaylistCollection.h
 ArrayList.h
 /cygdrive/c/Users/conno/220FinalRepo/220Final/ArrayList.h
@@ -57,6 +96,21 @@ PlaylistCollectionImplementation.h
 /cygdrive/c/Users/conno/220FinalRepo/220Final/PlaylistCollectionImplementation.h
 PlaylistCollection.h
 /cygdrive/c/Users/conno/220FinalRepo/220Final/PlaylistCollection.h
+=======
+/Users/jeffpage/CLionProjects/220Final/PlaylistCollection.h
+ArrayList.h
+/Users/jeffpage/CLionProjects/220Final/ArrayList.h
+PlaylistImplementation.h
+/Users/jeffpage/CLionProjects/220Final/PlaylistImplementation.h
+Song.h
+/Users/jeffpage/CLionProjects/220Final/Song.h
+Playlist.h
+/Users/jeffpage/CLionProjects/220Final/Playlist.h
+
+/Users/jeffpage/CLionProjects/220Final/PlaylistCollectionImplementation.h
+PlaylistCollection.h
+/Users/jeffpage/CLionProjects/220Final/PlaylistCollection.h
+>>>>>>> d79c6a95a318d14180dac34ee57167a98484da31
 
 /cygdrive/c/Users/conno/220FinalRepo/220Final/PlaylistImplementation.h
 Playlist.h

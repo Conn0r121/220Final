@@ -177,6 +177,36 @@ InventoryImplementation.cpp.s:
 	$(MAKE) -f CMakeFiles/220Final.dir/build.make CMakeFiles/220Final.dir/InventoryImplementation.cpp.s
 .PHONY : InventoryImplementation.cpp.s
 
+<<<<<<< HEAD
+=======
+LoadLibraryTest.o: LoadLibraryTest.cpp.o
+
+.PHONY : LoadLibraryTest.o
+
+# target to build an object file
+LoadLibraryTest.cpp.o:
+	$(MAKE) -f CMakeFiles/220Final.dir/build.make CMakeFiles/220Final.dir/LoadLibraryTest.cpp.o
+.PHONY : LoadLibraryTest.cpp.o
+
+LoadLibraryTest.i: LoadLibraryTest.cpp.i
+
+.PHONY : LoadLibraryTest.i
+
+# target to preprocess a source file
+LoadLibraryTest.cpp.i:
+	$(MAKE) -f CMakeFiles/220Final.dir/build.make CMakeFiles/220Final.dir/LoadLibraryTest.cpp.i
+.PHONY : LoadLibraryTest.cpp.i
+
+LoadLibraryTest.s: LoadLibraryTest.cpp.s
+
+.PHONY : LoadLibraryTest.s
+
+# target to generate assembly for a file
+LoadLibraryTest.cpp.s:
+	$(MAKE) -f CMakeFiles/220Final.dir/build.make CMakeFiles/220Final.dir/LoadLibraryTest.cpp.s
+.PHONY : LoadLibraryTest.cpp.s
+
+>>>>>>> d79c6a95a318d14180dac34ee57167a98484da31
 PlaylistCollectionImplementation.o: PlaylistCollectionImplementation.cpp.o
 
 .PHONY : PlaylistCollectionImplementation.o
@@ -327,6 +357,12 @@ help:
 	@echo "... InventoryImplementation.o"
 	@echo "... InventoryImplementation.i"
 	@echo "... InventoryImplementation.s"
+<<<<<<< HEAD
+=======
+	@echo "... LoadLibraryTest.o"
+	@echo "... LoadLibraryTest.i"
+	@echo "... LoadLibraryTest.s"
+>>>>>>> d79c6a95a318d14180dac34ee57167a98484da31
 	@echo "... PlaylistCollectionImplementation.o"
 	@echo "... PlaylistCollectionImplementation.i"
 	@echo "... PlaylistCollectionImplementation.s"

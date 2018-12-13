@@ -43,13 +43,40 @@ std::string InventoryImplementation::displaySong(std::string artist, std::string
 }
 
 void InventoryImplementation::loadLibrary() {
-//TODO
+    std::string readFile ="Library.txt";
+    std::ifstream infile;
+    infile.open(readFile);
+    if (!infile) {
+        std::cerr << "Unable to open file datafile.txt";
+        exit(1);
+    }
+    try {
+
+        while (!infile.eof()) {
+            std::string song;
+            getline(infile, song);
+            std::cout << song << std::endl;
+            Song *mySong = new Song(song);
+            allSongs.addSongAlphabetically(mySong);
+        }
+    }
+    catch (std::out_of_range){
+
+    }
+    infile.close();
 }
 
 void InventoryImplementation::saveLibrary() {
-//TODO
+    std::string fileName = "Library.txt";
+    std::ofstream out(fileName);
+    std::string line;
+    for(int i=0;i<allSongs.getPlaylistSize();i++){
+        line=allSongs.getSongByPosition(i)->toString();
+        if(out){
+            out << line << std::endl;
+        }
+    } out.close();
 }
-
 void InventoryImplementation::import(std::string fileName) {
 //TODO
     std::ifstream songsToAdd;
