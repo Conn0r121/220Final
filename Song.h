@@ -16,6 +16,7 @@ private:
 
 public:
     Song(std::string artistIn, std::string titleIn, int durationIn, int playCountIn);
+    Song(std::string csvInfo);
     Song();
     const std::string getArtist();
     const std::string getTitle();

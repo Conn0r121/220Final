@@ -109,18 +109,18 @@ CMakeFiles/220Final.dir/InventoryImplementation.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/220Final.dir/InventoryImplementation.cpp.s"
 	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/jeffpage/CLionProjects/220Final/InventoryImplementation.cpp -o CMakeFiles/220Final.dir/InventoryImplementation.cpp.s
 
-CMakeFiles/220Final.dir/InventoryTest.cpp.o: CMakeFiles/220Final.dir/flags.make
-CMakeFiles/220Final.dir/InventoryTest.cpp.o: ../InventoryTest.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/jeffpage/CLionProjects/220Final/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/220Final.dir/InventoryTest.cpp.o"
-	/Library/Developer/CommandLineTools/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/220Final.dir/InventoryTest.cpp.o -c /Users/jeffpage/CLionProjects/220Final/InventoryTest.cpp
+CMakeFiles/220Final.dir/LoadLibraryTest.cpp.o: CMakeFiles/220Final.dir/flags.make
+CMakeFiles/220Final.dir/LoadLibraryTest.cpp.o: ../LoadLibraryTest.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/jeffpage/CLionProjects/220Final/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/220Final.dir/LoadLibraryTest.cpp.o"
+	/Library/Developer/CommandLineTools/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/220Final.dir/LoadLibraryTest.cpp.o -c /Users/jeffpage/CLionProjects/220Final/LoadLibraryTest.cpp
 
-CMakeFiles/220Final.dir/InventoryTest.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/220Final.dir/InventoryTest.cpp.i"
-	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/jeffpage/CLionProjects/220Final/InventoryTest.cpp > CMakeFiles/220Final.dir/InventoryTest.cpp.i
+CMakeFiles/220Final.dir/LoadLibraryTest.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/220Final.dir/LoadLibraryTest.cpp.i"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/jeffpage/CLionProjects/220Final/LoadLibraryTest.cpp > CMakeFiles/220Final.dir/LoadLibraryTest.cpp.i
 
-CMakeFiles/220Final.dir/InventoryTest.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/220Final.dir/InventoryTest.cpp.s"
-	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/jeffpage/CLionProjects/220Final/InventoryTest.cpp -o CMakeFiles/220Final.dir/InventoryTest.cpp.s
+CMakeFiles/220Final.dir/LoadLibraryTest.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/220Final.dir/LoadLibraryTest.cpp.s"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/jeffpage/CLionProjects/220Final/LoadLibraryTest.cpp -o CMakeFiles/220Final.dir/LoadLibraryTest.cpp.s
 
 CMakeFiles/220Final.dir/PlaylistCollectionImplementation.cpp.o: CMakeFiles/220Final.dir/flags.make
 CMakeFiles/220Final.dir/PlaylistCollectionImplementation.cpp.o: ../PlaylistCollectionImplementation.cpp
@@ -154,7 +154,7 @@ CMakeFiles/220Final.dir/ArrayLib.cpp.s: cmake_force
 "CMakeFiles/220Final.dir/TestLib.cpp.o" \
 "CMakeFiles/220Final.dir/PlaylistImplementation.cpp.o" \
 "CMakeFiles/220Final.dir/InventoryImplementation.cpp.o" \
-"CMakeFiles/220Final.dir/InventoryTest.cpp.o" \
+"CMakeFiles/220Final.dir/LoadLibraryTest.cpp.o" \
 "CMakeFiles/220Final.dir/PlaylistCollectionImplementation.cpp.o" \
 "CMakeFiles/220Final.dir/ArrayLib.cpp.o"
 
@@ -165,7 +165,7 @@ CMakeFiles/220Final.dir/ArrayLib.cpp.s: cmake_force
 220Final: CMakeFiles/220Final.dir/TestLib.cpp.o
 220Final: CMakeFiles/220Final.dir/PlaylistImplementation.cpp.o
 220Final: CMakeFiles/220Final.dir/InventoryImplementation.cpp.o
-220Final: CMakeFiles/220Final.dir/InventoryTest.cpp.o
+220Final: CMakeFiles/220Final.dir/LoadLibraryTest.cpp.o
 220Final: CMakeFiles/220Final.dir/PlaylistCollectionImplementation.cpp.o
 220Final: CMakeFiles/220Final.dir/ArrayLib.cpp.o
 220Final: CMakeFiles/220Final.dir/build.make

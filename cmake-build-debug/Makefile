@@ -177,32 +177,32 @@ InventoryImplementation.cpp.s:
 	$(MAKE) -f CMakeFiles/220Final.dir/build.make CMakeFiles/220Final.dir/InventoryImplementation.cpp.s
 .PHONY : InventoryImplementation.cpp.s
 
-InventoryTest.o: InventoryTest.cpp.o
+LoadLibraryTest.o: LoadLibraryTest.cpp.o
 
-.PHONY : InventoryTest.o
+.PHONY : LoadLibraryTest.o
 
 # target to build an object file
-InventoryTest.cpp.o:
-	$(MAKE) -f CMakeFiles/220Final.dir/build.make CMakeFiles/220Final.dir/InventoryTest.cpp.o
-.PHONY : InventoryTest.cpp.o
+LoadLibraryTest.cpp.o:
+	$(MAKE) -f CMakeFiles/220Final.dir/build.make CMakeFiles/220Final.dir/LoadLibraryTest.cpp.o
+.PHONY : LoadLibraryTest.cpp.o
 
-InventoryTest.i: InventoryTest.cpp.i
+LoadLibraryTest.i: LoadLibraryTest.cpp.i
 
-.PHONY : InventoryTest.i
+.PHONY : LoadLibraryTest.i
 
 # target to preprocess a source file
-InventoryTest.cpp.i:
-	$(MAKE) -f CMakeFiles/220Final.dir/build.make CMakeFiles/220Final.dir/InventoryTest.cpp.i
-.PHONY : InventoryTest.cpp.i
+LoadLibraryTest.cpp.i:
+	$(MAKE) -f CMakeFiles/220Final.dir/build.make CMakeFiles/220Final.dir/LoadLibraryTest.cpp.i
+.PHONY : LoadLibraryTest.cpp.i
 
-InventoryTest.s: InventoryTest.cpp.s
+LoadLibraryTest.s: LoadLibraryTest.cpp.s
 
-.PHONY : InventoryTest.s
+.PHONY : LoadLibraryTest.s
 
 # target to generate assembly for a file
-InventoryTest.cpp.s:
-	$(MAKE) -f CMakeFiles/220Final.dir/build.make CMakeFiles/220Final.dir/InventoryTest.cpp.s
-.PHONY : InventoryTest.cpp.s
+LoadLibraryTest.cpp.s:
+	$(MAKE) -f CMakeFiles/220Final.dir/build.make CMakeFiles/220Final.dir/LoadLibraryTest.cpp.s
+.PHONY : LoadLibraryTest.cpp.s
 
 PlaylistCollectionImplementation.o: PlaylistCollectionImplementation.cpp.o
 
@@ -327,9 +327,9 @@ help:
 	@echo "... InventoryImplementation.o"
 	@echo "... InventoryImplementation.i"
 	@echo "... InventoryImplementation.s"
-	@echo "... InventoryTest.o"
-	@echo "... InventoryTest.i"
-	@echo "... InventoryTest.s"
+	@echo "... LoadLibraryTest.o"
+	@echo "... LoadLibraryTest.i"
+	@echo "... LoadLibraryTest.s"
 	@echo "... PlaylistCollectionImplementation.o"
 	@echo "... PlaylistCollectionImplementation.i"
 	@echo "... PlaylistCollectionImplementation.s"

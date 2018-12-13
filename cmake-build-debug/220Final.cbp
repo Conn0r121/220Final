@@ -101,10 +101,10 @@
 		<Unit filename="/Users/jeffpage/CLionProjects/220Final/InventoryImplementation.h">
 			<Option target="220Final"/>
 		</Unit>
-		<Unit filename="/Users/jeffpage/CLionProjects/220Final/InventoryTest.cpp">
+		<Unit filename="/Users/jeffpage/CLionProjects/220Final/List.h">
 			<Option target="220Final"/>
 		</Unit>
-		<Unit filename="/Users/jeffpage/CLionProjects/220Final/List.h">
+		<Unit filename="/Users/jeffpage/CLionProjects/220Final/LoadLibraryTest.cpp">
 			<Option target="220Final"/>
 		</Unit>
 		<Unit filename="/Users/jeffpage/CLionProjects/220Final/Playlist.h">

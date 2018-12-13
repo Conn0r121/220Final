@@ -50,20 +50,20 @@ void InventoryImplementation::loadLibrary() {
         std::cerr << "Unable to open file datafile.txt";
         exit(1);
     }
-    while(!infile.eof()) {
-        std::string song;
-        getline(infile,song);
+    try {
 
-
+        while (!infile.eof()) {
+            std::string song;
+            getline(infile, song);
+            std::cout << song << std::endl;
+            Song *mySong = new Song(song);
+            allSongs.addSongAlphabetically(mySong);
+        }
+    }
+    catch (std::out_of_range){
 
     }
-
-
-
-
-
-
-
+    infile.close();
 }
 
 void InventoryImplementation::saveLibrary() {

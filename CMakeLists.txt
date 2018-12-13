@@ -14,7 +14,7 @@ add_executable(220Final
         Inventory.h
         InventoryImplementation.h
         InventoryImplementation.cpp
-        InventoryTest.cpp
+        LoadLibraryTest.cpp
         PlaylistCollection.h
         PlaylistCollectionImplementation.h
         PlaylistCollectionImplementation.cpp
@@ -23,4 +23,4 @@ add_executable(220Final
         ArrayList.inl
         ArrayLib.h
         ArrayLib.cpp
-        )
+        LoadLibraryTest.cpp)
