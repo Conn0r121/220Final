@@ -43,7 +43,27 @@ std::string InventoryImplementation::displaySong(std::string artist, std::string
 }
 
 void InventoryImplementation::loadLibrary() {
-//TODO
+    std::string readFile ="Library.txt";
+    std::ifstream infile;
+    infile.open(readFile);
+    if (!infile) {
+        std::cerr << "Unable to open file datafile.txt";
+        exit(1);
+    }
+    while(!infile.eof()) {
+        std::string song;
+        getline(infile,song);
+
+
+
+    }
+
+
+
+
+
+
+
 }
 
 void InventoryImplementation::saveLibrary() {
