@@ -17,6 +17,10 @@ std::string InventoryImplementation::displayLibrary() {
     return allSongs.toString();
 
 }
+std::string InventoryImplementation::displayPlaylists(){
+    return allPlaylists.displayAll();
+
+}
 
 std::string InventoryImplementation::displayByArtist(std::string artistName) {
     std::string returnString = "";
@@ -50,8 +54,25 @@ void InventoryImplementation::loadLibrary() {
         while (!infile.eof()) {
             std::string song;
             getline(infile, song);
-            Song *mySong = new Song(song);
-            allSongs.addSongAlphabetically(mySong);
+            if(song=="-"){
+                std::string playList;
+                getline(infile,playList);
+                PlaylistImplementation *myPlaylist = new PlaylistImplementation(playList);
+                std::string nextLine;
+                getline(infile,nextLine);
+                while(nextLine!="-"){
+                    Song mySong = Song(nextLine);
+                    Song* mySong2 = allSongs.getSongByArtistandTitle(mySong.getArtist(),mySong.getTitle());
+                    myPlaylist->addSongAlphabetically(mySong2);
+                    getline(infile,nextLine);
+                }
+                allPlaylists.newPlaylist(*myPlaylist);
+                std::cout<<allPlaylists.displayAll()<<std::endl;
+            }
+            else {
+                Song *mySong = new Song(song);
+                allSongs.addSongAlphabetically(mySong);
+            }
         }
     }
     catch (std::out_of_range){

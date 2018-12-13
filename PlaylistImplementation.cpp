@@ -108,9 +108,10 @@ std::string PlaylistImplementation::getPlaylistName(){
     return playlistName;
 }
 bool PlaylistImplementation::songPresent(std::string songIn){
+    Song tempSong = Song(songIn);
     bool isHere=false;
     for(int i=0;i < songList->itemCount();i++){
-        if(songList->getValueAt(i)->toString()==songIn){
+        if(songList->getValueAt(i)->getArtist()==tempSong.getArtist() && songList->getValueAt(i)->getTitle()==tempSong.getTitle()){
             isHere=true;
         }
     }
