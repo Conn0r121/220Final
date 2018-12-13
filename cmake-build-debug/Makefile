@@ -39,19 +39,19 @@ cmake_force:
 SHELL = /bin/sh
 
 # The CMake executable.
-CMAKE_COMMAND = /Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake
+CMAKE_COMMAND = /cygdrive/c/Users/conno/.CLion2018.2/system/cygwin_cmake/bin/cmake.exe
 
 # The command to remove a file.
-RM = /Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake -E remove -f
+RM = /cygdrive/c/Users/conno/.CLion2018.2/system/cygwin_cmake/bin/cmake.exe -E remove -f
 
 # Escaping for special characters.
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /Users/jeffpage/CLionProjects/220Final
+CMAKE_SOURCE_DIR = /cygdrive/c/Users/conno/220FinalRepo/220Final
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /Users/jeffpage/CLionProjects/220Final/cmake-build-debug
+CMAKE_BINARY_DIR = /cygdrive/c/Users/conno/220FinalRepo/220Final/cmake-build-debug
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -59,7 +59,7 @@ CMAKE_BINARY_DIR = /Users/jeffpage/CLionProjects/220Final/cmake-build-debug
 # Special rule for the target rebuild_cache
 rebuild_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake to regenerate build system..."
-	/Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
+	/cygdrive/c/Users/conno/.CLion2018.2/system/cygwin_cmake/bin/cmake.exe -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
 .PHONY : rebuild_cache
 
 # Special rule for the target rebuild_cache
@@ -70,7 +70,7 @@ rebuild_cache/fast: rebuild_cache
 # Special rule for the target edit_cache
 edit_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "No interactive CMake dialog available..."
-	/Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
+	/cygdrive/c/Users/conno/.CLion2018.2/system/cygwin_cmake/bin/cmake.exe -E echo No\ interactive\ CMake\ dialog\ available.
 .PHONY : edit_cache
 
 # Special rule for the target edit_cache
@@ -80,9 +80,9 @@ edit_cache/fast: edit_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/jeffpage/CLionProjects/220Final/cmake-build-debug/CMakeFiles /Users/jeffpage/CLionProjects/220Final/cmake-build-debug/CMakeFiles/progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start /cygdrive/c/Users/conno/220FinalRepo/220Final/cmake-build-debug/CMakeFiles /cygdrive/c/Users/conno/220FinalRepo/220Final/cmake-build-debug/CMakeFiles/progress.marks
 	$(MAKE) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/jeffpage/CLionProjects/220Final/cmake-build-debug/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /cygdrive/c/Users/conno/220FinalRepo/220Final/cmake-build-debug/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
@@ -177,33 +177,6 @@ InventoryImplementation.cpp.s:
 	$(MAKE) -f CMakeFiles/220Final.dir/build.make CMakeFiles/220Final.dir/InventoryImplementation.cpp.s
 .PHONY : InventoryImplementation.cpp.s
 
-InventoryTest.o: InventoryTest.cpp.o
-
-.PHONY : InventoryTest.o
-
-# target to build an object file
-InventoryTest.cpp.o:
-	$(MAKE) -f CMakeFiles/220Final.dir/build.make CMakeFiles/220Final.dir/InventoryTest.cpp.o
-.PHONY : InventoryTest.cpp.o
-
-InventoryTest.i: InventoryTest.cpp.i
-
-.PHONY : InventoryTest.i
-
-# target to preprocess a source file
-InventoryTest.cpp.i:
-	$(MAKE) -f CMakeFiles/220Final.dir/build.make CMakeFiles/220Final.dir/InventoryTest.cpp.i
-.PHONY : InventoryTest.cpp.i
-
-InventoryTest.s: InventoryTest.cpp.s
-
-.PHONY : InventoryTest.s
-
-# target to generate assembly for a file
-InventoryTest.cpp.s:
-	$(MAKE) -f CMakeFiles/220Final.dir/build.make CMakeFiles/220Final.dir/InventoryTest.cpp.s
-.PHONY : InventoryTest.cpp.s
-
 PlaylistCollectionImplementation.o: PlaylistCollectionImplementation.cpp.o
 
 .PHONY : PlaylistCollectionImplementation.o
@@ -230,6 +203,33 @@ PlaylistCollectionImplementation.s: PlaylistCollectionImplementation.cpp.s
 PlaylistCollectionImplementation.cpp.s:
 	$(MAKE) -f CMakeFiles/220Final.dir/build.make CMakeFiles/220Final.dir/PlaylistCollectionImplementation.cpp.s
 .PHONY : PlaylistCollectionImplementation.cpp.s
+
+PlaylistCollectionTest.o: PlaylistCollectionTest.cpp.o
+
+.PHONY : PlaylistCollectionTest.o
+
+# target to build an object file
+PlaylistCollectionTest.cpp.o:
+	$(MAKE) -f CMakeFiles/220Final.dir/build.make CMakeFiles/220Final.dir/PlaylistCollectionTest.cpp.o
+.PHONY : PlaylistCollectionTest.cpp.o
+
+PlaylistCollectionTest.i: PlaylistCollectionTest.cpp.i
+
+.PHONY : PlaylistCollectionTest.i
+
+# target to preprocess a source file
+PlaylistCollectionTest.cpp.i:
+	$(MAKE) -f CMakeFiles/220Final.dir/build.make CMakeFiles/220Final.dir/PlaylistCollectionTest.cpp.i
+.PHONY : PlaylistCollectionTest.cpp.i
+
+PlaylistCollectionTest.s: PlaylistCollectionTest.cpp.s
+
+.PHONY : PlaylistCollectionTest.s
+
+# target to generate assembly for a file
+PlaylistCollectionTest.cpp.s:
+	$(MAKE) -f CMakeFiles/220Final.dir/build.make CMakeFiles/220Final.dir/PlaylistCollectionTest.cpp.s
+.PHONY : PlaylistCollectionTest.cpp.s
 
 PlaylistImplementation.o: PlaylistImplementation.cpp.o
 
@@ -319,20 +319,20 @@ help:
 	@echo "... clean"
 	@echo "... depend"
 	@echo "... rebuild_cache"
-	@echo "... edit_cache"
 	@echo "... 220Final"
+	@echo "... edit_cache"
 	@echo "... ArrayLib.o"
 	@echo "... ArrayLib.i"
 	@echo "... ArrayLib.s"
 	@echo "... InventoryImplementation.o"
 	@echo "... InventoryImplementation.i"
 	@echo "... InventoryImplementation.s"
-	@echo "... InventoryTest.o"
-	@echo "... InventoryTest.i"
-	@echo "... InventoryTest.s"
 	@echo "... PlaylistCollectionImplementation.o"
 	@echo "... PlaylistCollectionImplementation.i"
 	@echo "... PlaylistCollectionImplementation.s"
+	@echo "... PlaylistCollectionTest.o"
+	@echo "... PlaylistCollectionTest.i"
+	@echo "... PlaylistCollectionTest.s"
 	@echo "... PlaylistImplementation.o"
 	@echo "... PlaylistImplementation.i"
 	@echo "... PlaylistImplementation.s"

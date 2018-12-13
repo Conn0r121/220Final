@@ -73,6 +73,8 @@ public:
      */
     virtual Song* getSongByArtistandTitle(std::string artistIn, std::string titleIn)=0;
 
+    virtual std::string getPlaylistName()=0;
+
 
 };
 #endif //INC_220FINAL_PLAYLIST_H

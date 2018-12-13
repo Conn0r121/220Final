@@ -15,6 +15,7 @@ private:
 
 public:
     PlaylistCollectionImplementation(const PlaylistCollectionImplementation& playlistCollectionToCopy);
+
     PlaylistCollectionImplementation& operator=(const PlaylistCollectionImplementation& playlistCollectionToCopy);
     /**
      * constructor
@@ -44,12 +45,16 @@ public:
      * creates a new playlist
      */
 
-    void newPlaylist();
+    void newPlaylist(PlaylistImplementation newPlaylist);
     /**
      * i honestly dont know what this is supposed todo
      */
 
     void newRandPlaylist();
+
+    PlaylistImplementation* getPlaylistByName(std::string name);
+
+    std::string displayAllPlaylistNames();
 
 };
 

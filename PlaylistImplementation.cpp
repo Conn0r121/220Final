@@ -104,4 +104,8 @@ Song* PlaylistImplementation::getSongByArtistandTitle(std::string artistIn, std:
     throw std::invalid_argument("Song Not Found");
 }
 
+std::string PlaylistImplementation::getPlaylistName(){
+    return playlistName;
+}
+
 

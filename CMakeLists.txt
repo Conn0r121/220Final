@@ -14,7 +14,7 @@ add_executable(220Final
         Inventory.h
         InventoryImplementation.h
         InventoryImplementation.cpp
-        InventoryTest.cpp
+        PlaylistCollectionTest.cpp
         PlaylistCollection.h
         PlaylistCollectionImplementation.h
         PlaylistCollectionImplementation.cpp

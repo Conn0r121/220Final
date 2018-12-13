@@ -16,6 +16,7 @@
 class PlaylistCollection {
 private:
     PlaylistCollection(const PlaylistCollection& playlistCollectionToCopy);
+
     PlaylistCollection& operator=(const PlaylistCollection& playlistCollectionToCopy);
 public:
 
@@ -27,9 +28,14 @@ public:
 
     virtual void delWhenEmpty() =0;
 
-    virtual void newPlaylist() =0;
+    virtual void newPlaylist(PlaylistImplementation newPlaylist) =0;
 
     virtual void newRandPlaylist() =0;
+
+    virtual PlaylistImplementation* getPlaylistByName(std::string name)=0;
+
+    virtual std::string displayAllPlaylistNames()=0;
+
 
 };
 #endif //INC_220FINAL_PLAYLISTCOLLECTION_H
