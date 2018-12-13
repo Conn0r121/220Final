@@ -67,5 +67,7 @@ public:
 
     virtual void saveLibrary() =0;
 
+    virtual std::string displayPlaylists()=0;
+
 };
 #endif //INC_220FINAL_INVENTORY_H

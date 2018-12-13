@@ -58,6 +58,8 @@ public:
     void loadLibrary();
 
     void saveLibrary();
+
+    std::string displayPlaylists();
 };
 
 

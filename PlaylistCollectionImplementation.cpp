@@ -13,6 +13,7 @@ std::string PlaylistCollectionImplementation::displayAll() {
     for(int i=0; i<allPlaylists->itemCount(); i++){
         returnString+=allPlaylists->getValueAt(i)->toString()+"\n";
     }
+    std::cout<<"here"<<std::endl;
     return returnString;
 }
 
