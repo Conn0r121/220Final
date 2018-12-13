@@ -107,5 +107,13 @@ Song* PlaylistImplementation::getSongByArtistandTitle(std::string artistIn, std:
 std::string PlaylistImplementation::getPlaylistName(){
     return playlistName;
 }
-
+bool PlaylistImplementation::songPresent(std::string songIn){
+    bool isHere=false;
+    for(int i=0;i < songList->itemCount();i++){
+        if(songList->getValueAt(i)->toString()==songIn){
+            isHere=true;
+        }
+    }
+    return isHere;
+}
 

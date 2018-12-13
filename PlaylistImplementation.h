@@ -45,6 +45,8 @@ public:
 
     std::string getPlaylistName();
 
+    bool songPresent(std::string songIn);
+
 };
 
 

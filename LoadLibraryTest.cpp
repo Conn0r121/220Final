@@ -11,8 +11,10 @@ void LibraryTest(){
     InventoryImplementation *newInventory = new InventoryImplementation();
     newInventory->loadLibrary();
     std::cout<<newInventory->displayLibrary()<<std::endl;
-
-
+    std::cout<<"\n"<<std::endl;
+    newInventory->import("importTest.txt");
+    std::cout<<"\n"<<std::endl;
+    std::cout<<newInventory->displayLibrary()<<std::endl;
 }
 int main(){
     LibraryTest();

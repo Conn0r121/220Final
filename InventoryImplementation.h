@@ -32,7 +32,8 @@ public:
     /**
      * reads songs from a file and deletes songs from libray listed in the file
      */
-    void discontinue();
+     void discontinue(std::string fileIn);
+
 
     /**
      * displays the full library in alphabetical order by artist

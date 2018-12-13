@@ -13,10 +13,6 @@ void InventoryImplementation::addSongToLibrary(Song *&newSong) {
     allSongs.addSongAlphabetically(newSong);
 }
 
-void InventoryImplementation::discontinue() {
-//TODO
-}
-
 std::string InventoryImplementation::displayLibrary() {
     return allSongs.toString();
 
@@ -41,13 +37,12 @@ std::string InventoryImplementation::displaySong(std::string artist, std::string
     }
     return "No Songs to Display";
 }
-
 void InventoryImplementation::loadLibrary() {
     std::string readFile ="Library.txt";
     std::ifstream infile;
     infile.open(readFile);
     if (!infile) {
-        std::cerr << "Unable to open file datafile.txt";
+        std::cerr << "Unable to open file file";
         exit(1);
     }
     try {
@@ -55,7 +50,6 @@ void InventoryImplementation::loadLibrary() {
         while (!infile.eof()) {
             std::string song;
             getline(infile, song);
-            std::cout << song << std::endl;
             Song *mySong = new Song(song);
             allSongs.addSongAlphabetically(mySong);
         }
@@ -65,7 +59,6 @@ void InventoryImplementation::loadLibrary() {
     }
     infile.close();
 }
-
 void InventoryImplementation::saveLibrary() {
     std::string fileName = "Library.txt";
     std::ofstream out(fileName);
@@ -78,13 +71,52 @@ void InventoryImplementation::saveLibrary() {
     } out.close();
 }
 void InventoryImplementation::import(std::string fileName) {
-//TODO
-    std::ifstream songsToAdd;
-    songsToAdd.open(fileName);
-    std::string line;
-    while (std::getline(songsToAdd, line)) {
-        std::cout << line;
+    std::ifstream infile;
+    infile.open(fileName);
+    if (!infile) {
+        std::cerr << "Unable to open file file";
+        exit(1);
     }
-    songsToAdd.close();
+    try {
+        while (!infile.eof()) {
+            std::string song;
+            getline(infile, song);
+            if(allSongs.songPresent(song)){
+                std::cout<<song<<" is already present ya dingus"<<std::endl;
+            }
+            else{
+                Song *mySong = new Song(song);
+                allSongs.addSongAlphabetically(mySong);
+            }
+        }
+    }
+    catch (std::out_of_range){
+    }
+    infile.close();
+}
+void InventoryImplementation::discontinue(std::string fileIn){
+    std::ifstream infile;
+    infile.open(fileIn);
+    if (!infile) {
+        std::cerr << "Unable to open file file";
+        exit(1);
+    }
+    try {
+        while (!infile.eof()) {
+            std::string song;
+            getline(infile, song);
+            if(allSongs.songPresent(song)){
+                std::cout<<song<<" is already present ya dingus"<<std::endl;
+            }
+            else{
+                Song *mySong = new Song(song);
+                allSongs.addSongAlphabetically(mySong);
+            }
+        }
+    }
+    catch (std::out_of_range){
+    }
+    infile.close();
+    //TODO
 }
 

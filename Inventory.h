@@ -37,7 +37,7 @@ public:
     /**
      * reads songs from a file and deletes songs from the master file
      */
-    virtual void discontinue() =0;
+    virtual void discontinue(std::string fileIn) =0;
 
     /**
      * displays the full master file in alphabetical order by artist
