@@ -47,9 +47,16 @@ void InventoryImplementation::loadLibrary() {
 }
 
 void InventoryImplementation::saveLibrary() {
-//TODO
+    std::string fileName = "Library.txt";
+    std::ofstream out(fileName);
+    std::string line;
+    for(int i=0;i<allSongs.getPlaylistSize();i++){
+        line=allSongs.getSongByPosition(i)->toString();
+        if(out){
+            out << line << std::endl;
+        }
+    } out.close();
 }
-
 void InventoryImplementation::import(std::string fileName) {
 //TODO
     std::ifstream songsToAdd;
