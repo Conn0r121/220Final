@@ -47,6 +47,10 @@ public:
 
     bool songPresent(std::string songIn);
 
+    void removeSongFromPlaylist(std::string artist, std::string title);
+
+    void deleteSongFromPlaylist(std::string artist, std::string title);
+
 };
 
 

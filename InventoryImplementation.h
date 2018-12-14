@@ -63,6 +63,8 @@ public:
 
     PlaylistImplementation* getAllSongs();
     PlaylistCollectionImplementation* getAllPlaylists();
+
+    void removeSongFromLibrary(std::string artist, std::string title);
 };
 
 

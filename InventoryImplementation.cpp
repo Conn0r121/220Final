@@ -157,3 +157,13 @@ PlaylistImplementation* InventoryImplementation::getAllSongs() {
 PlaylistCollectionImplementation* InventoryImplementation::getAllPlaylists() {
     return &allPlaylists;
 }
+
+void InventoryImplementation::removeSongFromLibrary(std::string artist, std::string title){
+    //this loop goes through each playlist
+    for(int i=0; i>allPlaylists.getSize(); i++){
+        //this removes the song from the playlist
+        allPlaylists.getPlayListByLocation(i)->removeSongFromPlaylist(artist, title);
+    }
+    //this removes it from the master library
+    allSongs.deleteSongFromPlaylist(artist, title);
+}

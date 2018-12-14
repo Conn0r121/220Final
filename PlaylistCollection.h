@@ -41,5 +41,7 @@ public:
     virtual PlaylistImplementation* getPlayListByLocation(int pos)=0;
 
 
+
+
 };
 #endif //INC_220FINAL_PLAYLISTCOLLECTION_H

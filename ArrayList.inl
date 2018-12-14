@@ -153,12 +153,12 @@ T ArrayList<T>::removeValueAt(int index){
         throw std::out_of_range("Cannot remove anything from an empty list");
     }
     else {
-        T tempNum = ourList[index];
-        for (int i = index; i < currItemCount - 1; ++i) {
-            *ourList[i] = *ourList[i + 1];
+        for(int i=index; i<currItemCount; i++){
+            //this moves each item after the song to be removed forward, one by one.
+            // THIS DOES NOT DELETE T, it just overrides the pointer to it
+            ourList[i]=ourList[i+1];
         }
-        currItemCount = currItemCount - 1;
-        return tempNum;
+        currItemCount--;
     }
 }
 

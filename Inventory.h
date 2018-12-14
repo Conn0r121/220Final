@@ -73,5 +73,7 @@ public:
 
     virtual PlaylistCollectionImplementation* getAllPlaylists() =0;
 
+    virtual void removeSongFromLibrary(std::string artist, std::string title) =0;
+
 };
 #endif //INC_220FINAL_INVENTORY_H

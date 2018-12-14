@@ -120,4 +120,26 @@ bool PlaylistImplementation::songPresent(std::string songIn){
     }
     return isHere;
 }
+void PlaylistImplementation::removeSongFromPlaylist(std::string artist, std::string title){
+    // this loop goes through every song in playlist
+    for(int i=0; i<songList->itemCount();i++){
+        //this runs code if artist and title are what we are looking for
+        if(songList->getValueAt(i)->getArtist()==artist && songList->getValueAt(i)->getTitle()==title){
+            //removes value if artist and title match
+            songList->removeValueAt(i);
+        }
+    }
+}
+
+void PlaylistImplementation::deleteSongFromPlaylist(std::string artist, std::string title){
+    // this loop goes through every song
+    for(int i=0; i<songList->itemCount();i++){
+        //this runs code if artist and title are what we are looking for
+        if(songList->getValueAt(i)->getArtist()==artist && songList->getValueAt(i)->getTitle()==title){
+            //removes value if artist and title match
+            delete songList->getValueAt(i);
+            songList->removeValueAt(i);
+        }
+    }
+}
 

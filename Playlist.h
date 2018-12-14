@@ -75,6 +75,10 @@ public:
 
     virtual std::string getPlaylistName()=0;
 
+    virtual void removeSongFromPlaylist(std::string artist, std::string title) =0;
+
+    virtual void deleteSongFromPlaylist(std::string artist, std::string title) =0;
+
 
 };
 #endif //INC_220FINAL_PLAYLIST_H
