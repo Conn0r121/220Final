@@ -31,9 +31,9 @@ public:
 
     bool isEmpty();
 
-    void addSongAtEnd(Song* &newSong);
+    void addSongAtEnd(Song* newSong);
 
-    void addSongAlphabetically(Song* &newSong);
+    void addSongAlphabetically(Song* newSong);
 
     void removeSong(std::string artist, std::string title);
 

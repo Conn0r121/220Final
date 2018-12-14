@@ -17,6 +17,9 @@ PlaylistImplementation::PlaylistImplementation(std::string name) {
 }
 
 std::string PlaylistImplementation::toString() {
+    if(songList->itemCount()==0){
+        throw std::invalid_argument("The Playlist is Empty");
+    }
     std::string result = songList->getValueAt(0)->toString();
     for (int i = 1; i < songList->itemCount(); i++) {
         result = result +  "\n" + songList->getValueAt(i)->toString();
@@ -43,10 +46,10 @@ bool PlaylistImplementation::isEmpty() {
     return songList->isEmpty();
 }
 
-void PlaylistImplementation::addSongAtEnd(Song* &newSong) {
+void PlaylistImplementation::addSongAtEnd(Song* newSong) {
     songList->insertAtEnd(newSong);
 }
-void PlaylistImplementation::addSongAlphabetically(Song* &newSong){
+void PlaylistImplementation::addSongAlphabetically(Song* newSong){
     if(songList->itemCount()==0){
         songList->insertAtEnd(newSong);
         return;

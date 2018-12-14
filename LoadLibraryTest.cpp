@@ -11,7 +11,10 @@ void LibraryTest(){
     InventoryImplementation *newInventory = new InventoryImplementation();
     newInventory->loadLibrary();
     std::cout<<"\n"<<std::endl;
-    std::cout<<newInventory->displayPlaylists()<<std::endl;
+
+
+
+
 
 }
 int main(){

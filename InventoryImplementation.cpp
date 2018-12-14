@@ -45,6 +45,7 @@ void InventoryImplementation::loadLibrary() {
     std::string readFile ="Library.txt";
     std::ifstream infile;
     infile.open(readFile);
+    std::string song;
     if (!infile) {
         std::cerr << "Unable to open file file";
         exit(1);
@@ -52,8 +53,9 @@ void InventoryImplementation::loadLibrary() {
     try {
 
         while (!infile.eof()) {
-            std::string song;
-            getline(infile, song);
+            if(song!="-"){
+                getline(infile, song);
+            }
             if(song=="-"){
                 std::string playList;
                 getline(infile,playList);
@@ -62,12 +64,10 @@ void InventoryImplementation::loadLibrary() {
                 getline(infile,nextLine);
                 while(nextLine!="-"){
                     Song mySong = Song(nextLine);
-                    Song* mySong2 = allSongs.getSongByArtistandTitle(mySong.getArtist(),mySong.getTitle());
-                    myPlaylist->addSongAlphabetically(mySong2);
+                    myPlaylist->addSongAlphabetically(allSongs.getSongByArtistandTitle(mySong.getArtist(),mySong.getTitle()));
                     getline(infile,nextLine);
                 }
-                allPlaylists.newPlaylist(*myPlaylist);
-                std::cout<<allPlaylists.displayAll()<<std::endl;
+                allPlaylists.newPlaylist(myPlaylist);
             }
             else {
                 Song *mySong = new Song(song);

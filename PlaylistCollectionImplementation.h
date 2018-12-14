@@ -45,7 +45,7 @@ public:
      * creates a new playlist
      */
 
-    void newPlaylist(PlaylistImplementation newPlaylist);
+    void newPlaylist(PlaylistImplementation *newPlaylist);
     /**
      * i honestly dont know what this is supposed todo
      */

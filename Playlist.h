@@ -41,13 +41,13 @@ public:
      * @param artist
      * @param title
      */
-    virtual void addSongAtEnd(Song* &newSong) =0;
+    virtual void addSongAtEnd(Song* newSong) =0;
     /**
      * adds song to playlist alphabetically - necessary for the masterlist
      * @param artist
      * @param title
      */
-    virtual void addSongAlphabetically(Song* &newSong)=0;
+    virtual void addSongAlphabetically(Song* newSong)=0;
     /**
      * removes song from playlist
      * @param artist

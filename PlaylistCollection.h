@@ -28,7 +28,7 @@ public:
 
     virtual void delWhenEmpty() =0;
 
-    virtual void newPlaylist(PlaylistImplementation newPlaylist) =0;
+    virtual void newPlaylist(PlaylistImplementation *newPlaylist) =0;
 
     virtual void newRandPlaylist() =0;
 

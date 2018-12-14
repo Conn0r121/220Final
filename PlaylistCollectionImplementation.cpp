@@ -13,7 +13,6 @@ std::string PlaylistCollectionImplementation::displayAll() {
     for(int i=0; i<allPlaylists->itemCount(); i++){
         returnString+=allPlaylists->getValueAt(i)->toString()+"\n";
     }
-    std::cout<<"here"<<std::endl;
     return returnString;
 }
 
@@ -34,8 +33,8 @@ std::string PlaylistCollectionImplementation::displayAllPlaylistNames(){
     return returnString;
 }
 
-void PlaylistCollectionImplementation::newPlaylist(PlaylistImplementation newPlaylist ){
-    allPlaylists->insertAtEnd(&newPlaylist);
+void PlaylistCollectionImplementation::newPlaylist(PlaylistImplementation *newPlaylist ){
+    allPlaylists->insertAtEnd(newPlaylist);
 }
 
 void PlaylistCollectionImplementation::delWhenEmpty() {
