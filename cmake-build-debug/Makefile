@@ -177,33 +177,6 @@ InventoryImplementation.cpp.s:
 	$(MAKE) -f CMakeFiles/220Final.dir/build.make CMakeFiles/220Final.dir/InventoryImplementation.cpp.s
 .PHONY : InventoryImplementation.cpp.s
 
-LoadLibraryTest.o: LoadLibraryTest.cpp.o
-
-.PHONY : LoadLibraryTest.o
-
-# target to build an object file
-LoadLibraryTest.cpp.o:
-	$(MAKE) -f CMakeFiles/220Final.dir/build.make CMakeFiles/220Final.dir/LoadLibraryTest.cpp.o
-.PHONY : LoadLibraryTest.cpp.o
-
-LoadLibraryTest.i: LoadLibraryTest.cpp.i
-
-.PHONY : LoadLibraryTest.i
-
-# target to preprocess a source file
-LoadLibraryTest.cpp.i:
-	$(MAKE) -f CMakeFiles/220Final.dir/build.make CMakeFiles/220Final.dir/LoadLibraryTest.cpp.i
-.PHONY : LoadLibraryTest.cpp.i
-
-LoadLibraryTest.s: LoadLibraryTest.cpp.s
-
-.PHONY : LoadLibraryTest.s
-
-# target to generate assembly for a file
-LoadLibraryTest.cpp.s:
-	$(MAKE) -f CMakeFiles/220Final.dir/build.make CMakeFiles/220Final.dir/LoadLibraryTest.cpp.s
-.PHONY : LoadLibraryTest.cpp.s
-
 PlaylistCollectionImplementation.o: PlaylistCollectionImplementation.cpp.o
 
 .PHONY : PlaylistCollectionImplementation.o
@@ -312,6 +285,33 @@ TestLib.cpp.s:
 	$(MAKE) -f CMakeFiles/220Final.dir/build.make CMakeFiles/220Final.dir/TestLib.cpp.s
 .PHONY : TestLib.cpp.s
 
+main.o: main.cpp.o
+
+.PHONY : main.o
+
+# target to build an object file
+main.cpp.o:
+	$(MAKE) -f CMakeFiles/220Final.dir/build.make CMakeFiles/220Final.dir/main.cpp.o
+.PHONY : main.cpp.o
+
+main.i: main.cpp.i
+
+.PHONY : main.i
+
+# target to preprocess a source file
+main.cpp.i:
+	$(MAKE) -f CMakeFiles/220Final.dir/build.make CMakeFiles/220Final.dir/main.cpp.i
+.PHONY : main.cpp.i
+
+main.s: main.cpp.s
+
+.PHONY : main.s
+
+# target to generate assembly for a file
+main.cpp.s:
+	$(MAKE) -f CMakeFiles/220Final.dir/build.make CMakeFiles/220Final.dir/main.cpp.s
+.PHONY : main.cpp.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -327,9 +327,6 @@ help:
 	@echo "... InventoryImplementation.o"
 	@echo "... InventoryImplementation.i"
 	@echo "... InventoryImplementation.s"
-	@echo "... LoadLibraryTest.o"
-	@echo "... LoadLibraryTest.i"
-	@echo "... LoadLibraryTest.s"
 	@echo "... PlaylistCollectionImplementation.o"
 	@echo "... PlaylistCollectionImplementation.i"
 	@echo "... PlaylistCollectionImplementation.s"
@@ -342,6 +339,9 @@ help:
 	@echo "... TestLib.o"
 	@echo "... TestLib.i"
 	@echo "... TestLib.s"
+	@echo "... main.o"
+	@echo "... main.i"
+	@echo "... main.s"
 .PHONY : help
 
 

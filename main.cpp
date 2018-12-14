@@ -34,16 +34,16 @@ int main() {
             inventory->saveLibrary();
             programExit = true;
         } else if (command == "add") {
-            std::string artist;
-            ss >> artist;
             std::string title;
             ss >> title;
+            std::string artist;
+            ss >> artist;
             std::string name;
             ss >> name;
             Song* songToAdd = inventory->getAllSongs()->getSongByArtistandTitle(artist, title);
             inventory->getAllPlaylists()->getPlaylistByName(name)->addSongAtEnd(songToAdd);
         } else if (command == "library") {
-            inventory->displayLibrary();
+            std::cout<<inventory->displayLibrary()<<std::endl;
         } else if (command == "remove") {
             std::string artist;
             ss >> artist;
@@ -75,9 +75,7 @@ int main() {
             ss >> title;
             inventory->displaySong(artist, title);
         } else if (command == "new") {
-            std::string name;
-            ss >> name;
-            inventory->getAllPlaylists()->newPlaylist(name);
+
         } else if (command == "playlists") {
             inventory->displayPlaylists();
         } else if (command == "playlist") {

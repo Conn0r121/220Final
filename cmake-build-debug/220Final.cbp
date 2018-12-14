@@ -104,9 +104,6 @@
 		<Unit filename="/Users/jeffpage/CLionProjects/220Final/List.h">
 			<Option target="220Final"/>
 		</Unit>
-		<Unit filename="/Users/jeffpage/CLionProjects/220Final/LoadLibraryTest.cpp">
-			<Option target="220Final"/>
-		</Unit>
 		<Unit filename="/Users/jeffpage/CLionProjects/220Final/PlaylistCollectionImplementation.cpp">
 			<Option target="220Final"/>
 		</Unit>
@@ -129,6 +126,9 @@
 			<Option target="220Final"/>
 		</Unit>
 		<Unit filename="/Users/jeffpage/CLionProjects/220Final/TestLib.h">
+			<Option target="220Final"/>
+		</Unit>
+		<Unit filename="/Users/jeffpage/CLionProjects/220Final/main.cpp">
 			<Option target="220Final"/>
 		</Unit>
 		<Unit filename="/Users/jeffpage/CLionProjects/220Final/CMakeLists.txt">

@@ -17,19 +17,6 @@ CMakeFiles/220Final.dir/InventoryImplementation.cpp.o: ../PlaylistCollectionImpl
 CMakeFiles/220Final.dir/InventoryImplementation.cpp.o: ../PlaylistImplementation.h
 CMakeFiles/220Final.dir/InventoryImplementation.cpp.o: ../Song.h
 
-CMakeFiles/220Final.dir/LoadLibraryTest.cpp.o: ../ArrayLib.h
-CMakeFiles/220Final.dir/LoadLibraryTest.cpp.o: ../ArrayList.h
-CMakeFiles/220Final.dir/LoadLibraryTest.cpp.o: ../ArrayList.inl
-CMakeFiles/220Final.dir/LoadLibraryTest.cpp.o: ../Inventory.h
-CMakeFiles/220Final.dir/LoadLibraryTest.cpp.o: ../InventoryImplementation.h
-CMakeFiles/220Final.dir/LoadLibraryTest.cpp.o: ../List.h
-CMakeFiles/220Final.dir/LoadLibraryTest.cpp.o: ../LoadLibraryTest.cpp
-CMakeFiles/220Final.dir/LoadLibraryTest.cpp.o: ../Playlist.h
-CMakeFiles/220Final.dir/LoadLibraryTest.cpp.o: ../PlaylistCollection.h
-CMakeFiles/220Final.dir/LoadLibraryTest.cpp.o: ../PlaylistCollectionImplementation.h
-CMakeFiles/220Final.dir/LoadLibraryTest.cpp.o: ../PlaylistImplementation.h
-CMakeFiles/220Final.dir/LoadLibraryTest.cpp.o: ../Song.h
-
 CMakeFiles/220Final.dir/PlaylistCollectionImplementation.cpp.o: ../ArrayLib.h
 CMakeFiles/220Final.dir/PlaylistCollectionImplementation.cpp.o: ../ArrayList.h
 CMakeFiles/220Final.dir/PlaylistCollectionImplementation.cpp.o: ../ArrayList.inl
@@ -55,4 +42,17 @@ CMakeFiles/220Final.dir/Song.cpp.o: ../Song.h
 
 CMakeFiles/220Final.dir/TestLib.cpp.o: ../TestLib.cpp
 CMakeFiles/220Final.dir/TestLib.cpp.o: ../TestLib.h
+
+CMakeFiles/220Final.dir/main.cpp.o: ../ArrayLib.h
+CMakeFiles/220Final.dir/main.cpp.o: ../ArrayList.h
+CMakeFiles/220Final.dir/main.cpp.o: ../ArrayList.inl
+CMakeFiles/220Final.dir/main.cpp.o: ../Inventory.h
+CMakeFiles/220Final.dir/main.cpp.o: ../InventoryImplementation.h
+CMakeFiles/220Final.dir/main.cpp.o: ../List.h
+CMakeFiles/220Final.dir/main.cpp.o: ../Playlist.h
+CMakeFiles/220Final.dir/main.cpp.o: ../PlaylistCollection.h
+CMakeFiles/220Final.dir/main.cpp.o: ../PlaylistCollectionImplementation.h
+CMakeFiles/220Final.dir/main.cpp.o: ../PlaylistImplementation.h
+CMakeFiles/220Final.dir/main.cpp.o: ../Song.h
+CMakeFiles/220Final.dir/main.cpp.o: ../main.cpp
 
