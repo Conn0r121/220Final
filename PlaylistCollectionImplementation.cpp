@@ -24,7 +24,13 @@ std::string PlaylistCollectionImplementation::displayPlaylist(std::string playli
         }
     }
 }
+PlaylistImplementation*  PlaylistCollectionImplementation::getPlayListByLocation(int pos){
+    return allPlaylists->getValueAt(pos);
+}
 
+int PlaylistCollectionImplementation::getSize(){
+    return allPlaylists->itemCount();
+}
 std::string PlaylistCollectionImplementation::displayAllPlaylistNames(){
     std::string returnString ="";
     for (int i=0; i<allPlaylists->itemCount(); i++){

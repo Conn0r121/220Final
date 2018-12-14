@@ -52,9 +52,13 @@ public:
 
     void newRandPlaylist();
 
+    int getSize();
+
     PlaylistImplementation* getPlaylistByName(std::string name);
 
     std::string displayAllPlaylistNames();
+
+    PlaylistImplementation*  getPlayListByLocation(int pos);
 
 };
 

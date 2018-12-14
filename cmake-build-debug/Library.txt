@@ -12,7 +12,3 @@ NewerList4
 Billy Joel, Piano Man, 270, 71354643
 Earth Wind and Fire, September, 215, 116435849
 Metallica, Enter Sandman, 332, 87264930
--
-
-
-

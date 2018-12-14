@@ -89,7 +89,16 @@ void InventoryImplementation::saveLibrary() {
         if(out){
             out << line << std::endl;
         }
-    } out.close();
+
+    }
+    for(int i=0;i<allPlaylists.getSize();i++){
+        out<<"-"<<std::endl;
+        out<<allPlaylists.getPlayListByLocation(i)->getPlaylistName()<<std::endl;
+        out<<allPlaylists.getPlayListByLocation(i)->toString()<<std::endl;
+    }
+    out<<"-"<<std::endl;
+
+    out.close();
 }
 void InventoryImplementation::import(std::string fileName) {
     std::ifstream infile;
