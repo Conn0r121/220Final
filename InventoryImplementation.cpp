@@ -3,6 +3,9 @@
 //
 
 #include "InventoryImplementation.h"
+#include <cstdlib>
+#include <ctime>
+
 
 InventoryImplementation::InventoryImplementation() {
     PlaylistImplementation *allSongs = new PlaylistImplementation();
@@ -21,7 +24,6 @@ std::string InventoryImplementation::displayPlaylists(){
     return allPlaylists.displayAll();
 
 }
-
 std::string InventoryImplementation::displayByArtist(std::string artistName) {
     std::string returnString = "";
     for (int i = 0; i < allSongs.getPlaylistSize(); i++) {
@@ -31,7 +33,6 @@ std::string InventoryImplementation::displayByArtist(std::string artistName) {
     }
     return returnString;
 }
-
 std::string InventoryImplementation::displaySong(std::string artist, std::string title) {
     for (int i = 0; i < allSongs.getPlaylistSize(); i++) {
         if (allSongs.getSongByPosition(i)->getArtist() == artist &&
@@ -97,7 +98,6 @@ void InventoryImplementation::saveLibrary() {
         out<<allPlaylists.getPlayListByLocation(i)->toString()<<std::endl;
     }
     out<<"-"<<std::endl;
-
     out.close();
 }
 void InventoryImplementation::import(std::string fileName) {
@@ -147,7 +147,6 @@ void InventoryImplementation::discontinue(std::string fileIn){
     catch (std::out_of_range){
     }
     infile.close();
-    //TODO
 }
 
 PlaylistImplementation* InventoryImplementation::getAllSongs() {
@@ -166,4 +165,18 @@ void InventoryImplementation::removeSongFromLibrary(std::string artist, std::str
     }
     //this removes it from the master library
     allSongs.deleteSongFromPlaylist(artist, title);
+}
+void InventoryImplementation::genRandPlaylist(std::string name, int duration){
+    srand(time(NULL));
+    PlaylistImplementation *myPlaylist = new PlaylistImplementation(name);
+    int myDuration = 0;
+    while(myDuration<duration){
+        int rando = rand()%(allSongs.getPlaylistSize());
+        if((allSongs.getSongByPosition(rando)->getDuration()+myDuration)>duration){
+            break;
+        }
+        myPlaylist->addSongAlphabetically(allSongs.getSongByPosition(rando));
+        myDuration=myDuration+allSongs.getSongByPosition(rando)->getDuration();
+    }
+    allPlaylists.newPlaylist(myPlaylist);
 }

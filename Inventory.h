@@ -75,5 +75,7 @@ public:
 
     virtual void removeSongFromLibrary(std::string artist, std::string title) =0;
 
+    virtual void genRandPlaylist(std::string name, int duration)=0;
+
 };
 #endif //INC_220FINAL_INVENTORY_H

@@ -65,6 +65,8 @@ public:
     PlaylistCollectionImplementation* getAllPlaylists();
 
     void removeSongFromLibrary(std::string artist, std::string title);
+
+    void genRandPlaylist(std::string name, int duration);
 };
 
 
