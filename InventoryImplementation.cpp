@@ -134,13 +134,13 @@ void InventoryImplementation::discontinue(std::string fileIn){
     try {
         while (!infile.eof()) {
             std::string song;
-            getline(infile, song);
-            if(allSongs.songPresent(song)){
-                std::cout<<song<<" is already present ya dingus"<<std::endl;
+            getline(infile,song);
+            if(!allSongs.songPresent(song)){
+                std::cout<< song << " is not in library!" <<std::endl;
             }
-            else{
-                Song *mySong = new Song(song);
-                allSongs.addSongAlphabetically(mySong);
+            if (allSongs.songPresent(song)){
+                Song mySong = Song(song);
+                removeSongFromLibrary(mySong.getArtist(),mySong.getTitle());
             }
         }
     }
