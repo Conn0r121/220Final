@@ -69,5 +69,9 @@ public:
 
     virtual std::string displayPlaylists()=0;
 
+    virtual PlaylistImplementation* getAllSongs() =0;
+
+    virtual PlaylistCollectionImplementation* getAllPlaylists() =0;
+
 };
 #endif //INC_220FINAL_INVENTORY_H

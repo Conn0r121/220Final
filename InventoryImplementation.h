@@ -60,6 +60,9 @@ public:
     void saveLibrary();
 
     std::string displayPlaylists();
+
+    PlaylistImplementation* getAllSongs();
+    PlaylistCollectionImplementation* getAllPlaylists();
 };
 
 

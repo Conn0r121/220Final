@@ -141,3 +141,10 @@ void InventoryImplementation::discontinue(std::string fileIn){
     //TODO
 }
 
+PlaylistImplementation* InventoryImplementation::getAllSongs() {
+    return &allSongs;
+}
+
+PlaylistCollectionImplementation* InventoryImplementation::getAllPlaylists() {
+    return &allPlaylists;
+}
