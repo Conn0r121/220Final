@@ -2,6 +2,8 @@
 #include <sstream>
 #include "Inventory.h"
 #include "InventoryImplementation.h"
+#include <string>
+
 
 int main() {
     Inventory* inventory = new InventoryImplementation();
@@ -11,10 +13,9 @@ int main() {
     std::cout << "Playlist program" << std::endl;
     std::cout << "Type help for a list of commands" << std::endl;
     while (!programExit) {
-        std::cin >> fullString;
-        std::istringstream ss(fullString);
         std::string command;
-        ss >> command;
+        getline(std::cin,command);
+        std::stringstream(command) >>command;
         if (command == "help") {
             std::cout << "help\tdisplays all available commands\n"
                     "import <filename>\timports songs from a text file and adds to library\n"
@@ -35,57 +36,69 @@ int main() {
             programExit = true;
         } else if (command == "add") {
             std::string title;
-            ss >> title;
             std::string artist;
-            ss >> artist;
             std::string name;
-            ss >> name;
-            Song* songToAdd = inventory->getAllSongs()->getSongByArtistandTitle(artist, title);
-            inventory->getAllPlaylists()->getPlaylistByName(name)->addSongAtEnd(songToAdd);
-        } else if (command == "library") {
-            std::cout<<inventory->displayLibrary()<<std::endl;
-        } else if (command == "remove") {
-            std::string artist;
-            ss >> artist;
-            std::string title;
-            ss >> title;
-            std::string name;
-            ss >> name;
-            inventory->getAllPlaylists()->getPlaylistByName(name)->removeSong(artist, title);
-        } else if (command == "import") {
-            std::string fileName;
-            ss >> fileName;
-            inventory->import(fileName);
-        } else if (command == "discontinue") {
-            std::string fileName;
-            ss >> fileName;
-            inventory->discontinue(fileName);
-        } else if (command == "playnext") {
-            std::string name;
-            ss >> name;
-            inventory->getAllPlaylists()->getPlaylistByName(name)->playNext();
-        } else if (command == "artist") {
-            std::string artist;
-            ss >> artist;
-            inventory->displayByArtist(artist);
-        } else if (command == "song") {
-            std::string artist;
-            ss >> artist;
-            std::string title;
-            ss >> title;
-            inventory->displaySong(artist, title);
-        } else if (command == "new") {
 
-        } else if (command == "playlists") {
-            inventory->displayPlaylists();
-        } else if (command == "playlist") {
-            std::string name;
-            ss >> name;
-            inventory->getAllPlaylists()->displayPlaylist(name);
-        } else if (command == "newrandom") {
-            std::string name;
-            ss >> name;
+            std::cout << "enter title: ";
+            getline(std::cin, title);
+            std::stringstream(title) >> title;
+
+            std::cout << "enter artist: ";
+            getline(std::cin, artist);
+            std::stringstream(artist) >> artist;
+
+            std::cout << "enter name of playlist: ";
+            getline(std::cin, name);
+            std::stringstream(name) >> name;
+            std::cout<<artist<<title<<name<<std::endl;
+
+            Song *songToAdd = inventory->getAllSongs()->getSongByArtistandTitle(artist, title);
+            inventory->getAllPlaylists()->getPlaylistByName(name)->addSongAtEnd(songToAdd);
         }
+//        } else if (command == "library") {
+//            std::cout<<inventory->displayLibrary()<<std::endl;
+//        } else if (command == "remove") {
+//            std::string artist;
+//            ss >> artist;
+//            std::string title;
+//            ss >> title;
+//            std::string name;
+//            ss >> name;
+//            inventory->getAllPlaylists()->getPlaylistByName(name)->removeSong(artist, title);
+//        } else if (command == "import") {
+//            std::string fileName;
+//            ss >> fileName;
+//            inventory->import(fileName);
+//        } else if (command == "discontinue") {
+//            std::string fileName;
+//            ss >> fileName;
+//            inventory->discontinue(fileName);
+//        } else if (command == "playnext") {
+//            std::string name;
+//            ss >> name;
+//            inventory->getAllPlaylists()->getPlaylistByName(name)->playNext();
+//        } else if (command == "artist") {
+//            std::string artist;
+//            ss >> artist;
+//            inventory->displayByArtist(artist);
+//        } else if (command == "song") {
+//            std::string artist;
+//            ss >> artist;
+//            std::string title;
+//            ss >> title;
+//            inventory->displaySong(artist, title);
+//        } else if (command == "new") {
+//
+//        } else if (command == "playlists") {
+//            inventory->displayPlaylists();
+//        } else if (command == "playlist") {
+//            std::string name;
+//            ss >> name;
+//            inventory->getAllPlaylists()->displayPlaylist(name);
+//        } else if (command == "newrandom") {
+//            std::string name;
+//            ss >> name;
+//        }
     }
     return 0;
 }

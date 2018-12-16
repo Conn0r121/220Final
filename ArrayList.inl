@@ -87,23 +87,7 @@ template <class T>
 void ArrayList<T>::clearList(){
     currItemCount=0;
 }
-//template <class T>
-//T ArrayList<T>::find(T itemToFind){
-//    return ::find(ourList,currItemCount,itemToFind,numLinesRun);
-//}
-//template <class T>
-//T ArrayList<T>::findLast(T itemToFind){
-//    return ::findLast(ourList,currItemCount,itemToFind,numLinesRun);
-//}
-//template <class T>
-//int ArrayList<T>::findMaxIndex(){
-//    if(currItemCount<1){
-//        throw std::out_of_range("Arrays must be greater than 0");
-//    }
-//    else {
-//        return ::findMaxIndex(ourList, currItemCount, numLinesRun);
-//    }
-//}
+
 template <class T>
 void ArrayList<T>::insertAtEnd(T itemToAdd){
     if(currItemCount==currCapacity){
@@ -161,5 +145,11 @@ T ArrayList<T>::removeValueAt(int index){
         currItemCount--;
     }
 }
+template <class T>
+void ArrayList<T>::setValueAt(int index, T item){
+    ourList[index]=item;
+}
+
+
 
 

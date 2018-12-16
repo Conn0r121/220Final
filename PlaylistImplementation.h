@@ -20,6 +20,8 @@ public:
      */
     PlaylistImplementation();
 
+    PlaylistImplementation(const PlaylistImplementation& PlayListToCopy);
+
 
     PlaylistImplementation(std::string name);
 
@@ -50,6 +52,12 @@ public:
     void removeSongFromPlaylist(std::string artist, std::string title);
 
     void deleteSongFromPlaylist(std::string artist, std::string title);
+
+    void setName(std::string nameIn);
+
+    void setSongAt(Song * mySong, int index);
+
+
 
 };
 

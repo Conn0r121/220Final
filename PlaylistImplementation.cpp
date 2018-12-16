@@ -3,6 +3,7 @@
 //
 
 #include "PlaylistImplementation.h"
+#include "ArrayLib.h"
 
 PlaylistImplementation::PlaylistImplementation() {
     songList = new ArrayList<Song*>(1);
@@ -14,6 +15,12 @@ PlaylistImplementation::PlaylistImplementation(std::string name) {
     songList = new ArrayList<Song*>(1);
     playlistName = name;
     duration = 0;
+}
+
+PlaylistImplementation::PlaylistImplementation(const PlaylistImplementation& PlayListToCopy){
+    this->songList=PlayListToCopy.songList;
+    playlistName=PlayListToCopy.playlistName;
+    duration=PlayListToCopy.duration;
 }
 
 std::string PlaylistImplementation::toString() {
@@ -141,5 +148,12 @@ void PlaylistImplementation::deleteSongFromPlaylist(std::string artist, std::str
             songList->removeValueAt(i);
         }
     }
+}
+void PlaylistImplementation::setName(std::string nameIn){
+    playlistName=nameIn;
+}
+
+void PlaylistImplementation::setSongAt(Song * mySong, int index){
+    songList->setValueAt(index,mySong);
 }
 

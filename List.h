@@ -122,6 +122,10 @@ public:
      */
     virtual T removeValueAt(int index)=0;
 
+    virtual void setValueAt(int index, T item)=0;
+
+
+
 };
 
 

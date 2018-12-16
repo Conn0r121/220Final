@@ -10,8 +10,8 @@
 void LibraryTest(){
     InventoryImplementation *newInventory = new InventoryImplementation();
     newInventory->loadLibrary();
-    newInventory->genRandPlaylist("coolioList",700);
-    std::cout<<newInventory->getAllPlaylists()->getPlaylistByName("coolioList")->toString()<<std::endl;
+    newInventory->genRandPlaylist("coolioList",1200);
+
 
 
 

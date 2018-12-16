@@ -104,7 +104,7 @@ void InventoryImplementation::import(std::string fileName) {
     std::ifstream infile;
     infile.open(fileName);
     if (!infile) {
-        std::cerr << "Unable to open file file";
+        std::cerr << "Unable to open file";
         exit(1);
     }
     try {
@@ -125,10 +125,11 @@ void InventoryImplementation::import(std::string fileName) {
     infile.close();
 }
 void InventoryImplementation::discontinue(std::string fileIn){
+    std::cout<<fileIn<<std::endl;
     std::ifstream infile;
     infile.open(fileIn);
     if (!infile) {
-        std::cerr << "Unable to open file file";
+        std::cerr << "Unable to open file";
         exit(1);
     }
     try {
@@ -166,17 +167,36 @@ void InventoryImplementation::removeSongFromLibrary(std::string artist, std::str
     //this removes it from the master library
     allSongs.deleteSongFromPlaylist(artist, title);
 }
-void InventoryImplementation::genRandPlaylist(std::string name, int duration){
-    srand(time(NULL));
-    PlaylistImplementation *myPlaylist = new PlaylistImplementation(name);
-    int myDuration = 0;
-    while(myDuration<duration){
-        int rando = rand()%(allSongs.getPlaylistSize());
-        if((allSongs.getSongByPosition(rando)->getDuration()+myDuration)>duration){
-            break;
-        }
-        myPlaylist->addSongAlphabetically(allSongs.getSongByPosition(rando));
-        myDuration=myDuration+allSongs.getSongByPosition(rando)->getDuration();
+PlaylistImplementation * InventoryImplementation::genRandPlaylist(std::string name, int duration){
+    PlaylistImplementation * myPlaylist= new PlaylistImplementation(name);
+    for(int i=0;i<allSongs.getPlaylistSize();i++){
+        myPlaylist->addSongAlphabetically(allSongs.getSongByPosition(i));
     }
     allPlaylists.newPlaylist(myPlaylist);
+    for(int i=0;i<myPlaylist->getPlaylistSize();i++){
+        srand(time(NULL));
+        int r = (rand() % myPlaylist->getPlaylistSize());
+        Song * tempSong = myPlaylist->getSongByPosition(i);
+        Song * nextTemp = myPlaylist->getSongByPosition(r);
+        myPlaylist->setSongAt(nextTemp,i);
+        myPlaylist->setSongAt(tempSong,r);
+    }
+    int myDuration=0;
+    int breakpoint;
+    for(int i=0;i<myPlaylist->getPlaylistSize();i++){
+        myDuration=myDuration+myPlaylist->getSongByPosition(i)->getDuration();
+        if(myDuration>duration){
+            breakpoint=i;
+            break;
+        }
+    }
+    PlaylistImplementation * myFinalPlaylist = new PlaylistImplementation(name);
+    for(int i=0;i<breakpoint;i++){
+        myFinalPlaylist->addSongAtEnd(myPlaylist->getSongByPosition(i));
+    }
+    std::cout<<myFinalPlaylist->toString()<<std::endl;
+    delete myPlaylist;
+
 }
+
+

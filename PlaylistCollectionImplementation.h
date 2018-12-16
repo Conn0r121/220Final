@@ -6,6 +6,10 @@
 #define INC_220FINAL_PLAYLISTCOLLECTIONIMPLEMENTATION_H
 
 #include "PlaylistCollection.h"
+#include "ArrayList.h"
+#include "ArrayLib.h"
+#include "List.h"
+
 
 
 
@@ -59,6 +63,8 @@ public:
     std::string displayAllPlaylistNames();
 
     PlaylistImplementation*  getPlayListByLocation(int pos);
+
+
 
 };
 

@@ -40,6 +40,19 @@ void inventoryTest(){
 
     std::cout<<"Testing outFile"<<std::endl;
     newInventory->saveLibrary();
+
+    std::cout<<"\n"<<std::endl;
+
+
+
+
+    std::cout<<newInventory->getAllPlaylists()->displayAllPlaylistNames()<<std::endl;
+
+
+
+
+
+
 }
 
 

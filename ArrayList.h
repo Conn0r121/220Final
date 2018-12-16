@@ -140,6 +140,12 @@ public:
      * @throws out_of_range exception if index is invalid
      */
     T removeValueAt(int index);
+
+    void setValueAt(int index, T item);
+
+
+
+
 };
 #include "ArrayList.inl"
 

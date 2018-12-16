@@ -66,7 +66,8 @@ public:
 
     void removeSongFromLibrary(std::string artist, std::string title);
 
-    void genRandPlaylist(std::string name, int duration);
+    PlaylistImplementation * genRandPlaylist(std::string name, int duration);
+
 };
 
 

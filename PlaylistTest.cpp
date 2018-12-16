@@ -40,6 +40,10 @@ Playlist* hardcodedSongPlaylist() {
 }
 
 int main() {
+
+
+
+
     Playlist* testPlaylist = hardcodedSongPlaylist();
 
     std::cout << "Full Playlist:" << std::endl;
