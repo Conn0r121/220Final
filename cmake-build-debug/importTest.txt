@@ -1,7 +1,2 @@
-Billy Joel, Piano Man, 270, 71354643
-Earth Wind and Fire, September, 215, 116435849
-Metallica, Enter Sandman, 332, 87264930
-Miley Cyrus, Blarty in the Bu Bus Bay, 202, 100275463
-Miley Cyrus, Party in the USA, 202, 100275463
-Philly Moel, Piano Dan, 370, 98769986
-Phily Moel, Piano Cam, 360, 5244
+Philly Moel, Piano Dan, 370, 0
+Phily Moel, Piano Cam, 360, 0

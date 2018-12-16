@@ -125,7 +125,6 @@ void InventoryImplementation::import(std::string fileName) {
     infile.close();
 }
 void InventoryImplementation::discontinue(std::string fileIn){
-    std::cout<<fileIn<<std::endl;
     std::ifstream infile;
     infile.open(fileIn);
     if (!infile) {
@@ -168,12 +167,12 @@ void InventoryImplementation::removeSongFromLibrary(std::string artist, std::str
     allSongs.deleteSongFromPlaylist(artist, title);
 }
 PlaylistImplementation * InventoryImplementation::genRandPlaylist(std::string name, int duration){
+    srand(time(NULL));
     PlaylistImplementation * myPlaylist= new PlaylistImplementation("TempList");
     for(int i=0;i<allSongs.getPlaylistSize();i++){
         myPlaylist->addSongAlphabetically(allSongs.getSongByPosition(i));
     }
     for(int i=0;i<myPlaylist->getPlaylistSize();i++){
-        srand(time(NULL));
         int r = (rand() % myPlaylist->getPlaylistSize());
         Song * tempSong = myPlaylist->getSongByPosition(i);
         Song * nextTemp = myPlaylist->getSongByPosition(r);

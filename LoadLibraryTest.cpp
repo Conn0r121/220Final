@@ -10,9 +10,9 @@
 void LibraryTest(){
     InventoryImplementation *newInventory = new InventoryImplementation();
     newInventory->loadLibrary();
-    newInventory->genRandPlaylist("coolioList",1200);
-    std::cout<<newInventory->getAllPlaylists()->getPlaylistByName("coolioList")->calcDuration()<<std::endl;
-
+    newInventory->discontinue("Discontinue.txt");
+    newInventory->import("importTest.txt");
+    newInventory->saveLibrary();
 
 
 
