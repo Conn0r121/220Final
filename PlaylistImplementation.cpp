@@ -17,6 +17,7 @@ PlaylistImplementation::PlaylistImplementation(std::string name) {
     duration = 0;
 }
 
+
 PlaylistImplementation::PlaylistImplementation(const PlaylistImplementation& PlayListToCopy){
     this->songList=PlayListToCopy.songList;
     playlistName=PlayListToCopy.playlistName;

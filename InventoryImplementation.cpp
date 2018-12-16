@@ -168,11 +168,10 @@ void InventoryImplementation::removeSongFromLibrary(std::string artist, std::str
     allSongs.deleteSongFromPlaylist(artist, title);
 }
 PlaylistImplementation * InventoryImplementation::genRandPlaylist(std::string name, int duration){
-    PlaylistImplementation * myPlaylist= new PlaylistImplementation(name);
+    PlaylistImplementation * myPlaylist= new PlaylistImplementation("TempList");
     for(int i=0;i<allSongs.getPlaylistSize();i++){
         myPlaylist->addSongAlphabetically(allSongs.getSongByPosition(i));
     }
-    allPlaylists.newPlaylist(myPlaylist);
     for(int i=0;i<myPlaylist->getPlaylistSize();i++){
         srand(time(NULL));
         int r = (rand() % myPlaylist->getPlaylistSize());
@@ -194,8 +193,10 @@ PlaylistImplementation * InventoryImplementation::genRandPlaylist(std::string na
     for(int i=0;i<breakpoint;i++){
         myFinalPlaylist->addSongAtEnd(myPlaylist->getSongByPosition(i));
     }
+    allPlaylists.newPlaylist(myFinalPlaylist);
     std::cout<<myFinalPlaylist->toString()<<std::endl;
     delete myPlaylist;
+    myPlaylist = nullptr;
 
 }
 
