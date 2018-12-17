@@ -16,19 +16,17 @@ int main() {
     getline(std::cin, title);
     std::cout << title << std::endl;
     std::cout << "Piano Man" << std::endl;
-    std::string dur;
-    getline(std::cin, dur);
-    std::stringstream ss;
+    int dur;
+    std::cin >> dur;
     std::cout << dur << std::endl;
     std::cout << "270" << std::endl;
-    std::string playCount;
-    if (!(ss >> ))
-    getline(std::cin, playCount);
+    int playCount;
+    std::cin >> playCount;
     std::cout << playCount << std::endl;
     std::cout << "5" << std::endl;
     if (command == "add") {
         Song newSong(artist, title, dur, playCount);
-        std::cout << newSong.toString() << std::endl;
+        std::cout << newSong.toString();
     }
     std::cout << command;
     return 0;

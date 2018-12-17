@@ -15,7 +15,6 @@ int main() {
     while (!programExit) {
         std::string command;
         getline(std::cin,command);
-        std::stringstream(command) >>command;
         if (command == "help") {
             std::cout << "help\tdisplays all available commands\n"
                     "import <filename>\timports songs from a text file and adds to library\n"
@@ -41,16 +40,13 @@ int main() {
 
             std::cout << "enter title: ";
             getline(std::cin, title);
-            std::stringstream(title) >> title;
 
             std::cout << "enter artist: ";
             getline(std::cin, artist);
-            std::stringstream(artist) >> artist;
 
             std::cout << "enter name of playlist: ";
             getline(std::cin, name);
-            std::stringstream(name) >> name;
-            std::cout<<artist<<title<<name<<std::endl;
+            //std::cout<<artist<<title<<name<<std::endl;
 
             Song *songToAdd = inventory->getAllSongs()->getSongByArtistandTitle(artist, title);
             inventory->getAllPlaylists()->getPlaylistByName(name)->addSongAtEnd(songToAdd);
