@@ -33,8 +33,11 @@ int PlaylistCollectionImplementation::getSize(){
 }
 std::string PlaylistCollectionImplementation::displayAllPlaylistNames(){
     std::string returnString ="";
+    int duration = 0;
     for (int i=0; i<allPlaylists->itemCount(); i++){
-        returnString += allPlaylists->getValueAt(i)->getPlaylistName() += "\n";
+        returnString += allPlaylists->getValueAt(i)->getPlaylistName() += " ";
+        duration = allPlaylists->getValueAt(i)->calcDuration();
+        returnString += std::to_string(duration) + "\n";
     }
     return returnString;
 }

@@ -21,9 +21,9 @@ std::string InventoryImplementation::displayLibrary() {
 
 }
 std::string InventoryImplementation::displayPlaylists(){
-    return allPlaylists.displayAll();
-
+    return allPlaylists.displayAllPlaylistNames();
 }
+
 std::string InventoryImplementation::displayByArtist(std::string artistName) {
     std::string returnString = "";
     for (int i = 0; i < allSongs.getPlaylistSize(); i++) {

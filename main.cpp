@@ -9,7 +9,6 @@ int main() {
     Inventory *inventory = new InventoryImplementation();
     inventory->loadLibrary();
     bool programExit = false;
-    std::string fullString;
     std::cout << "Playlist program" << std::endl;
     std::cout << "Type help for a list of commands" << std::endl;
     while (!programExit) {
@@ -33,68 +32,88 @@ int main() {
         } else if (command == "quit") {
             inventory->saveLibrary();
             programExit = true;
-        } else if (command == "add") {
-            std::string title;
-            std::string artist;
-            std::string name;
-
-            std::cout << "enter title: ";
-            getline(std::cin, title);
-
-            std::cout << "enter artist: ";
-            getline(std::cin, artist);
-
-            std::cout << "enter name of playlist: ";
-            getline(std::cin, name);
-            //std::cout<<artist<<title<<name<<std::endl;
-
-            Song *songToAdd = inventory->getAllSongs()->getSongByArtistandTitle(artist, title);
-            inventory->getAllPlaylists()->getPlaylistByName(name)->addSongAtEnd(songToAdd);
+//        } else if (command == "add") {
+//            std::string title;
+//            std::string artist;
+//            std::string name;
+//
+//            std::cout << "enter title: ";
+//            getline(std::cin, title);
+//
+//            std::cout << "enter artist: ";
+//            getline(std::cin, artist);
+//
+//            std::cout << "enter name of playlist: ";
+//            getline(std::cin, name);
+//            std::cout << artist << title << name << std::endl;
+//
+//            Song *songToAdd = inventory->getAllSongs()->getSongByArtistandTitle(artist, title);
+//            inventory->getAllPlaylists()->getPlaylistByName(name)->addSongAtEnd(songToAdd);
 
         } else if (command == "library") {
             std::cout << inventory->displayLibrary() << std::endl;
-//        } else if (command == "remove") {
-//            std::string artist;
-//            ss >> artist;
-//            std::string title;
-//            ss >> title;
-//            std::string name;
-//            ss >> name;
-//            inventory->getAllPlaylists()->getPlaylistByName(name)->removeSong(artist, title);
-//        } else if (command == "import") {
-//            std::string fileName;
-//            ss >> fileName;
-//            inventory->import(fileName);
+        } else if (command == "remove") {
+            std::string artist;
+            std::cout << "enter artist: ";
+            getline(std::cin, artist);
+            std::cout << "enter title: ";
+            std::string title;
+            getline(std::cin, title);
+            std::string name;
+            std::cout << "enter name: ";
+            getline(std::cin, name);
+            inventory->getAllPlaylists()->getPlaylistByName(name)->removeSong(artist, title);
+        } else if (command == "import") {
+            std::string fileName;
+            std::cout << "enter file name: ";
+            getline(std::cin, fileName);
+            inventory->import(fileName);
 //        } else if (command == "discontinue") {
 //            std::string fileName;
 //            ss >> fileName;
 //            inventory->discontinue(fileName);
 //        } else if (command == "playnext") {
 //            std::string name;
-//            ss >> name;
-//            inventory->getAllPlaylists()->getPlaylistByName(name)->playNext();
-//        } else if (command == "artist") {
-//            std::string artist;
-//            ss >> artist;
-//            inventory->displayByArtist(artist);
-//        } else if (command == "song") {
-//            std::string artist;
-//            ss >> artist;
-//            std::string title;
-//            ss >> title;
-//            inventory->displaySong(artist, title);
-//        } else if (command == "new") {
-//
-//        } else if (command == "playlists") {
-//            inventory->displayPlaylists();
-//        } else if (command == "playlist") {
-//            std::string name;
-//            ss >> name;
-//            inventory->getAllPlaylists()->displayPlaylist(name);
-//        } else if (command == "newrandom") {
-//            std::string name;
-//            ss >> name;
-//        }
+//            std::cout << "enter name: ";
+//            getline(std::cin, name);
+//            std::cout << inventory->getAllPlaylists()->getPlaylistByName(name)->playNext() << std::endl;
+        } else if (command == "artist") {
+            std::string artist;
+            std::cout << "enter artist: ";
+            getline(std::cin, artist);
+            std::cout << inventory->displayByArtist(artist) << std::endl;
+        } else if (command == "song") {
+            std::string artist;
+            std::cout << "enter artist: ";
+            getline(std::cin, artist);
+            std::string title;
+            std::cout << "enter title: ";
+            getline(std::cin, title);
+            std::cout << inventory->displaySong(artist, title) << std::endl;
+        } else if (command == "new") {
+            //overwrites any existing playlists
+            std::string name;
+            std::cout << "enter name: " << std::endl;
+            getline(std::cin, name);
+            PlaylistImplementation *newPlaylist = new PlaylistImplementation(name);
+            inventory->getAllPlaylists()->newPlaylist(newPlaylist);
+        } else if (command == "playlists") {
+            std::cout << inventory->displayPlaylists() << std::endl;
+        } else if (command == "playlist") {
+            std::string name;
+            std::cout << "enter name: ";
+            getline(std::cin, name);
+            std::cout << inventory->getAllPlaylists()->displayPlaylist(name) << std::endl;
+        } else if (command == "newrandom") {
+            //overwrites existing playlists
+            std::string name;
+            std::cout << "enter name: ";
+            getline(std::cin, name);
+            int dur;
+
+            std::cout << "enter duration: ";
+            std::cin >> dur;
+            inventory->genRandPlaylist(name, dur);
         }
     }
     return 0;
