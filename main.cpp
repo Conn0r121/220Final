@@ -46,8 +46,8 @@ int main() {
             std::cout << "enter name of playlist: ";
             getline(std::cin, name);
             std::cout << artist <<" " <<title << std::endl;
-            Song *songToAdd = inventory->getAllSongs()->getSongByArtistandTitle(artist, title);
-            inventory->getAllPlaylists()->getPlaylistByName(name)->addSongAtEnd(songToAdd);
+            Song *songToAdd = inventory->getAllSongs()->getSongByArtistandTitle(artist,title);
+            inventory->getAllPlaylists()->getPlaylistByName(name)->addSongAlphabetically(songToAdd);
 
         } else if (command == "library") {
             std::cout << inventory->displayLibrary() << std::endl;
@@ -67,15 +67,16 @@ int main() {
             std::cout << "enter file name: ";
             getline(std::cin, fileName);
             inventory->import(fileName);
-//        } else if (command == "discontinue") {
-//            std::string fileName;
-//            ss >> fileName;
-//            inventory->discontinue(fileName);
-//        } else if (command == "playnext") {
-//            std::string name;
-//            std::cout << "enter name: ";
-//            getline(std::cin, name);
-//            std::cout << inventory->getAllPlaylists()->getPlaylistByName(name)->playNext() << std::endl;
+        } else if (command == "discontinue") {
+            std::string fileName;
+            std::cout << "enter file name: ";
+            getline(std::cin, fileName);
+            inventory->discontinue(fileName);
+        } else if (command == "playnext") {
+            std::string name;
+            std::cout << "enter name: ";
+            getline(std::cin, name);
+            std::cout << inventory->getAllPlaylists()->getPlaylistByName(name)->playNext() << std::endl;
         } else if (command == "artist") {
             std::string artist;
             std::cout << "enter artist: ";
