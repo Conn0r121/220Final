@@ -32,23 +32,22 @@ int main() {
         } else if (command == "quit") {
             inventory->saveLibrary();
             programExit = true;
-//        } else if (command == "add") {
-//            std::string title;
-//            std::string artist;
-//            std::string name;
-//
-//            std::cout << "enter title: ";
-//            getline(std::cin, title);
-//
-//            std::cout << "enter artist: ";
-//            getline(std::cin, artist);
-//
-//            std::cout << "enter name of playlist: ";
-//            getline(std::cin, name);
-//            std::cout << artist << title << name << std::endl;
-//
-//            Song *songToAdd = inventory->getAllSongs()->getSongByArtistandTitle(artist, title);
-//            inventory->getAllPlaylists()->getPlaylistByName(name)->addSongAtEnd(songToAdd);
+        } else if (command == "add") {
+            std::string title;
+            std::string artist;
+            std::string name;
+
+            std::cout << "enter title: ";
+            getline(std::cin, title);
+
+            std::cout << "enter artist: ";
+            getline(std::cin, artist);
+
+            std::cout << "enter name of playlist: ";
+            getline(std::cin, name);
+            std::cout << artist <<" " <<title << std::endl;
+            Song *songToAdd = inventory->getAllSongs()->getSongByArtistandTitle(artist, title);
+            inventory->getAllPlaylists()->getPlaylistByName(name)->addSongAtEnd(songToAdd);
 
         } else if (command == "library") {
             std::cout << inventory->displayLibrary() << std::endl;
@@ -110,7 +109,6 @@ int main() {
             std::cout << "enter name: ";
             getline(std::cin, name);
             int dur;
-
             std::cout << "enter duration: ";
             std::cin >> dur;
             inventory->genRandPlaylist(name, dur);
