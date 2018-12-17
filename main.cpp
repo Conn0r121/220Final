@@ -36,13 +36,10 @@ int main() {
             std::string title;
             std::string artist;
             std::string name;
-
             std::cout << "enter title: ";
             getline(std::cin, title);
-
             std::cout << "enter artist: ";
             getline(std::cin, artist);
-
             std::cout << "enter name of playlist: ";
             getline(std::cin, name);
             std::cout << artist <<" " <<title << std::endl;

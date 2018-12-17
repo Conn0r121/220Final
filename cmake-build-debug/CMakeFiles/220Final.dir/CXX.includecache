@@ -44,6 +44,14 @@ fstream
 iostream
 -
 
+/Users/jeffpage/CLionProjects/220Final/InventoryImplementation.cpp
+InventoryImplementation.h
+/Users/jeffpage/CLionProjects/220Final/InventoryImplementation.h
+cstdlib
+-
+ctime
+-
+
 /Users/jeffpage/CLionProjects/220Final/InventoryImplementation.h
 Inventory.h
 /Users/jeffpage/CLionProjects/220Final/Inventory.h
@@ -80,6 +88,10 @@ Song.h
 Playlist.h
 /Users/jeffpage/CLionProjects/220Final/Playlist.h
 
+/Users/jeffpage/CLionProjects/220Final/PlaylistCollectionImplementation.cpp
+PlaylistCollectionImplementation.h
+/Users/jeffpage/CLionProjects/220Final/PlaylistCollectionImplementation.h
+
 /Users/jeffpage/CLionProjects/220Final/PlaylistCollectionImplementation.h
 PlaylistCollection.h
 /Users/jeffpage/CLionProjects/220Final/PlaylistCollection.h
@@ -89,6 +101,12 @@ ArrayLib.h
 /Users/jeffpage/CLionProjects/220Final/ArrayLib.h
 List.h
 /Users/jeffpage/CLionProjects/220Final/List.h
+
+/Users/jeffpage/CLionProjects/220Final/PlaylistImplementation.cpp
+PlaylistImplementation.h
+/Users/jeffpage/CLionProjects/220Final/PlaylistImplementation.h
+ArrayLib.h
+/Users/jeffpage/CLionProjects/220Final/ArrayLib.h
 
 /Users/jeffpage/CLionProjects/220Final/PlaylistImplementation.h
 Playlist.h

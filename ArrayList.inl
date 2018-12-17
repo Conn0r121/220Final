@@ -137,13 +137,16 @@ T ArrayList<T>::removeValueAt(int index){
         throw std::out_of_range("Cannot remove anything from an empty list");
     }
     else {
+        T  tempPointer = ourList[index];
         for(int i=index; i<currItemCount; i++){
             //this moves each item after the song to be removed forward, one by one.
             // THIS DOES NOT DELETE T, it just overrides the pointer to it
             ourList[i]=ourList[i+1];
         }
         currItemCount--;
+        return tempPointer;
     }
+
 }
 template <class T>
 void ArrayList<T>::setValueAt(int index, T item){

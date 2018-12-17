@@ -39,6 +39,7 @@ std::string PlaylistImplementation::toString() {
 }
 
 int PlaylistImplementation::calcDuration() {
+    duration=0;
     for (int i = 0; i < songList->itemCount(); i++) {
         duration += songList->getValueAt(i)->getDuration();
     }
