@@ -57,5 +57,8 @@ std::string Song::toString() {
     std::string returnString = artist + ", " + title + ", " + std::to_string(duration) + ", " + std::to_string(playCount);
     return returnString;
 }
+void Song::updatePlayCount(){
+    playCount=playCount+1;
+}
 
 

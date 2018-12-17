@@ -13,16 +13,13 @@
   <component name="ChangeListManager">
     <list default="true" id="23a2a833-20d2-4d52-b26b-7b28bf0a3bf8" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ArrayList.inl" beforeDir="false" afterPath="$PROJECT_DIR$/ArrayList.inl" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/PlaylistImplementation.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/PlaylistImplementation.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Song.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Song.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Song.h" beforeDir="false" afterPath="$PROJECT_DIR$/Song.h" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/220Final" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/220Final" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/220Final.dir/CXX.includecache" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/220Final.dir/CXX.includecache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/220Final.dir/PlaylistCollectionImplementation.cpp.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/220Final.dir/PlaylistCollectionImplementation.cpp.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/220Final.dir/PlaylistImplementation.cpp.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/220Final.dir/PlaylistImplementation.cpp.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/Discontinue.txt" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/Discontinue.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/220Final.dir/main.cpp.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/220Final.dir/main.cpp.o" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/Library.txt" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/Library.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/importTest.txt" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/importTest.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/main.cpp" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/cmake-build-debug/" />
     <ignored path="../Lab6/cmake-build-debug/" />
@@ -37,83 +34,44 @@
     <session id="-1673137598">
       <usages-collector id="statistics.file.extensions.open">
         <counts>
-          <entry key="cpp" value="5" />
+          <entry key="cpp" value="10" />
+          <entry key="h" value="1" />
           <entry key="inl" value="2" />
           <entry key="txt" value="5" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="ObjectiveC" value="7" />
+          <entry key="ObjectiveC" value="13" />
           <entry key="PLAIN_TEXT" value="5" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="cpp" value="70" />
+          <entry key="cpp" value="183" />
+          <entry key="h" value="2" />
           <entry key="inl" value="62" />
-          <entry key="txt" value="134" />
+          <entry key="txt" value="135" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="ObjectiveC" value="132" />
-          <entry key="PLAIN_TEXT" value="134" />
+          <entry key="ObjectiveC" value="247" />
+          <entry key="PLAIN_TEXT" value="135" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.lifecycle.project">
+        <counts>
+          <entry key="project.closed" value="3" />
+          <entry key="project.open.time.1" value="1" />
+          <entry key="project.open.time.4" value="1" />
+          <entry key="project.opened" value="2" />
         </counts>
       </usages-collector>
     </session>
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/CMakeLists.txt">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="212">
-              <caret line="18" column="21" selection-start-line="18" selection-start-column="21" selection-end-line="18" selection-end-column="21" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/main.cpp">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-460">
-              <caret line="41" column="38" selection-start-line="41" selection-start-column="38" selection-end-line="41" selection-end-column="38" />
-              <folding>
-                <element signature="e#0#19#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/cmake-build-debug/Library.txt">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="90">
-              <caret line="6" selection-start-line="6" selection-end-line="6" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/cmake-build-debug/importTest.txt">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="15">
-              <caret line="1" column="5" selection-start-line="1" selection-start-column="5" selection-end-line="1" selection-end-column="5" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/cmake-build-debug/Discontinue.txt">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="15">
-              <caret line="1" column="5" selection-start-line="1" selection-start-column="5" selection-end-line="1" selection-end-column="5" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300" />
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -156,8 +114,6 @@
         <option value="$PROJECT_DIR$/ArraylistPlaylist.cpp" />
         <option value="$PROJECT_DIR$/ArraylistPlaylist.h" />
         <option value="$PROJECT_DIR$/ArrayList.cpp" />
-        <option value="$PROJECT_DIR$/Song.h" />
-        <option value="$PROJECT_DIR$/Song.cpp" />
         <option value="$PROJECT_DIR$/SongTest.cpp" />
         <option value="$PROJECT_DIR$/PlaylistCollection.h" />
         <option value="$PROJECT_DIR$/PlaylistCollectionImplementation.cpp" />
@@ -173,14 +129,16 @@
         <option value="$PROJECT_DIR$/PlaylistImplementation.h" />
         <option value="$PROJECT_DIR$/Playlist.h" />
         <option value="$PROJECT_DIR$/LoadLibraryTest.cpp" />
-        <option value="$PROJECT_DIR$/InventoryImplementation.cpp" />
         <option value="$PROJECT_DIR$/CMakeLists.txt" />
         <option value="$PROJECT_DIR$/StreamTest.cpp" />
         <option value="$PROJECT_DIR$/cmake-build-debug/importTest.txt" />
         <option value="$PROJECT_DIR$/cmake-build-debug/Discontinue.txt" />
-        <option value="$PROJECT_DIR$/PlaylistImplementation.cpp" />
         <option value="$PROJECT_DIR$/ArrayList.inl" />
         <option value="$PROJECT_DIR$/main.cpp" />
+        <option value="$PROJECT_DIR$/Song.cpp" />
+        <option value="$PROJECT_DIR$/Song.h" />
+        <option value="$PROJECT_DIR$/InventoryImplementation.cpp" />
+        <option value="$PROJECT_DIR$/PlaylistImplementation.cpp" />
         <option value="$PROJECT_DIR$/cmake-build-debug/Library.txt" />
       </list>
     </option>
@@ -192,8 +150,7 @@
     <sorting>DEFINITION_ORDER</sorting>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="31" />
-    <option name="y" value="33" />
+    <option name="y" value="23" />
     <option name="width" value="1280" />
     <option name="height" value="706" />
   </component>
@@ -202,7 +159,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -214,6 +170,7 @@
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -292,6 +249,8 @@
       <workItem from="1544894091642" duration="10371000" />
       <workItem from="1544987520275" duration="3786000" />
       <workItem from="1545021231923" duration="3027000" />
+      <workItem from="1545069873019" duration="885000" />
+      <workItem from="1545071390323" duration="1514000" />
     </task>
     <task id="LOCAL-00001" summary="file i/o">
       <created>1544677871930</created>
@@ -304,7 +263,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="102663000" />
+    <option name="totallyTimeSpent" value="105236000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -316,21 +275,21 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="31" y="33" width="1280" height="706" extended-state="0" />
+    <frame x="0" y="23" width="1280" height="706" extended-state="6" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.22132471" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.22778675" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.39413682" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.36300173" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.5260586" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.3615635" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.32899022" />
       <window_info anchor="bottom" id="Database Changes" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="8" weight="0.32871974" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="9" visible="true" weight="0.39087948" />
+      <window_info anchor="bottom" id="Terminal" order="9" weight="0.41205212" />
       <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
       <window_info anchor="bottom" id="Messages" order="11" weight="0.5456026" />
       <window_info anchor="bottom" id="CMake" order="12" weight="0.46596858" />
@@ -367,6 +326,9 @@
   </component>
   <component name="UnknownFeatures">
     <option featureType="com.intellij.fileTypeFactory" implementationName="*.md" />
+  </component>
+  <component name="VcsContentAnnotationSettings">
+    <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="file i/o" />
@@ -423,13 +385,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Song.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
-          <caret line="18" column="28" selection-start-line="18" selection-start-column="28" selection-end-line="18" selection-end-column="28" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file:///Library/Developer/CommandLineTools/usr/include/c++/v1/string" />
     <entry file="file://$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Disontinue.txt" />
     <entry file="file://$PROJECT_DIR$/../Lab8/ArrayLib.cpp" />
@@ -438,9 +393,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="209">
           <caret line="135" selection-start-line="135" selection-end-line="135" />
-          <folding>
-            <element signature="e#42#63#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -479,9 +431,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-346">
           <caret line="7" column="9" lean-forward="true" selection-start-line="7" selection-start-column="9" selection-end-line="7" selection-end-column="9" />
-          <folding>
-            <element signature="e#128#150#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -489,9 +438,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="163">
           <caret line="66" selection-start-line="66" selection-end-line="66" />
-          <folding>
-            <element signature="e#154#185#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -528,9 +474,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-10">
           <caret line="69" column="22" selection-start-line="69" selection-start-column="22" selection-end-line="69" selection-end-column="22" />
-          <folding>
-            <element signature="e#108#125#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -554,16 +497,6 @@
     <entry file="file://C:/cygwin64/lib/gcc/x86_64-pc-cygwin/7.3.0/include/c++/ext/string_conversions.h" />
     <entry file="file://C:/cygwin64/lib/gcc/x86_64-pc-cygwin/7.3.0/include/c++/bits/basic_string.h" />
     <entry file="file://$PROJECT_DIR$/StreamTest.h" />
-    <entry file="file://$PROJECT_DIR$/Song.cpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="51">
-          <caret line="3" column="9" selection-start-line="3" selection-start-column="9" selection-end-line="3" selection-end-column="9" />
-          <folding>
-            <element signature="e#50#67#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/StreamTest.cpp">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="253">
@@ -574,10 +507,41 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/ArrayList.inl">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="191">
+          <caret line="139" column="10" selection-start-line="139" selection-start-column="10" selection-end-line="139" selection-end-column="10" />
+          <folding>
+            <element signature="e#44#65#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Song.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="405">
+          <caret line="27" lean-forward="true" selection-start-line="27" selection-end-line="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Song.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="342">
+          <caret line="52" column="32" selection-start-line="52" selection-start-column="32" selection-end-line="52" selection-end-column="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/PlaylistImplementation.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="91">
+          <caret line="77" column="50" selection-start-line="77" selection-start-column="50" selection-end-line="77" selection-end-column="50" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/InventoryImplementation.cpp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2897">
-          <caret line="200" selection-start-line="200" selection-end-line="200" />
+        <state relative-caret-position="114">
+          <caret line="72" selection-start-line="72" selection-end-line="72" />
           <folding>
             <element signature="e#41#77#0" expanded="true" />
           </folding>
@@ -586,25 +550,25 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/PlaylistCollectionImplementation.cpp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="67">
-          <caret line="33" column="60" selection-start-line="33" selection-start-column="60" selection-end-line="33" selection-end-column="60" />
+        <state relative-caret-position="122">
+          <caret line="45" selection-start-line="45" selection-end-line="45" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/PlaylistImplementation.cpp">
+    <entry file="file://$PROJECT_DIR$/main.cpp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="167">
-          <caret line="46" column="1" selection-start-line="46" selection-start-column="1" selection-end-line="46" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ArrayList.inl">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="191">
-          <caret line="139" column="10" selection-start-line="139" selection-start-column="10" selection-end-line="139" selection-end-column="10" />
+        <state relative-caret-position="114">
+          <caret line="9" selection-start-line="9" selection-end-line="9" />
           <folding>
-            <element signature="e#44#65#0" expanded="true" />
+            <element signature="e#0#19#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/CMakeLists.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="270">
+          <caret line="18" column="21" selection-start-line="18" selection-start-column="21" selection-end-line="18" selection-end-column="21" />
         </state>
       </provider>
     </entry>
@@ -622,27 +586,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/CMakeLists.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="212">
-          <caret line="18" column="21" selection-start-line="18" selection-start-column="21" selection-end-line="18" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/cmake-build-debug/Library.txt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="6" selection-start-line="6" selection-end-line="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/main.cpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-460">
-          <caret line="41" column="38" selection-start-line="41" selection-start-column="38" selection-end-line="41" selection-end-column="38" />
-          <folding>
-            <element signature="e#0#19#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="105">
+          <caret line="7" lean-forward="true" selection-start-line="7" selection-end-line="7" />
         </state>
       </provider>
     </entry>

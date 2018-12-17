@@ -47,8 +47,8 @@ int PlaylistImplementation::calcDuration() {
 }
 
 std::string PlaylistImplementation::playNext() {
+    songList->getValueAt(0)->updatePlayCount();
     return songList->removeValueAtFront()->toString();
-
 }
 
 bool PlaylistImplementation::isEmpty() {
@@ -75,7 +75,7 @@ void PlaylistImplementation::addSongAlphabetically(Song* newSong){
 
 void PlaylistImplementation::removeSong(std::string artist, std::string title) {
     if (isEmpty()) {
-        throw std::out_of_range("Playlist is empty");
+        std::cout<<"Playlist is empty"<<std::endl;
     } else {
         bool found = false;
         for (int i = 0; i < songList->itemCount(); i++) {

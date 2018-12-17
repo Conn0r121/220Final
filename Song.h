@@ -23,6 +23,7 @@ public:
     const int getDuration();
     const int getPlayCount();
     std::string toString();
+    void updatePlayCount();
 };
 
 #endif //INC_220FINAL_SONG_H
