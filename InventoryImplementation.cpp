@@ -12,15 +12,23 @@ InventoryImplementation::InventoryImplementation() {
     PlaylistCollectionImplementation *allPlaylists = new PlaylistCollectionImplementation();
 }
 
+InventoryImplementation::~InventoryImplementation() {
+    delete &allSongs;
+    delete &allPlaylists;
+};
+
 void InventoryImplementation::addSongToLibrary(Song *&newSong) {
     allSongs.addSongAlphabetically(newSong);
 }
 
 std::string InventoryImplementation::displayLibrary() {
     return allSongs.toString();
-
 }
+
 std::string InventoryImplementation::displayPlaylists(){
+    if (allPlaylists.isEmpty()) {
+        return "There are no playlists";
+    }
     return allPlaylists.displayAllPlaylistNames();
 }
 
@@ -83,6 +91,7 @@ void InventoryImplementation::loadLibrary() {
     }
     infile.close();
 }
+
 void InventoryImplementation::saveLibrary() {
     std::string fileName = "Library.txt";
     std::ofstream out(fileName);
@@ -102,6 +111,7 @@ void InventoryImplementation::saveLibrary() {
     out<<"-"<<std::endl;
     out.close();
 }
+
 void InventoryImplementation::import(std::string fileName) {
     std::ifstream infile;
     infile.open(fileName);
@@ -168,6 +178,7 @@ void InventoryImplementation::removeSongFromLibrary(std::string artist, std::str
     //this removes it from the master library
     allSongs.deleteSongFromPlaylist(artist, title);
 }
+
 PlaylistImplementation * InventoryImplementation::genRandPlaylist(std::string name, int duration){
     srand(time(NULL));
     PlaylistImplementation * myPlaylist= new PlaylistImplementation("TempList");

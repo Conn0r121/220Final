@@ -11,61 +11,66 @@
 #include "List.h"
 
 
-
-
-class PlaylistCollectionImplementation:public PlaylistCollection {
+class PlaylistCollectionImplementation : public PlaylistCollection {
 private:
-    List<PlaylistImplementation*>* allPlaylists;
+    List<PlaylistImplementation *> *allPlaylists;
 
 public:
-    PlaylistCollectionImplementation(const PlaylistCollectionImplementation& playlistCollectionToCopy);
+    PlaylistCollectionImplementation(const PlaylistCollectionImplementation &playlistCollectionToCopy);
 
-    PlaylistCollectionImplementation& operator=(const PlaylistCollectionImplementation& playlistCollectionToCopy);
+    PlaylistCollectionImplementation &operator=(const PlaylistCollectionImplementation &playlistCollectionToCopy);
+
     /**
      * constructor
      */
     PlaylistCollectionImplementation();
+
+    ~PlaylistCollectionImplementation();
+
     /**
      * lists all the playlist names
      * @return a string of all the playlist names, line by line
      */
-
-
-
     std::string displayAll();
+
     /**
      * finds a specific playlist and tostrings it
      * @param playlistToFind
      * @return
      */
-
     std::string displayPlaylist(std::string playlistToFind);
+
     /**
      * auto deletes a playlist if its empty
      */
-
     void delWhenEmpty();
+
     /**
      * creates a new playlist
      */
-
     void newPlaylist(PlaylistImplementation *newPlaylist);
+
     /**
-     * i honestly dont know what this is supposed todo
+     * @return an int of the playlist size
      */
-
-    void newRandPlaylist();
-
     int getSize();
 
-    PlaylistImplementation* getPlaylistByName(std::string name);
+    /**
+     *
+     * @param name
+     * @return a pointer of to the playlist with the given name
+     */
+    PlaylistImplementation *getPlaylistByName(std::string name);
 
+    /**
+     *
+     * @return the name of every playlist in the collection
+     */
     std::string displayAllPlaylistNames();
 
-    PlaylistImplementation*  getPlayListByLocation(int pos);
+    PlaylistImplementation *getPlayListByLocation(int pos);
 
-
-
+    bool isEmpty();
 };
 
 

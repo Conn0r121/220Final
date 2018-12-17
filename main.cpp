@@ -112,5 +112,6 @@ int main() {
             inventory->genRandPlaylist(name, dur);
         }
     }
+    delete inventory;
     return 0;
 }

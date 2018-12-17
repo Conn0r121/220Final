@@ -22,6 +22,7 @@ public:
 
     PlaylistImplementation(const PlaylistImplementation& PlayListToCopy);
 
+    ~PlaylistImplementation();
 
     PlaylistImplementation(std::string name);
 

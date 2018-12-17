@@ -16,21 +16,17 @@
 class PlaylistCollection {
 private:
     PlaylistCollection(const PlaylistCollection& playlistCollectionToCopy);
-
     PlaylistCollection& operator=(const PlaylistCollection& playlistCollectionToCopy);
+
 public:
 
     PlaylistCollection() {}
 
-    virtual std::string displayAll() =0;
+    ~PlaylistCollection() {}
 
     virtual std::string displayPlaylist(std::string playlistToFind) =0;
 
-    virtual void delWhenEmpty() =0;
-
     virtual void newPlaylist(PlaylistImplementation *newPlaylist) =0;
-
-    virtual void newRandPlaylist() =0;
 
     virtual PlaylistImplementation* getPlaylistByName(std::string name)=0;
 
@@ -40,7 +36,7 @@ public:
 
     virtual PlaylistImplementation* getPlayListByLocation(int pos)=0;
 
-
+    virtual bool isEmpty() =0;
 
 
 };

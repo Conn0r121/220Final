@@ -23,6 +23,8 @@ public:
      * constructor
      */
     Inventory() {}
+
+    ~Inventory() {}
     /**
      * add songs to the library
      * @param artist

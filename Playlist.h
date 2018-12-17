@@ -16,6 +16,8 @@ public:
      * constructor
      */
     Playlist() {}
+
+    ~Playlist() {}
     /**
      * to string
      * @return string containing artist, title, duration in seconds, playcount

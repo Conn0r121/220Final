@@ -17,6 +17,10 @@ PlaylistImplementation::PlaylistImplementation(std::string name) {
     duration = 0;
 }
 
+PlaylistImplementation::~PlaylistImplementation() {
+    delete songList;
+    songList = nullptr;
+}
 
 PlaylistImplementation::PlaylistImplementation(const PlaylistImplementation& PlayListToCopy){
     this->songList=PlayListToCopy.songList;
@@ -39,16 +43,24 @@ std::string PlaylistImplementation::toString() {
 }
 
 int PlaylistImplementation::calcDuration() {
-    duration=0;
-    for (int i = 0; i < songList->itemCount(); i++) {
-        duration += songList->getValueAt(i)->getDuration();
+    if (songList->isEmpty()) {
+        return 0;
+    } else {
+        duration = 0;
+        for (int i = 0; i < songList->itemCount(); i++) {
+            duration += songList->getValueAt(i)->getDuration();
+        }
+        return duration;
     }
-    return duration;
 }
 
 std::string PlaylistImplementation::playNext() {
     songList->getValueAt(0)->updatePlayCount();
-    return songList->removeValueAtFront()->toString();
+    std::string result = songList->removeValueAtFront()->toString();
+    if (songList->isEmpty()) {
+        delete this;
+    }
+    return result;
 }
 
 bool PlaylistImplementation::isEmpty() {
@@ -138,6 +150,9 @@ void PlaylistImplementation::removeSongFromPlaylist(std::string artist, std::str
             songList->removeValueAt(i);
         }
     }
+    if (songList->isEmpty()) {
+        delete this;
+    }
 }
 
 void PlaylistImplementation::deleteSongFromPlaylist(std::string artist, std::string title){
@@ -151,6 +166,7 @@ void PlaylistImplementation::deleteSongFromPlaylist(std::string artist, std::str
         }
     }
 }
+
 void PlaylistImplementation::setName(std::string nameIn){
     playlistName=nameIn;
 }

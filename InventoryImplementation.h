@@ -23,6 +23,8 @@ private:
 public:
     InventoryImplementation();
 
+    ~InventoryImplementation();
+
     void addSongToLibrary(Song* &newSong);
     /**
      * reads songs from a file and adds with no duplicates
