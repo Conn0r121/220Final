@@ -43,8 +43,8 @@ std::string InventoryImplementation::displaySong(std::string artist, std::string
     return "No Songs to Display";
 }
 void InventoryImplementation::loadLibrary() {
-    std::string fileName = "Library.txt";
-    std::ofstream out(fileName);
+//    std::string fileName = "Library.txt";
+//    std::ofstream out(fileName);
     std::string readFile ="Library.txt";
     std::ifstream infile;
     infile.open(readFile);

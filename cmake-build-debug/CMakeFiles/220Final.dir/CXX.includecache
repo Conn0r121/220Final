@@ -44,14 +44,6 @@ fstream
 iostream
 -
 
-/cygdrive/c/Users/conno/220FinalRepo/220Final/InventoryImplementation.cpp
-InventoryImplementation.h
-/cygdrive/c/Users/conno/220FinalRepo/220Final/InventoryImplementation.h
-cstdlib
--
-ctime
--
-
 /cygdrive/c/Users/conno/220FinalRepo/220Final/InventoryImplementation.h
 Inventory.h
 /cygdrive/c/Users/conno/220FinalRepo/220Final/Inventory.h
@@ -103,6 +95,18 @@ Playlist.h
 /cygdrive/c/Users/conno/220FinalRepo/220Final/Playlist.h
 
 /cygdrive/c/Users/conno/220FinalRepo/220Final/Song.h
+string
+-
+
+/cygdrive/c/Users/conno/220FinalRepo/220Final/main.cpp
+iostream
+-
+sstream
+-
+Inventory.h
+/cygdrive/c/Users/conno/220FinalRepo/220Final/Inventory.h
+InventoryImplementation.h
+/cygdrive/c/Users/conno/220FinalRepo/220Final/InventoryImplementation.h
 string
 -
 
