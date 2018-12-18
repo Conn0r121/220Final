@@ -10,6 +10,7 @@ void songTest() {
     Song* song2 = new Song("Miley Cyrus", "Party in the USA", 202, 100275463);
     Song* song3 = new Song("Metallica", "Enter Sandman", 332, 87264930);
     Song* song4 = new Song("Earth Wind and Fire", "September", 215, 116435849);
+    Song* song5 = new Song("Earth Wind and Fire, September, 215, 116435849");
 
     //testing getArtist
     printAssertEquals("Billy Joel", song1->getArtist());
@@ -34,9 +35,13 @@ void songTest() {
     printAssertEquals(100275463, song2->getPlayCount());
     printAssertEquals(87264930, song3->getPlayCount());
     printAssertEquals(116435849, song4->getPlayCount());
+    std::cout<<song5->toString()<<std::endl;
 };
+
+
 
 int main() {
     songTest();
     return 0;
+
 }

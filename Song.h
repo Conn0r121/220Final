@@ -16,11 +16,14 @@ private:
 
 public:
     Song(std::string artistIn, std::string titleIn, int durationIn, int playCountIn);
+    Song(std::string csvInfo);
+    Song();
     const std::string getArtist();
     const std::string getTitle();
     const int getDuration();
     const int getPlayCount();
     std::string toString();
+    void updatePlayCount();
 };
 
 #endif //INC_220FINAL_SONG_H

@@ -68,7 +68,7 @@ int findMaxIndex(const int* arrayPtr, int size, int& numLinesRun);
  * @return a pointer to the copy array, which must be deleted by the user, or nullptr, if size < 1
  */
 template <class T>
-T copyArray(const T* arrayToCopy, int size, int& numLinesRun);
+T* copyArray(const T arrayToCopy, int size);
 
 /**
  * Generates an array with all values 1 through size occurring once each, shuffled in random order
@@ -121,5 +121,7 @@ int* merge(const int*a1, int size1, const int* a2, int size2, int& numLinesRun);
  */
 template <class T>
 int* mergeSort(const int* arrayToSort, int size, int& numLinesRun);
+
+
 
 #endif //COMP220LAB_ARRAYLIB_H

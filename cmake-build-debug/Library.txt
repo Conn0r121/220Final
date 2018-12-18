@@ -1,0 +1,29 @@
+Library.txt:
+Billy Joel, Piano Man, 270, 9
+Bon Iver, Skinny Love, 150, 3
+Father John Misty, HoneyBear, 180, 3
+Fleet Foxes, White Winter Hymnal, 230, 5
+Greta Van Fleet, Safari Song, 210, 10
+Harry Belafonte, Jump In The Line, 210, 3
+Metallica, Enter Sandman, 200, 11
+Mumford and Sons, Hopeless Wanderer, 180, 3
+Odd Future, Rella, 210, 3
+The Lumineers, Hey Ho, 170, 3
+The Lumineers, Sleep on the Floor, 230, 5
+The Shacks, Follow me, 140, 3
+-
+myPlaylist
+The Lumineers, Hey Ho, 170, 3
+The Lumineers, Sleep on the Floor, 230, 5
+Greta Van Fleet, Safari Song, 210, 10
+Father John Misty, HoneyBear, 180, 3
+-
+jeffPlaylist
+Odd Future, Rella, 210, 3
+The Lumineers, Hey Ho, 170, 3
+Harry Belafonte, Jump In The Line, 210, 3
+Father John Misty, HoneyBear, 180, 3
+Mumford and Sons, Hopeless Wanderer, 180, 3
+Fleet Foxes, White Winter Hymnal, 230, 5
+The Lumineers, Sleep on the Floor, 230, 5
+-

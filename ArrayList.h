@@ -14,7 +14,7 @@ template <class T>
 class ArrayList : public List<T> {
 private:
     //pointer to the start of the array
-    T* array;
+    T* ourList;
     //count of the number of valid items currently stored in the array
     int currItemCount;
     //size of the current array
@@ -26,6 +26,7 @@ private:
      * @post: array points to a new array of twice the size with values copied from the old one,
      *        the old array is deleted.
      */
+    void doubleCapacity();
 
     //Copy Constructor
     ArrayList<T>(const ArrayList& arrayListToCopy);
@@ -139,6 +140,12 @@ public:
      * @throws out_of_range exception if index is invalid
      */
     T removeValueAt(int index);
+
+    void setValueAt(int index, T item);
+
+
+
+
 };
 #include "ArrayList.inl"
 

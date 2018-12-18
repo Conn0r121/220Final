@@ -4,7 +4,12 @@
 #include "ArrayLib.h"
 #include <string>
 #include <iostream>
-#include "random"
+#include <algorithm>    // std::shuffle
+#include <array>        // std::array
+#include <random>       // std::default_random_engine
+#include <chrono>       // std::chrono::system_clock
+
+
 
 
 int genRandInt(int min, int max, int& numLinesRun){
@@ -89,7 +94,7 @@ int genRandInt(int min, int max, int& numLinesRun){
 //}
 
 template <class T>
-T copyArray(const T arrayToCopy, int size, int& numLinesRun){
+T* copyArray(const T arrayToCopy, int size){
     T *newArray = new T[size];
     int i;
     for(i=0;i<size;i++){
@@ -97,6 +102,7 @@ T copyArray(const T arrayToCopy, int size, int& numLinesRun){
     }
     return newArray;
 }
+
 template <class T>
 T* genShuffledArray(int size, int& numLinesRun){
     int i;
@@ -127,4 +133,6 @@ T* genShuffledArray(int size, int& numLinesRun){
     numLinesRun+=1;
     return newArray;
 }
+
+
 

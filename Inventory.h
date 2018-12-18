@@ -6,24 +6,40 @@
 #define INC_220FINAL_INVENTORY_H
 #include <string>
 #include "Song.h"
+#include "List.h"
+#include "PlaylistImplementation.h"
+#include "PlaylistCollectionImplementation.h"
+#include <fstream>
+#include <iostream>
 
 class Inventory {
 private:
-    Inventory(const Inventory& invToCopy);
-    Inventory& operator=(const Inventory& invToCopy);
+//    Inventory(const Inventory& invToCopy);
+//    Inventory& operator=(const Inventory& invToCopy);
+
 
 public:
+    /**
+     * constructor
+     */
     Inventory() {}
-    virtual void addSongToLibrary(Song songIn)=0;
+
+    ~Inventory() {}
+    /**
+     * add songs to the library
+     * @param artist
+     * @param title
+     */
+    virtual void addSongToLibrary(Song* &newSong)=0;
     /**
      * reads songs from a file and adds with no duplicates to master file
      */
-    virtual void import() =0;
+    virtual void import(std::string fileName) =0;
 
     /**
      * reads songs from a file and deletes songs from the master file
      */
-    virtual void discontinue() =0;
+    virtual void discontinue(std::string fileIn) =0;
 
     /**
      * displays the full master file in alphabetical order by artist
@@ -41,11 +57,29 @@ public:
      * display information on a given song from master file
      * @return a string
      */
-    virtual std::string displaySong() =0;
+    virtual std::string displaySong(std::string artist, std::string title) =0;
+    /**
+     * takes info from a file and populates inventory
+     */
 
     virtual void loadLibrary() =0;
+    /**
+     * populates a file with song and playlist info
+     */
 
     virtual void saveLibrary() =0;
+
+    virtual std::string displayPlaylists()=0;
+
+    virtual PlaylistImplementation* getAllSongs() =0;
+
+    virtual PlaylistCollectionImplementation* getAllPlaylists() =0;
+
+    virtual void removeSongFromLibrary(std::string artist, std::string title) =0;
+
+    virtual PlaylistImplementation * genRandPlaylist(std::string name, int duration)=0;
+
+
 
 };
 #endif //INC_220FINAL_INVENTORY_H

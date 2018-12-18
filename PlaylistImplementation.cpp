@@ -3,49 +3,88 @@
 //
 
 #include "PlaylistImplementation.h"
+#include "ArrayLib.h"
 
 PlaylistImplementation::PlaylistImplementation() {
-    songList = new ArrayList<Song*>(10);
+    songList = new ArrayList<Song*>(1);
+    playlistName="";
+    duration=0;
 };
 
 PlaylistImplementation::PlaylistImplementation(std::string name) {
-    songList = new ArrayList<Song*>(10);
+    songList = new ArrayList<Song*>(1);
     playlistName = name;
     duration = 0;
 }
 
+PlaylistImplementation::~PlaylistImplementation() {
+    delete songList;
+    songList = nullptr;
+}
+
+PlaylistImplementation::PlaylistImplementation(const PlaylistImplementation& PlayListToCopy){
+    this->songList=PlayListToCopy.songList;
+    playlistName=PlayListToCopy.playlistName;
+    duration=PlayListToCopy.duration;
+}
+
 std::string PlaylistImplementation::toString() {
-    std::string result = "";
-    result += songList->getValueAt(0)->toString();
-    for (int i = 1; i < songList->itemCount(); i++) {
-        result += "\n" + songList->getValueAt(i)->toString();
+    if(songList->itemCount()==0){
+        throw std::invalid_argument("The Playlist is Empty");
     }
+    std::string result = songList->getValueAt(0)->toString();
+    for (int i = 1; i < songList->itemCount(); i++) {
+        result = result +  "\n" + songList->getValueAt(i)->toString();
+
+    }
+
+
     return result;
 }
 
-void PlaylistImplementation::calcDuration() {
-    for (int i = 0; i < songList->itemCount(); i++) {
-        duration += songList->getValueAt(i)->getDuration();
+int PlaylistImplementation::calcDuration() {
+    if (songList->isEmpty()) {
+        return 0;
+    } else {
+        duration = 0;
+        for (int i = 0; i < songList->itemCount(); i++) {
+            duration += songList->getValueAt(i)->getDuration();
+        }
+        return duration;
     }
 }
 
 std::string PlaylistImplementation::playNext() {
-    return songList->removeValueAtFront()->toString();
-
+    songList->getValueAt(0)->updatePlayCount();
+    std::string result = songList->removeValueAtFront()->toString();
+    return result;
 }
 
 bool PlaylistImplementation::isEmpty() {
     return songList->isEmpty();
 }
 
-void PlaylistImplementation::addSong(std::string artist, std::string title) {
-    Song* newSong = new Song(artist, title, 0, 0);
-    return songList->insertAtEnd(newSong);
+void PlaylistImplementation::addSongAtEnd(Song* newSong) {
+    songList->insertAtEnd(newSong);
+}
+void PlaylistImplementation::addSongAlphabetically(Song* newSong){
+    if(songList->itemCount()==0){
+        songList->insertAtEnd(newSong);
+        return;
+    }
+    int q = songList->itemCount();
+    for(int i=0;i<q;i++){
+        if(newSong->toString()<songList->getValueAt(i)->toString()){
+            songList->insertAt(newSong,i);
+            return;
+        }
+    }
+    songList->insertAtEnd(newSong);
 }
 
 void PlaylistImplementation::removeSong(std::string artist, std::string title) {
     if (isEmpty()) {
-        throw std::out_of_range("Playlist is empty");
+        std::cout<<"Playlist is empty"<<std::endl;
     } else {
         bool found = false;
         for (int i = 0; i < songList->itemCount(); i++) {
@@ -85,3 +124,51 @@ Song* PlaylistImplementation::getSongByArtistandTitle(std::string artistIn, std:
     }
     throw std::invalid_argument("Song Not Found");
 }
+
+std::string PlaylistImplementation::getPlaylistName(){
+    return playlistName;
+}
+bool PlaylistImplementation::songPresent(std::string songIn){
+    Song tempSong = Song(songIn);
+    bool isHere=false;
+    for(int i=0;i < songList->itemCount();i++){
+        if(songList->getValueAt(i)->getArtist()==tempSong.getArtist() && songList->getValueAt(i)->getTitle()==tempSong.getTitle()){
+            isHere=true;
+        }
+    }
+    return isHere;
+}
+void PlaylistImplementation::removeSongFromPlaylist(std::string artist, std::string title){
+    // this loop goes through every song in playlist
+    for(int i=0; i<songList->itemCount();i++){
+        //this runs code if artist and title are what we are looking for
+        if(songList->getValueAt(i)->getArtist()==artist && songList->getValueAt(i)->getTitle()==title){
+            //removes value if artist and title match
+            songList->removeValueAt(i);
+        }
+    }
+    if (songList->isEmpty()) {
+        delete this;
+    }
+}
+
+void PlaylistImplementation::deleteSongFromPlaylist(std::string artist, std::string title){
+    // this loop goes through every song
+    for(int i=0; i<songList->itemCount();i++){
+        //this runs code if artist and title are what we are looking for
+        if(songList->getValueAt(i)->getArtist()==artist && songList->getValueAt(i)->getTitle()==title){
+            //removes value if artist and title match
+            delete songList->getValueAt(i);
+            songList->removeValueAt(i);
+        }
+    }
+}
+
+void PlaylistImplementation::setName(std::string nameIn){
+    playlistName=nameIn;
+}
+
+void PlaylistImplementation::setSongAt(Song * mySong, int index){
+    songList->setValueAt(index,mySong);
+}
+

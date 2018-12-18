@@ -8,27 +8,34 @@
 #include "Inventory.h"
 #include <string>
 #include "List.h"
-#include "ArrayList.h"
 #include "Song.h"
+#include "PlaylistImplementation.h"
+#include "PlaylistCollectionImplementation.h"
 
 
 class InventoryImplementation: public Inventory {
 private:
-    ArrayList<Song> allSongs;
-    int totalSongCount;
+    PlaylistImplementation allSongs;
+    PlaylistCollectionImplementation allPlaylists;
+
 
 
 public:
-    virtual void addSongToLibrary(Song songIn);
+    InventoryImplementation();
+
+    ~InventoryImplementation();
+
+    void addSongToLibrary(Song* &newSong);
     /**
      * reads songs from a file and adds with no duplicates
      */
-    void import();
+    void import(std::string fileName);
 
     /**
      * reads songs from a file and deletes songs from libray listed in the file
      */
-    void discontinue();
+     void discontinue(std::string fileIn);
+
 
     /**
      * displays the full library in alphabetical order by artist
@@ -48,11 +55,21 @@ public:
      * display information on a given song
      * @return a string
      */
-    std::string displaySong(std::string songName);
+    std::string displaySong(std::string artist, std::string title);
 
     void loadLibrary();
 
     void saveLibrary();
+
+    std::string displayPlaylists();
+
+    PlaylistImplementation* getAllSongs();
+    PlaylistCollectionImplementation* getAllPlaylists();
+
+    void removeSongFromLibrary(std::string artist, std::string title);
+
+    PlaylistImplementation * genRandPlaylist(std::string name, int duration);
+
 };
 
 
