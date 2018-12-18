@@ -28,6 +28,7 @@ std::string PlaylistCollectionImplementation::displayPlaylist(std::string playli
             return allPlaylists->getValueAt(i)->toString();
         }
     }
+    throw std::invalid_argument("Playlist not Found");
 }
 PlaylistImplementation*  PlaylistCollectionImplementation::getPlayListByLocation(int pos){
     return allPlaylists->getValueAt(pos);
@@ -74,7 +75,7 @@ PlaylistImplementation* PlaylistCollectionImplementation::getPlaylistByName(std:
             return allPlaylists->getValueAt(i);
         }
     }
-
+    throw std::invalid_argument("Playlist not Found");
 
 }
 
@@ -88,5 +89,12 @@ bool PlaylistCollectionImplementation::isEmpty() {
         return true;
     } else {
         return false;
+    }
+}
+void PlaylistCollectionImplementation::removePlaylist(std::string name){
+    for(int i =0;i<allPlaylists->itemCount();i++){
+        if(allPlaylists->getValueAt(i)->getPlaylistName()==name){
+            allPlaylists->removeValueAt(i);
+        }
     }
 }

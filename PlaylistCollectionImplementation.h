@@ -71,6 +71,8 @@ public:
     PlaylistImplementation *getPlayListByLocation(int pos);
 
     bool isEmpty();
+
+    void removePlaylist(std::string name);
 };
 
 

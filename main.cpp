@@ -43,8 +43,13 @@ int main() {
             std::cout << "enter name of playlist: ";
             getline(std::cin, name);
             std::cout << artist <<" " <<title << std::endl;
-            Song *songToAdd = inventory->getAllSongs()->getSongByArtistandTitle(artist,title);
-            inventory->getAllPlaylists()->getPlaylistByName(name)->addSongAlphabetically(songToAdd);
+            try {
+                Song *songToAdd = inventory->getAllSongs()->getSongByArtistandTitle(artist, title);
+                inventory->getAllPlaylists()->getPlaylistByName(name)->addSongAlphabetically(songToAdd);
+            }
+            catch(std::invalid_argument){
+                std::cout<<"Song was not found"<<std::endl;
+            }
 
         } else if (command == "library") {
             std::cout << inventory->displayLibrary() << std::endl;
@@ -58,22 +63,48 @@ int main() {
             std::string name;
             std::cout << "enter name: ";
             getline(std::cin, name);
-            inventory->getAllPlaylists()->getPlaylistByName(name)->removeSong(artist, title);
+            try {
+                inventory->getAllPlaylists()->getPlaylistByName(name)->removeSong(artist, title);
+            }
+            catch(std::invalid_argument){
+                std::cout<<"Playlist was not found"<<std::endl;
+            }
+            catch(std::out_of_range){
+                std::cout<<"Song was not found"<<std::endl;
+            }
         } else if (command == "import") {
             std::string fileName;
             std::cout << "enter file name: ";
             getline(std::cin, fileName);
-            inventory->import(fileName);
+            try {
+                inventory->import(fileName);
+            }
+            catch(std::invalid_argument){
+                std::cout<<"Cannot open file"<<std::endl;
+            }
         } else if (command == "discontinue") {
             std::string fileName;
             std::cout << "enter file name: ";
             getline(std::cin, fileName);
-            inventory->discontinue(fileName);
+            try {
+                inventory->discontinue(fileName);
+            }
+            catch(std::invalid_argument){
+                std::cout<<"Could not open file"<<std::endl;
+            }
         } else if (command == "playnext") {
             std::string name;
             std::cout << "enter name: ";
             getline(std::cin, name);
-            std::cout << inventory->getAllPlaylists()->getPlaylistByName(name)->playNext() << std::endl;
+            try {
+                std::cout << inventory->getAllPlaylists()->getPlaylistByName(name)->playNext() << std::endl;
+                if(inventory->getAllPlaylists()->getPlaylistByName(name)->isEmpty()){
+                    inventory->getAllPlaylists()->removePlaylist(name);
+                }
+            }
+            catch(std::invalid_argument){
+                std::cout<<"Playlist not found"<<std::endl;
+            }
         } else if (command == "artist") {
             std::string artist;
             std::cout << "enter artist: ";
@@ -100,7 +131,12 @@ int main() {
             std::string name;
             std::cout << "enter name: ";
             getline(std::cin, name);
-            std::cout << inventory->getAllPlaylists()->displayPlaylist(name) << std::endl;
+            try {
+                std::cout << inventory->getAllPlaylists()->displayPlaylist(name) << std::endl;
+            }
+            catch(std::invalid_argument){
+                std::cout<<"Please enter a valid playlist"<<std::endl;
+            }
         } else if (command == "newrandom") {
             //overwrites existing playlists
             std::string name;
@@ -112,6 +148,5 @@ int main() {
             inventory->genRandPlaylist(name, dur);
         }
     }
-    delete inventory;
     return 0;
 }

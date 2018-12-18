@@ -116,8 +116,7 @@ void InventoryImplementation::import(std::string fileName) {
     std::ifstream infile;
     infile.open(fileName);
     if (!infile) {
-        std::cerr << "Unable to open file";
-        exit(1);
+        throw std::invalid_argument("Cannot Open File");
     }
     try {
         while (!infile.eof()) {
@@ -140,8 +139,8 @@ void InventoryImplementation::discontinue(std::string fileIn){
     std::ifstream infile;
     infile.open(fileIn);
     if (!infile) {
-        std::cerr << "Unable to open file";
-        exit(1);
+        throw std::invalid_argument("Unable to open File");
+
     }
     try {
         while (!infile.eof()) {

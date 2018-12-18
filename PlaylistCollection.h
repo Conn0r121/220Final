@@ -38,6 +38,8 @@ public:
 
     virtual bool isEmpty() =0;
 
+    virtual void removePlaylist(std::string name)=0;
+
 
 };
 #endif //INC_220FINAL_PLAYLISTCOLLECTION_H

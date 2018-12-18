@@ -57,9 +57,6 @@ int PlaylistImplementation::calcDuration() {
 std::string PlaylistImplementation::playNext() {
     songList->getValueAt(0)->updatePlayCount();
     std::string result = songList->removeValueAtFront()->toString();
-    if (songList->isEmpty()) {
-        delete this;
-    }
     return result;
 }
 
